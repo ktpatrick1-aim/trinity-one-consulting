@@ -1,0 +1,7 @@
+{
+  "name": "trinity-one-consulting",
+  "version": "1.0.0",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}

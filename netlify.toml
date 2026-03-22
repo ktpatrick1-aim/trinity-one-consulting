@@ -1,0 +1,31 @@
+[build]
+  publish = "."
+  functions = "functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Blog pretty URLs
+[[redirects]]
+  from = "/blog/why-dream-management-works"
+  to = "/blog/why-dream-management-works.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/ai-for-small-business"
+  to = "/blog/ai-for-small-business.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/culture-eats-strategy"
+  to = "/blog/culture-eats-strategy.html"
+  status = 200
