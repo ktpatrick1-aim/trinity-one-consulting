@@ -1,0 +1,84 @@
+headersOrigin = "config"
+redirectsOrigin = "config"
+plugins = []
+functionsDirectory = "/Users/kevinpatrick/Documents/GitHub/trinity_one_consulting/functions"
+functionsDirectoryOrigin = "config-v1"
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/kevinpatrick/Documents/GitHub/trinity_one_consulting"
+publishOrigin = "config"
+functions = "/Users/kevinpatrick/Documents/GitHub/trinity_one_consulting/functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+from = "/api/*"
+to = "/.netlify/functions/:splat"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/blog/why-dream-management-works"
+to = "/blog/why-dream-management-works.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/blog/ai-for-small-business"
+to = "/blog/ai-for-small-business.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/blog/culture-eats-strategy"
+to = "/blog/culture-eats-strategy.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
