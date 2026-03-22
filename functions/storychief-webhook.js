@@ -34,18 +34,26 @@ async function fanOutPayload(originalBody) {
 }
 
 function verifySignature(payload, signature, key) {
+  const cleanedJSON = JSON.stringify(payload)
+    .replace(/\//g, '\\/')
+    .replace(/[\u007F-\uFFFF]/g, function(chr) {
+      return '\\u' + ('0000' + chr.charCodeAt(0).toString(16)).substr(-4);
+    });
   const hmac = crypto.createHmac('sha256', key);
-  hmac.update(JSON.stringify(payload));
+  hmac.update(cleanedJSON);
   return hmac.digest('hex') === signature;
 }
 
 function generateMAC(responseObj, key) {
   if (!key) return '';
-  // StoryChief server is PHP — json_encode() escapes forward slashes by default
-  // We must match that behavior for the MAC to validate
-  const jsonStr = JSON.stringify(responseObj).replace(/\//g, '\\/');
+  // Must match PHP json_encode behavior for StoryChief validation
+  const cleanedJSON = JSON.stringify(responseObj)
+    .replace(/\//g, '\\/')
+    .replace(/[\u007F-\uFFFF]/g, function(chr) {
+      return '\\u' + ('0000' + chr.charCodeAt(0).toString(16)).substr(-4);
+    });
   const hmac = crypto.createHmac('sha256', key);
-  hmac.update(jsonStr);
+  hmac.update(cleanedJSON);
   return hmac.digest('hex');
 }
 
@@ -175,10 +183,19 @@ exports.handler = async (event) => {
     const payload = JSON.parse(event.body);
     const encryptionKey = process.env.STORYCHIEF_KEY;
 
+    console.log('StoryChief webhook received:', JSON.stringify({
+      event: payload.meta?.event,
+      hasSignature: !!event.headers['x-storychief-signature'],
+      hasKey: !!encryptionKey,
+      headers: Object.keys(event.headers).filter(h => h.includes('story') || h.includes('content')),
+    }));
+
     if (encryptionKey && event.headers['x-storychief-signature']) {
       if (!verifySignature(payload, event.headers['x-storychief-signature'], encryptionKey)) {
+        console.log('Signature verification FAILED');
         return { statusCode: 401, body: 'Invalid signature' };
       }
+      console.log('Signature verification passed');
     }
 
     const eventType = payload.meta?.event;
