@@ -46,14 +46,9 @@ function verifySignature(payload, signature, key) {
 
 function generateMAC(responseObj, key) {
   if (!key) return '';
-  // Must match PHP json_encode behavior for StoryChief validation
-  const cleanedJSON = JSON.stringify(responseObj)
-    .replace(/\//g, '\\/')
-    .replace(/[\u007F-\uFFFF]/g, function(chr) {
-      return '\\u' + ('0000' + chr.charCodeAt(0).toString(16)).substr(-4);
-    });
+  // HMAC-SHA256 of the JSON-encoded response (without mac field)
   const hmac = crypto.createHmac('sha256', key);
-  hmac.update(cleanedJSON);
+  hmac.update(JSON.stringify(responseObj));
   return hmac.digest('hex');
 }
 
