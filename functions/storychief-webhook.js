@@ -41,9 +41,11 @@ function verifySignature(payload, signature, key) {
 
 function generateMAC(responseObj, key) {
   if (!key) return '';
-  // StoryChief expects: HMAC-SHA256 of JSON-encoded response (without mac) using encryption key
+  // StoryChief server is PHP — json_encode() escapes forward slashes by default
+  // We must match that behavior for the MAC to validate
+  const jsonStr = JSON.stringify(responseObj).replace(/\//g, '\\/');
   const hmac = crypto.createHmac('sha256', key);
-  hmac.update(JSON.stringify(responseObj));
+  hmac.update(jsonStr);
   return hmac.digest('hex');
 }
 
