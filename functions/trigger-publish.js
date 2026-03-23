@@ -41,13 +41,29 @@ exports.handler = async (event) => {
   const results = [];
 
   for (const item of items) {
-    // Blog deploy
+    // Blog deploy — hub first, then sub-brand
     if (item.blog && githubToken) {
+      // Step 1: Deploy to trinityoneconsulting.com (the hub)
       try {
-        const r = await deployBlog(item, githubToken);
-        results.push(r);
+        const hubResult = await deployBlog({
+          ...item,
+          blog: { ...item.blog, repo: 'ktpatrick1-aim/trinity-one-consulting' }
+        }, githubToken);
+        hubResult.action = 'blog-hub';
+        results.push(hubResult);
       } catch (err) {
-        results.push({ itemId: item.id, title: item.title, action: 'blog', success: false, error: err.message });
+        results.push({ itemId: item.id, title: item.title, action: 'blog-hub', success: false, error: err.message });
+      }
+
+      // Step 2: Fan out to sub-brand repo
+      if (item.blog.repo !== 'ktpatrick1-aim/trinity-one-consulting') {
+        try {
+          const brandResult = await deployBlog(item, githubToken);
+          brandResult.action = 'blog-brand';
+          results.push(brandResult);
+        } catch (err) {
+          results.push({ itemId: item.id, title: item.title, action: 'blog-brand', success: false, error: err.message });
+        }
       }
     }
 

@@ -26,14 +26,32 @@ exports.handler = async (event) => {
 
   for (const item of dueItems) {
     // ── BLOG DEPLOY via GitHub API ──
+    // Step 1: Always deploy to trinityoneconsulting.com first (the hub)
     if (item.blog && githubToken) {
       try {
-        const blogResult = await deployBlog(item, githubToken);
-        results.push(blogResult);
-        console.log(`[blog] ${blogResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title} → ${item.blog.repo}`);
+        const hubResult = await deployBlog({
+          ...item,
+          blog: { ...item.blog, repo: 'ktpatrick1-aim/trinity-one-consulting' }
+        }, githubToken);
+        hubResult.action = 'blog-hub';
+        results.push(hubResult);
+        console.log(`[blog-hub] ${hubResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title} → trinity-one-consulting`);
       } catch (err) {
-        results.push({ itemId: item.id, title: item.title, action: 'blog', success: false, error: err.message });
-        console.log(`[blog] ERROR: ${item.title}: ${err.message}`);
+        results.push({ itemId: item.id, title: item.title, action: 'blog-hub', success: false, error: err.message });
+        console.log(`[blog-hub] ERROR: ${item.title}: ${err.message}`);
+      }
+
+      // Step 2: Fan out to the sub-brand repo
+      if (item.blog.repo !== 'ktpatrick1-aim/trinity-one-consulting') {
+        try {
+          const brandResult = await deployBlog(item, githubToken);
+          brandResult.action = 'blog-brand';
+          results.push(brandResult);
+          console.log(`[blog-brand] ${brandResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title} → ${item.blog.repo}`);
+        } catch (err) {
+          results.push({ itemId: item.id, title: item.title, action: 'blog-brand', success: false, error: err.message });
+          console.log(`[blog-brand] ERROR: ${item.title}: ${err.message}`);
+        }
       }
     }
 
