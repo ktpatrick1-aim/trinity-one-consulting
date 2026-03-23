@@ -21,8 +21,15 @@ exports.handler = async (event) => {
 
   const { text, articleUrl, articleTitle, articleDescription, targets } = JSON.parse(event.body);
 
-  // Default targets: personal profile. Can also include org pages.
-  const postTargets = targets || ['personal'];
+  // Default targets: personal + org pages (read org IDs from env vars)
+  const orgTrinity = process.env.LINKEDIN_ORG_TRINITY;
+  const orgDream = process.env.LINKEDIN_ORG_DREAMDIV;
+
+  let defaultTargets = ['personal'];
+  if (orgTrinity) defaultTargets.push(orgTrinity);
+  if (orgDream) defaultTargets.push(orgDream);
+
+  const postTargets = targets || defaultTargets;
 
   const results = [];
 
