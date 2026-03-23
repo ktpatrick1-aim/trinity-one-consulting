@@ -9,7 +9,7 @@ exports.handler = async (event) => {
 
   const clientId = process.env.LINKEDIN_CLIENT_ID;
   const clientSecret = process.env.LINKEDIN_CLIENT_SECRET;
-  const redirectUri = `${process.env.URL || 'https://trinity-one-consulting.netlify.app'}/api/linkedin-callback`;
+  const redirectUri = 'https://trinityoneconsulting.com/api/linkedin-callback';
 
   try {
     // Exchange code for access token
