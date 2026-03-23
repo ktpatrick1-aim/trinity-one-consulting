@@ -2,6 +2,10 @@
   publish = "."
   functions = "functions"
 
+# Auto-publish LinkedIn content daily at 8am ET (12:00 UTC)
+[functions."scheduled-publish"]
+  schedule = "0 12 * * *"
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
