@@ -1,5 +1,14 @@
 [
   {
+    "slug": "you-dont-need-6-months-to-launch",
+    "title": "Forge Is Live — Book Your Free Consultation",
+    "excerpt": "Trinity Forge compresses months of startup setup into a 2-4 week AI-powered sprint.",
+    "tag": "Trinity Forge",
+    "date": "2026-03-24",
+    "readTime": "7 min",
+    "icon": "🚀"
+  },
+  {
     "slug": "youre-not-behind-on-ai",
     "title": "Calibrate Is Live — AI Readiness Audit, Free",
     "excerpt": "Most AI implementations fail because companies solve the wrong problem first. The AI Readiness Audit changes that.",
@@ -7,15 +16,6 @@
     "date": "2026-03-24",
     "readTime": "8 min",
     "icon": "🎯"
-  },
-  {
-    "slug": "you-dont-need-6-months-to-launch",
-    "title": "You Don't Need 6 Months to Launch. You Need 4 Weeks.",
-    "excerpt": "The idea isn't the hard part. The build is. Trinity Forge compresses months of startup infrastructure into a 2–4 week AI-powered sprint.",
-    "tag": "Trinity Forge",
-    "date": "2026-03-23",
-    "readTime": "7 min",
-    "icon": "🚀"
   },
   {
     "slug": "the-human-machine-equation",
