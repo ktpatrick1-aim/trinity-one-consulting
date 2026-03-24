@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "date": "2026-03-24",
+    "date": "2026-03-23",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "launch",
@@ -11,15 +11,15 @@
   },
   {
     "id": 2,
-    "date": "2026-03-24",
+    "date": "2026-03-25",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
     "title": "You Don't Need 6 Months to Launch. You Need 4 Weeks.",
     "cta": "https://calendly.com/kevin-trinityoneconsulting",
-    "excerpt": "The idea isn't the hard part. The build is. Trinity Forge compresses months of startup infrastructure into a 2\u20134 week AI-powered sprint.",
+    "excerpt": "The idea isn't the hard part. The build is. Trinity Forge compresses months of startup infrastructure into a 2–4 week AI-powered sprint.",
     "tag": "Trinity Forge",
-    "icon": "\ud83d\ude80",
+    "icon": "🚀",
     "readTime": "7 min",
     "blog": {
       "repo": "ktpatrick1-aim/trinity-one-consulting",
@@ -47,7 +47,7 @@
     "cta": "https://calibrate.trinityoneconsulting.com/audit",
     "excerpt": "Most AI implementations fail because companies solve the wrong problem first. The AI Readiness Audit changes that.",
     "tag": "Trinity Calibrate",
-    "icon": "\ud83c\udfaf",
+    "icon": "🎯",
     "readTime": "8 min",
     "blog": {
       "repo": "ktpatrick1-aim/trinity-one-consulting",
@@ -75,7 +75,7 @@
     "cta": "https://trinityoneconsulting.com/#contact",
     "excerpt": "68% turnover reduction. 4.8x ROI. What happens when organizations stop managing people and start investing in their dreams.",
     "tag": "Dream Management",
-    "icon": "\ud83d\udc9a",
+    "icon": "💚",
     "readTime": "6 min",
     "blog": {
       "repo": "ktpatrick1-aim/trinity-one-consulting",
@@ -85,7 +85,7 @@
   },
   {
     "id": 7,
-    "date": "2026-03-27",
+    "date": "2026-03-31",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "linkedin",
@@ -141,9 +141,9 @@
     "type": "blog",
     "title": "The Dream Architects: Season 3 of The Dream Dividend",
     "cta": "https://thedreamdividend.com/#subscribe",
-    "excerpt": "Season 3 is here \u2014 The Dream Architects: Designing the Next Economy. 283 episodes in, this is the season KP has been building toward.",
+    "excerpt": "Season 3 is here — The Dream Architects: Designing the Next Economy. 283 episodes in, this is the season KP has been building toward.",
     "tag": "Dream Dividend",
-    "icon": "\ud83c\udf99\ufe0f",
+    "icon": "🎙️",
     "readTime": "5 min",
     "blog": {
       "repo": "ktpatrick1-aim/trinity-one-consulting",
