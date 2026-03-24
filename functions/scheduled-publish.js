@@ -87,22 +87,7 @@ exports.handler = async (event) => {
       }
     }
 
-    // ── LINKEDIN POST ──
-    if (item.linkedinText && accessToken && personUrn) {
-      const targets = [{ type: 'personal', author: `urn:li:person:${personUrn}` }];
-
-      // Post to LinkedIn
-      for (const target of targets) {
-        try {
-          const liResult = await postToLinkedIn(item, target, accessToken);
-          results.push(liResult);
-          console.log(`[linkedin] ${liResult.success ? 'SUCCESS' : 'FAILED'}: "${item.title}" → ${target.type} (${liResult.status})`);
-          await new Promise(r => setTimeout(r, 2000));
-        } catch (err) {
-          results.push({ itemId: item.id, title: item.title, action: 'linkedin', target: target.type, success: false, error: err.message });
-        }
-      }
-    }
+    // LinkedIn disabled for now
   }
 
   const summary = {
