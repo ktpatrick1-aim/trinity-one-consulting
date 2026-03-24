@@ -1,14 +1,5 @@
 [
   {
-    "slug": "youre-not-behind-on-ai",
-    "title": "You're Not Behind on AI. You Just Haven't Had Anyone Show You Where It Fits.",
-    "excerpt": "Most AI implementations fail because companies solve the wrong problem first. The AI Readiness Audit changes that.",
-    "tag": "Trinity Calibrate",
-    "date": "2026-03-24",
-    "readTime": "8 min",
-    "icon": "🎯"
-  },
-  {
     "slug": "you-dont-need-6-months-to-launch",
     "title": "Forge Is Live — Book Your Free Consultation",
     "excerpt": "Trinity Forge compresses months of startup setup into a 2-4 week AI-powered sprint.",
@@ -16,6 +7,15 @@
     "date": "2026-03-24",
     "readTime": "7 min",
     "icon": "🚀"
+  },
+  {
+    "slug": "youre-not-behind-on-ai",
+    "title": "You're Not Behind on AI. You Just Haven't Had Anyone Show You Where It Fits.",
+    "excerpt": "Most AI implementations fail because companies solve the wrong problem first. The AI Readiness Audit changes that.",
+    "tag": "Trinity Calibrate",
+    "date": "2026-03-24",
+    "readTime": "8 min",
+    "icon": "🎯"
   },
   {
     "slug": "the-human-machine-equation",
