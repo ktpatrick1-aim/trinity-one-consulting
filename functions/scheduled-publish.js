@@ -55,16 +55,36 @@ exports.handler = async (event) => {
         }
       }
 
-      // Step 3: Fan out to the sub-brand repo
-      if (item.blog.repo !== 'ktpatrick1-aim/trinity-one-consulting') {
+      // Step 3: Fan out to sub-brand repo based on targetBrand
+      const brandRepoMap = {
+        forge: 'ktpatrick1-aim/trinity_forge',
+        calibrate: 'ktpatrick1-aim/trinity_calibrate',
+        dreamdividend: 'ktpatrick1-aim/thedreamdividend',
+      };
+      const subBrandRepo = brandRepoMap[item.targetBrand];
+      if (subBrandRepo) {
         try {
-          const brandResult = await deployBlog(item, githubToken);
+          const brandResult = await deployBlog({
+            ...item,
+            blog: { ...item.blog, repo: subBrandRepo }
+          }, githubToken);
           brandResult.action = 'blog-brand';
           results.push(brandResult);
-          console.log(`[blog-brand] ${brandResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title} → ${item.blog.repo}`);
+          console.log(`[blog-brand] ${brandResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title} → ${subBrandRepo}`);
         } catch (err) {
           results.push({ itemId: item.id, title: item.title, action: 'blog-brand', success: false, error: err.message });
           console.log(`[blog-brand] ERROR: ${item.title}: ${err.message}`);
+        }
+
+        // Update sub-brand posts.json
+        try {
+          const subPostsResult = await updatePostsJson(item, githubToken, subBrandRepo);
+          subPostsResult.action = 'posts-json-brand';
+          results.push(subPostsResult);
+          console.log(`[posts-json-brand] ${subPostsResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title} → ${subBrandRepo}`);
+        } catch (err) {
+          results.push({ itemId: item.id, title: item.title, action: 'posts-json-brand', success: false, error: err.message });
+          console.log(`[posts-json-brand] ERROR: ${item.title}: ${err.message}`);
         }
       }
     }
@@ -166,8 +186,8 @@ async function deployBlog(item, githubToken) {
 }
 
 // ── Update posts.json on the hub repo ──
-async function updatePostsJson(item, githubToken) {
-  const repo = 'ktpatrick1-aim/trinity-one-consulting';
+async function updatePostsJson(item, githubToken, repoOverride) {
+  const repo = repoOverride || 'ktpatrick1-aim/trinity-one-consulting';
   const filePath = 'blog/posts.json';
 
   // 1. Fetch current posts.json

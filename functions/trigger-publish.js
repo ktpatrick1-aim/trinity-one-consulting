@@ -69,14 +69,32 @@ exports.handler = async (event) => {
         }
       }
 
-      // Step 3: Fan out to sub-brand repo
-      if (item.blog.repo !== 'ktpatrick1-aim/trinity-one-consulting') {
+      // Step 3: Fan out to sub-brand repo based on targetBrand
+      const brandRepoMap = {
+        forge: 'ktpatrick1-aim/trinity_forge',
+        calibrate: 'ktpatrick1-aim/trinity_calibrate',
+        dreamdividend: 'ktpatrick1-aim/thedreamdividend',
+      };
+      const subBrandRepo = brandRepoMap[item.targetBrand];
+      if (subBrandRepo) {
         try {
-          const brandResult = await deployBlog(item, githubToken);
+          const brandResult = await deployBlog({
+            ...item,
+            blog: { ...item.blog, repo: subBrandRepo }
+          }, githubToken);
           brandResult.action = 'blog-brand';
           results.push(brandResult);
         } catch (err) {
           results.push({ itemId: item.id, title: item.title, action: 'blog-brand', success: false, error: err.message });
+        }
+
+        // Update sub-brand posts.json too
+        try {
+          const subPostsResult = await updatePostsJson(item, githubToken, subBrandRepo);
+          subPostsResult.action = 'posts-json-brand';
+          results.push(subPostsResult);
+        } catch (err) {
+          results.push({ itemId: item.id, title: item.title, action: 'posts-json-brand', success: false, error: err.message });
         }
       }
     }
@@ -144,8 +162,8 @@ async function deployBlog(item, githubToken) {
   return { itemId: item.id, title: item.title, action: 'blog', success: true, repo, path: destPath, commitSha: putData.commit?.sha };
 }
 
-async function updatePostsJson(item, githubToken) {
-  const repo = 'ktpatrick1-aim/trinity-one-consulting';
+async function updatePostsJson(item, githubToken, repoOverride) {
+  const repo = repoOverride || 'ktpatrick1-aim/trinity-one-consulting';
   const filePath = 'blog/posts.json';
 
   const getRes = await fetch(`https://api.github.com/repos/${repo}/contents/${filePath}`, {
