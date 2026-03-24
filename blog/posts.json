@@ -1,48 +1,12 @@
 [
   {
-    "slug": "the-dream-architects-season-3",
-    "title": "The Dream Architects: Season 3 of The Dream Dividend",
-    "excerpt": "Season 3 is here \u2014 The Dream Architects: Designing the Next Economy. 283 episodes in, this is the season KP has been building toward.",
-    "tag": "Dream Dividend",
-    "date": "2026-04-03",
-    "readTime": "5 min",
-    "icon": "\ud83c\udf99\ufe0f"
-  },
-  {
-    "slug": "retention-problem-isnt-about-compensation",
-    "title": "Your Retention Problem Isn't About Compensation. It's About Dreams.",
-    "excerpt": "68% turnover reduction. 4.8x ROI. What happens when organizations stop managing people and start investing in their dreams.",
-    "tag": "Dream Management",
-    "date": "2026-03-26",
-    "readTime": "6 min",
-    "icon": "\ud83d\udc9a"
-  },
-  {
-    "slug": "you-dont-need-6-months-to-launch",
-    "title": "You Don't Need 6 Months to Launch. You Need 4 Weeks.",
-    "excerpt": "The idea isn't the hard part. The build is. Trinity Forge compresses months of startup infrastructure into a 2\u20134 week AI-powered sprint.",
-    "tag": "Trinity Forge",
-    "date": "2026-03-24",
-    "readTime": "7 min",
-    "icon": "\ud83d\ude80"
-  },
-  {
-    "slug": "youre-not-behind-on-ai",
-    "title": "You're Not Behind on AI. You Just Haven't Had Anyone Show You Where It Fits.",
-    "excerpt": "Most AI implementations fail because companies solve the wrong problem first. The AI Readiness Audit changes that.",
-    "tag": "Trinity Calibrate",
-    "date": "2026-03-24",
-    "readTime": "8 min",
-    "icon": "\ud83c\udfaf"
-  },
-  {
     "slug": "the-human-machine-equation",
     "title": "The Human + Machine Equation",
-    "excerpt": "Most businesses are chasing AI like it's the answer. It's not. It's half the answer. Here's what 20 years of ERP implementations taught me \u2014 and what I built because of it.",
+    "excerpt": "Most businesses are chasing AI like it's the answer. It's not. It's half the answer. Here's what 20 years of ERP implementations taught me — and what I built because of it.",
     "tag": "Human + Machine",
     "date": "2026-03-22",
     "readTime": "8 min",
-    "icon": "\u26a1"
+    "icon": "⚡"
   },
   {
     "slug": "why-dream-management-works",
@@ -51,24 +15,24 @@
     "tag": "Dream Management",
     "date": "2026-03-15",
     "readTime": "5 min",
-    "icon": "\ud83d\udcdd"
+    "icon": "📝"
   },
   {
     "slug": "ai-for-small-business",
-    "title": "AI Isn't Just for Enterprise \u2014 How Small Businesses Can Start Today",
+    "title": "AI Isn't Just for Enterprise — How Small Businesses Can Start Today",
     "excerpt": "You don't need a massive budget to leverage AI. Practical steps for small and mid-size organizations to start automating intelligently.",
     "tag": "AI & Automation",
     "date": "2026-03-08",
     "readTime": "4 min",
-    "icon": "\ud83e\udd16"
+    "icon": "🤖"
   },
   {
     "slug": "culture-eats-strategy",
-    "title": "Culture Eats Strategy for Breakfast \u2014 And Here's the Proof",
+    "title": "Culture Eats Strategy for Breakfast — And Here's the Proof",
     "excerpt": "Data-driven evidence that organizational culture is the single biggest predictor of long-term business performance.",
     "tag": "Culture",
     "date": "2026-02-28",
     "readTime": "6 min",
-    "icon": "\ud83c\udfe2"
+    "icon": "🏢"
   }
 ]
