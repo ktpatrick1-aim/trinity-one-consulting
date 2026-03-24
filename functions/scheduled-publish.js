@@ -28,6 +28,7 @@ exports.handler = async (event) => {
     // ── BLOG DEPLOY via GitHub API ──
     // Step 1: Always deploy to trinityoneconsulting.com first (the hub)
     if (item.blog && githubToken) {
+      let hubDeploySuccess = false;
       try {
         const hubResult = await deployBlog({
           ...item,
@@ -35,13 +36,26 @@ exports.handler = async (event) => {
         }, githubToken);
         hubResult.action = 'blog-hub';
         results.push(hubResult);
+        hubDeploySuccess = hubResult.success;
         console.log(`[blog-hub] ${hubResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title} → trinity-one-consulting`);
       } catch (err) {
         results.push({ itemId: item.id, title: item.title, action: 'blog-hub', success: false, error: err.message });
         console.log(`[blog-hub] ERROR: ${item.title}: ${err.message}`);
       }
 
-      // Step 2: Fan out to the sub-brand repo
+      // Step 2: Update posts.json on the hub repo after successful deploy
+      if (hubDeploySuccess) {
+        try {
+          const postsResult = await updatePostsJson(item, githubToken);
+          results.push(postsResult);
+          console.log(`[posts-json] ${postsResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title}`);
+        } catch (err) {
+          results.push({ itemId: item.id, title: item.title, action: 'posts-json', success: false, error: err.message });
+          console.log(`[posts-json] ERROR: ${item.title}: ${err.message}`);
+        }
+      }
+
+      // Step 3: Fan out to the sub-brand repo
       if (item.blog.repo !== 'ktpatrick1-aim/trinity-one-consulting') {
         try {
           const brandResult = await deployBlog(item, githubToken);
@@ -147,6 +161,79 @@ async function deployBlog(item, githubToken) {
     success: true,
     repo: repo,
     path: destPath,
+    commitSha: putData.commit?.sha,
+  };
+}
+
+// ── Update posts.json on the hub repo ──
+async function updatePostsJson(item, githubToken) {
+  const repo = 'ktpatrick1-aim/trinity-one-consulting';
+  const filePath = 'blog/posts.json';
+
+  // 1. Fetch current posts.json
+  const getRes = await fetch(`https://api.github.com/repos/${repo}/contents/${filePath}`, {
+    headers: { Authorization: `token ${githubToken}`, Accept: 'application/vnd.github.v3+json' },
+  });
+
+  let posts = [];
+  let existingSha = null;
+
+  if (getRes.ok) {
+    const fileData = await getRes.json();
+    existingSha = fileData.sha;
+    const decoded = Buffer.from(fileData.content, 'base64').toString('utf-8');
+    posts = JSON.parse(decoded);
+  }
+
+  // 2. Build new post entry from schedule item metadata
+  const slug = item.blog.destPath.replace('blog/', '').replace('.html', '');
+  const newPost = {
+    slug: slug,
+    title: item.title,
+    excerpt: item.excerpt || '',
+    tag: item.tag || '',
+    date: item.date,
+    readTime: item.readTime || '5 min',
+    icon: item.icon || '📝',
+  };
+
+  // 3. Remove duplicate if exists, then prepend (newest first)
+  posts = posts.filter(p => p.slug !== slug);
+  posts.unshift(newPost);
+
+  // 4. Sort by date descending
+  posts.sort((a, b) => b.date.localeCompare(a.date));
+
+  // 5. PUT updated posts.json back
+  const content = Buffer.from(JSON.stringify(posts, null, 2) + '\n').toString('base64');
+  const putBody = {
+    message: `Update posts.json: add ${item.title}`,
+    content: content,
+    branch: 'main',
+  };
+  if (existingSha) putBody.sha = existingSha;
+
+  const putRes = await fetch(`https://api.github.com/repos/${repo}/contents/${filePath}`, {
+    method: 'PUT',
+    headers: {
+      Authorization: `token ${githubToken}`,
+      Accept: 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(putBody),
+  });
+
+  if (!putRes.ok) {
+    const err = await putRes.text();
+    return { itemId: item.id, title: item.title, action: 'posts-json', success: false, error: `posts.json update failed: ${putRes.status} ${err}` };
+  }
+
+  const putData = await putRes.json();
+  return {
+    itemId: item.id,
+    title: item.title,
+    action: 'posts-json',
+    success: true,
     commitSha: putData.commit?.sha,
   };
 }
