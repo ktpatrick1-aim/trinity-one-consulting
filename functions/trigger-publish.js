@@ -69,32 +69,30 @@ exports.handler = async (event) => {
         }
       }
 
-      // Step 3: Fan out to sub-brand repo based on targetBrand
-      const brandRepoMap = {
-        forge: 'ktpatrick1-aim/trinity_forge',
-        calibrate: 'ktpatrick1-aim/trinity_calibrate',
-        dreamdividend: 'ktpatrick1-aim/thedreamdividend',
-      };
-      const subBrandRepo = brandRepoMap[item.targetBrand];
-      if (subBrandRepo) {
+      // Step 3: Fan out to ALL sub-brand repos
+      const allSubBrandRepos = [
+        'ktpatrick1-aim/trinity_forge',
+        'ktpatrick1-aim/trinity_calibrate',
+        'ktpatrick1-aim/thedreamdividend',
+      ];
+      for (const subRepo of allSubBrandRepos) {
         try {
           const brandResult = await deployBlog({
             ...item,
-            blog: { ...item.blog, repo: subBrandRepo }
+            blog: { ...item.blog, repo: subRepo }
           }, githubToken);
-          brandResult.action = 'blog-brand';
+          brandResult.action = 'blog-' + subRepo.split('/')[1];
           results.push(brandResult);
         } catch (err) {
-          results.push({ itemId: item.id, title: item.title, action: 'blog-brand', success: false, error: err.message });
+          results.push({ itemId: item.id, title: item.title, action: 'blog-' + subRepo.split('/')[1], success: false, error: err.message });
         }
 
-        // Update sub-brand posts.json too
         try {
-          const subPostsResult = await updatePostsJson(item, githubToken, subBrandRepo);
-          subPostsResult.action = 'posts-json-brand';
+          const subPostsResult = await updatePostsJson(item, githubToken, subRepo);
+          subPostsResult.action = 'posts-json-' + subRepo.split('/')[1];
           results.push(subPostsResult);
         } catch (err) {
-          results.push({ itemId: item.id, title: item.title, action: 'posts-json-brand', success: false, error: err.message });
+          results.push({ itemId: item.id, title: item.title, action: 'posts-json-' + subRepo.split('/')[1], success: false, error: err.message });
         }
       }
     }
