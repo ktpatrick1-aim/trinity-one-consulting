@@ -1,24 +1,34 @@
 const fetch = require('node-fetch');
 
+const CORS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Content-Type': 'application/json',
+};
+
 exports.handler = async (event) => {
-  // Auth check
+  if (event.httpMethod === 'OPTIONS') {
+    return { statusCode: 200, headers: CORS, body: '' };
+  }
+
   const auth = event.headers.authorization || '';
   if (auth !== `Bearer ${process.env.ADMIN_PASSWORD}`) {
-    return { statusCode: 401, body: 'Unauthorized' };
+    return { statusCode: 401, headers: CORS, body: 'Unauthorized' };
   }
 
   if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, body: 'Method not allowed' };
+    return { statusCode: 405, headers: CORS, body: 'Method not allowed' };
   }
 
   const githubToken = process.env.GITHUB_TOKEN;
   if (!githubToken) {
-    return { statusCode: 500, body: JSON.stringify({ error: 'GITHUB_TOKEN not set' }) };
+    return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: 'GITHUB_TOKEN not set' }) };
   }
 
   const { updates } = JSON.parse(event.body);
-  if (!updates || !Array.length) {
-    return { statusCode: 400, body: JSON.stringify({ error: 'No updates provided' }) };
+  if (!updates || !Array.isArray(updates)) {
+    return { statusCode: 400, headers: CORS, body: JSON.stringify({ error: 'No updates provided' }) };
   }
 
   const repo = 'ktpatrick1-aim/trinity-one-consulting';
@@ -32,7 +42,7 @@ exports.handler = async (event) => {
 
     if (!getRes.ok) {
       const err = await getRes.text();
-      return { statusCode: 500, body: JSON.stringify({ error: `Failed to fetch schedule: ${err}` }) };
+      return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: `Failed to fetch schedule: ${err}` }) };
     }
 
     const fileData = await getRes.json();
@@ -51,7 +61,7 @@ exports.handler = async (event) => {
     if (changed === 0) {
       return {
         statusCode: 200,
-        headers: { 'Content-Type': 'application/json' },
+        headers: CORS,
         body: JSON.stringify({ message: 'No changes to save', changed: 0 }),
       };
     }
@@ -76,16 +86,16 @@ exports.handler = async (event) => {
 
     if (!putRes.ok) {
       const err = await putRes.text();
-      return { statusCode: 500, body: JSON.stringify({ error: `Failed to update: ${err}` }) };
+      return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: `Failed to update: ${err}` }) };
     }
 
     const putData = await putRes.json();
     return {
       statusCode: 200,
-      headers: { 'Content-Type': 'application/json' },
+      headers: CORS,
       body: JSON.stringify({ message: 'Schedule updated', changed, commitSha: putData.commit?.sha }),
     };
   } catch (err) {
-    return { statusCode: 500, body: JSON.stringify({ error: err.message }) };
+    return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: err.message }) };
   }
 };
