@@ -46,6 +46,7 @@ exports.handler = async (event) => {
     // Blog deploy — hub first, then sub-brand
     if (item.blog && githubToken) {
       // Step 1: Deploy to trinityoneconsulting.com (the hub)
+      let hubSuccess = false;
       try {
         const hubResult = await deployBlog({
           ...item,
@@ -53,11 +54,22 @@ exports.handler = async (event) => {
         }, githubToken);
         hubResult.action = 'blog-hub';
         results.push(hubResult);
+        hubSuccess = hubResult.success;
       } catch (err) {
         results.push({ itemId: item.id, title: item.title, action: 'blog-hub', success: false, error: err.message });
       }
 
-      // Step 2: Fan out to sub-brand repo
+      // Step 2: Update posts.json so blog index shows the new post
+      if (hubSuccess) {
+        try {
+          const postsResult = await updatePostsJson(item, githubToken);
+          results.push(postsResult);
+        } catch (err) {
+          results.push({ itemId: item.id, title: item.title, action: 'posts-json', success: false, error: err.message });
+        }
+      }
+
+      // Step 3: Fan out to sub-brand repo
       if (item.blog.repo !== 'ktpatrick1-aim/trinity-one-consulting') {
         try {
           const brandResult = await deployBlog(item, githubToken);
@@ -130,6 +142,54 @@ async function deployBlog(item, githubToken) {
 
   const putData = await putRes.json();
   return { itemId: item.id, title: item.title, action: 'blog', success: true, repo, path: destPath, commitSha: putData.commit?.sha };
+}
+
+async function updatePostsJson(item, githubToken) {
+  const repo = 'ktpatrick1-aim/trinity-one-consulting';
+  const filePath = 'blog/posts.json';
+
+  const getRes = await fetch(`https://api.github.com/repos/${repo}/contents/${filePath}`, {
+    headers: { Authorization: `token ${githubToken}`, Accept: 'application/vnd.github.v3+json' },
+  });
+
+  let posts = [];
+  let existingSha = null;
+  if (getRes.ok) {
+    const fileData = await getRes.json();
+    existingSha = fileData.sha;
+    posts = JSON.parse(Buffer.from(fileData.content, 'base64').toString('utf-8'));
+  }
+
+  const slug = item.blog.destPath.replace('blog/', '').replace('.html', '');
+  const newPost = {
+    slug,
+    title: item.title,
+    excerpt: item.excerpt || '',
+    tag: item.tag || '',
+    date: item.date,
+    readTime: item.readTime || '5 min',
+    icon: item.icon || '📝',
+  };
+
+  posts = posts.filter(p => p.slug !== slug);
+  posts.unshift(newPost);
+  posts.sort((a, b) => b.date.localeCompare(a.date));
+
+  const content = Buffer.from(JSON.stringify(posts, null, 2) + '\n').toString('base64');
+  const putBody = { message: `Update posts.json: add ${item.title}`, content, branch: 'main' };
+  if (existingSha) putBody.sha = existingSha;
+
+  const putRes = await fetch(`https://api.github.com/repos/${repo}/contents/${filePath}`, {
+    method: 'PUT',
+    headers: { Authorization: `token ${githubToken}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+    body: JSON.stringify(putBody),
+  });
+
+  if (!putRes.ok) {
+    return { itemId: item.id, title: item.title, action: 'posts-json', success: false, error: `posts.json: ${putRes.status}` };
+  }
+  const putData = await putRes.json();
+  return { itemId: item.id, title: item.title, action: 'posts-json', success: true, commitSha: putData.commit?.sha };
 }
 
 async function postToLinkedIn(item, target, accessToken) {
