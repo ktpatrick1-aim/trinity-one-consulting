@@ -28,10 +28,12 @@ exports.handler = async (event) => {
 
   if (body.id) {
     items = schedule.filter(item => item.id === body.id);
+  } else if (body.date && body.title) {
+    items = schedule.filter(item => item.date === body.date && item.title === body.title);
   } else if (body.date) {
     items = schedule.filter(item => item.date === body.date);
   } else {
-    return { statusCode: 400, headers: corsHeaders(), body: JSON.stringify({ error: 'Provide "date" or "id"' }) };
+    return { statusCode: 400, headers: corsHeaders(), body: JSON.stringify({ error: 'Provide "date", "id", or "date"+"title"' }) };
   }
 
   if (items.length === 0) {
