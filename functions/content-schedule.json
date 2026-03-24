@@ -7,6 +7,15 @@
     "type": "launch",
     "title": "Forge Is Live — Book Your Free Consultation",
     "cta": "https://calendly.com/kevin-trinityoneconsulting",
+    "excerpt": "Trinity Forge compresses months of startup setup into a 2-4 week AI-powered sprint.",
+    "tag": "Trinity Forge",
+    "icon": "🚀",
+    "readTime": "7 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-forge-launch.html",
+      "destPath": "blog/you-dont-need-6-months-to-launch.html"
+    },
     "linkedinText": "Forge is live.\n\nI've watched too many great business ideas die in the gap between \"I want to start something\" and \"I know how to actually build it.\"\n\nThat gap isn't talent. It's infrastructure. Brand. Website. CRM. Workflows. The operational backbone that used to take 6 months and $50K.\n\nWe compress all of it into 2–4 weeks.\n\nTrinity Forge is AI-Powered. Human-Built. Every sprint is built custom — not from a template, not from a course, not from a \"here's your login to Squarespace.\"\n\nThree tiers:\n→ AI Launch Assessment ($500–$1,500): Validate the idea. Map the tools. Get a real roadmap.\n→ AI-Powered Launch Sprint ($3K–$10K): The full build. Brand, site, CRM, automations, content engine. Go-live ready.\n→ Ongoing Launch Support ($500–$1,500/mo): 90 days of check-ins, optimization, and strategy for the critical early months.\n\nIf you've been sitting on an idea, this is the signal you've been waiting for.\n\nBook a free consultation: https://calendly.com/kevin-trinityoneconsulting\n\nNo pitch deck. No pressure. Just an honest conversation about your idea.\n\nWhat's the business you've been sitting on? Drop it in the comments — I read every single one."
   },
   {
@@ -35,6 +44,15 @@
     "type": "launch",
     "title": "Calibrate Is Live — AI Readiness Audit, Free",
     "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "excerpt": "Most AI implementations fail because companies solve the wrong problem first. The AI Readiness Audit changes that.",
+    "tag": "Trinity Calibrate",
+    "icon": "🎯",
+    "readTime": "8 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-calibrate-launch.html",
+      "destPath": "blog/youre-not-behind-on-ai.html"
+    },
     "linkedinText": "Most AI implementations fail. Here's the honest reason.\n\nCompanies buy AI platforms before they've diagnosed the problem. The conversation starts with \"here's what our tool does\" instead of \"where are you bleeding time and money?\"\n\nThat's not a strategy. It's vendor pressure dressed up as transformation.\n\nAfter 20+ years building enterprise systems, I know one thing about technology adoption: precision beats breadth every time.\n\nTrinity Calibrate is live.\n\nWe don't show up with a platform and a pitch deck. We show up with an AI Readiness Audit — a systematic look at your operations to find the 2–3 places where AI creates real, measurable ROI.\n\nThen we build it. Deploy it. Train your team to sustain it. In 4–8 weeks.\n\nWhat we consistently find:\n→ Document processing: 60%+ time reduction\n→ Customer intake & qualification: 8–12 hrs/week reclaimed\n→ Operational reporting: from 47 dashboards to 3 decisions\n→ 12-month ROI: 3–5x\n\nNo guesswork. No bloated timelines. Precision AI, built right.\n\nIf your business is generating revenue but hitting operational ceilings, this is the conversation I want to have with you.\n\nFree consultation → https://calendly.com/kevin-trinityoneconsulting\n\nWhat's the most manual, repetitive process in your operation right now? Tell me in the comments."
   },
   {
