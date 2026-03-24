@@ -1,5 +1,23 @@
 [
   {
+    "id": 2,
+    "date": "2026-03-23",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "blog",
+    "title": "You Don't Need 6 Months to Launch. You Need 4 Weeks.",
+    "cta": "https://calendly.com/kevin-trinityoneconsulting",
+    "excerpt": "The idea isn't the hard part. The build is. Trinity Forge compresses months of startup infrastructure into a 2–4 week AI-powered sprint.",
+    "tag": "Trinity Forge",
+    "icon": "🚀",
+    "readTime": "7 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-forge-launch.html",
+      "destPath": "blog/you-dont-need-6-months-to-launch.html"
+    }
+  },
+  {
     "id": 1,
     "date": "2026-03-24",
     "brand": "forge",
@@ -17,24 +35,6 @@
       "destPath": "blog/you-dont-need-6-months-to-launch.html"
     },
     "linkedinText": "Forge is live.\n\nI've watched too many great business ideas die in the gap between \"I want to start something\" and \"I know how to actually build it.\"\n\nThat gap isn't talent. It's infrastructure. Brand. Website. CRM. Workflows. The operational backbone that used to take 6 months and $50K.\n\nWe compress all of it into 2–4 weeks.\n\nTrinity Forge is AI-Powered. Human-Built. Every sprint is built custom — not from a template, not from a course, not from a \"here's your login to Squarespace.\"\n\nThree tiers:\n→ AI Launch Assessment ($500–$1,500): Validate the idea. Map the tools. Get a real roadmap.\n→ AI-Powered Launch Sprint ($3K–$10K): The full build. Brand, site, CRM, automations, content engine. Go-live ready.\n→ Ongoing Launch Support ($500–$1,500/mo): 90 days of check-ins, optimization, and strategy for the critical early months.\n\nIf you've been sitting on an idea, this is the signal you've been waiting for.\n\nBook a free consultation: https://calendly.com/kevin-trinityoneconsulting\n\nNo pitch deck. No pressure. Just an honest conversation about your idea.\n\nWhat's the business you've been sitting on? Drop it in the comments — I read every single one."
-  },
-  {
-    "id": 2,
-    "date": "2026-03-23",
-    "brand": "forge",
-    "targetBrand": "forge",
-    "type": "blog",
-    "title": "You Don't Need 6 Months to Launch. You Need 4 Weeks.",
-    "cta": "https://calendly.com/kevin-trinityoneconsulting",
-    "excerpt": "The idea isn't the hard part. The build is. Trinity Forge compresses months of startup infrastructure into a 2–4 week AI-powered sprint.",
-    "tag": "Trinity Forge",
-    "icon": "🚀",
-    "readTime": "7 min",
-    "blog": {
-      "repo": "ktpatrick1-aim/trinity-one-consulting",
-      "sourceFile": "blog-forge-launch.html",
-      "destPath": "blog/you-dont-need-6-months-to-launch.html"
-    }
   },
   {
     "id": 3,
@@ -71,6 +71,24 @@
       "repo": "ktpatrick1-aim/trinity-one-consulting",
       "sourceFile": "blog-calibrate-launch.html",
       "destPath": "blog/youre-not-behind-on-ai.html"
+    }
+  },
+  {
+    "id": 43,
+    "date": "2026-03-25",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "blog",
+    "title": "You Don't Need 6 Months to Launch. You Need 4 Weeks.",
+    "cta": "https://calendly.com/kevin-trinityoneconsulting",
+    "excerpt": "Trinity Forge compresses months of startup infrastructure into a 2-4 week AI-powered sprint.",
+    "tag": "Trinity Forge",
+    "icon": "🚀",
+    "readTime": "7 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-forge-launch.html",
+      "destPath": "blog/you-dont-need-6-months-to-launch.html"
     }
   },
   {
@@ -132,6 +150,26 @@
     "linkedinText": "Most AI consultants ignore the human side.\nMost culture consultants ignore technology.\n\nI've spent 20+ years watching both sides make the same mistake in different directions.\n\nThe AI folks build brilliant automation that nobody uses because the team never bought in.\n\nThe culture folks build engaged, motivated teams that burn out because manual processes are eating them alive.\n\nNeither side is wrong. Both sides are incomplete.\n\nThat's the Human + Machine Equation — and it's the core thesis behind everything I build at Trinity One.\n\nAI optimizes operations.\nDream Management optimizes people.\n\nBoth are required.\nNeither alone is sufficient.\n\nHere's what I know: the highest-performing organizations I've ever seen aren't the ones with the best technology. They're not the ones with the best culture, either.\n\nThey're the ones who figured out that people and machines work best when they're designed to serve each other.\n\n→ Dream Manager Program, for the human side: trinityoneconsulting.com\n→ Trinity Forge, if you're launching: forge.trinityoneconsulting.com\n→ Trinity Calibrate, for AI in your operations: calibrate.trinityoneconsulting.com\n\nWhich side of this equation is your organization underinvesting in right now?"
   },
   {
+    "id": 44,
+    "date": "2026-03-30",
+    "brand": "dream",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "The Question That Changes Every Organization",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "There's one question I ask every CEO within the first 10 minutes.\n\n\"Do you know what your people dream about?\"\n\nNot their career goals. Their actual dreams. The ones they think about on the drive home.\n\nI've asked this hundreds of times. The answer is almost always silence.\n\nNot because the leader doesn't care. Because nobody ever taught them to ask.\n\nThat's the gap the Dream Manager Program closes.\n\n68% reduction in turnover. 4.8x ROI. 91% engagement.\n\nWhat would change if every employee knew you cared about their dreams?\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
+    "id": 45,
+    "date": "2026-03-31",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "What a $50K Startup Budget Looks Like in 2026",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "In 2020, launching a real business cost $50K minimum.\n\nBrand: $5-15K. Website: $8-20K. CRM: $3-8K. Automations: $5-15K.\n\nIn 2026, AI changed the math. Not the quality. The execution speed.\n\nForge delivers the same infrastructure in 2-4 weeks. Starting at $3K.\n\nBecause AI compresses the build without compressing the thought.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
     "id": 11,
     "date": "2026-04-01",
     "brand": "dream",
@@ -170,6 +208,16 @@
     }
   },
   {
+    "id": 46,
+    "date": "2026-04-04",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "The Dashboard Problem: 47 Dashboards, Zero Decisions",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "I walked into a client's office. They had 47 dashboards.\n\nI asked: \"Which 3 numbers drive your decisions this week?\"\n\nSilence.\n\nMore dashboards doesn't mean more insight. Operational Intelligence asks: what are the 3-5 numbers that predict outcomes?\n\nThe AI Readiness Audit starts here. 60 minutes. Free.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
     "id": 15,
     "date": "2026-04-05",
     "brand": "cross",
@@ -180,6 +228,74 @@
     "linkedinText": "I coach middle school football.\n\nTwelve-year-olds don't lie to you. They don't performance-manage. They don't fake engagement.\n\nWhen they're checked out, you know. When they believe in something, you know that too.\n\nLast season, we made it to the county championship game. Didn't win. But what happened in that locker room after the loss was the most powerful leadership moment I've experienced in years — including in business.\n\nEvery kid cried. Every kid said they'd do it again. Every kid talked about what they were going to do differently next year.\n\nThat's what culture looks like when it works. People are so bought in that even the hard moments make them more committed, not less.\n\nI try to build the same thing in every organization I work with.\n\nInvest in the person. Build the system around them. Hold the standard.\n\nIt works on the football field. It works in the warehouse. It works in the boardroom.\n\nThe Dream Dividend podcast drops new episodes every week. This season we're talking to the people building organizations that actually work — for humans.\n\nSubscribe wherever you listen: https://thedreamdividend.com/#subscribe\n\nWhat's a leadership lesson you learned somewhere unexpected?"
   },
   {
+    "id": 47,
+    "date": "2026-04-06",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "podcast",
+    "title": "S3 Ep1: What Does It Mean to Architect a Dream?",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "excerpt": "Season 3 premiere — the thesis: the next economy is built by people who dare to dream."
+  },
+  {
+    "id": 48,
+    "date": "2026-04-07",
+    "brand": "trinity",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "The Biggest Lie in Business Consulting",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "\"We'll transform your organization.\" No we won't. Transformation happens inside out.\n\nWhat a great consultant does is create conditions. Build systems. Ask right questions. Then get out of the way.\n\n20+ years, 120+ implementations taught me: the companies that transform have leaders willing to look at the people stuff.\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
+    "id": 49,
+    "date": "2026-04-08",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "The MVP Myth: Minimum Viable Isn't Enough",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "You can have a brilliant product and fail because your intake loses leads, your follow-up is manual, your invoicing takes 3 hours/week.\n\nForge doesn't build your product. Forge builds everything AROUND it. Brand. Website. CRM. Automations.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
+    "id": 50,
+    "date": "2026-04-09",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "Why I Coach Middle School Football",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "12-year-olds don't fake engagement. When the drill is boring, they check out. When it matters, they lock in.\n\nEvery principle I teach in organizations, I test on the football field first. Invest in the person. Build the system around them. Hold the standard.\n\nLast season: county championship game.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 51,
+    "date": "2026-04-10",
+    "brand": "dream",
+    "targetBrand": "trinity",
+    "type": "blog",
+    "title": "The 12 Rooms Framework: A Complete Guide",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "excerpt": "Most people only live in 3 of the 12 rooms. The Dream Manager framework maps life into 12 dimensions.",
+    "tag": "Dream Management",
+    "icon": "💚",
+    "readTime": "10 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-12-rooms-guide.html",
+      "destPath": "blog/the-12-rooms-framework.html"
+    }
+  },
+  {
+    "id": 52,
+    "date": "2026-04-11",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "The ROI of Saying No to the Wrong AI",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "The most valuable thing I do: telling clients what NOT to buy.\n\nLast quarter, saved a manufacturing client $165K and 14 months by replacing a $180K platform with $15K in targeted tools.\n\nThat's the AI Readiness Audit. Signal from noise.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
     "id": 20,
     "date": "2026-04-12",
     "brand": "dream",
@@ -188,6 +304,36 @@
     "title": "The $11,000 Number Every Leader Should Know",
     "cta": "https://trinityoneconsulting.com/#contact",
     "linkedinText": "There's a number I think about more than almost any other business metric.\n\n$11,000.\n\nThat's the average cost of replacing a single employee in the US, across all industries and roles. Add management time, lost institutional knowledge, and onboarding lag, and you're often looking at 50–200% of annual salary.\n\nNow multiply that by your turnover rate.\n\nFor a 150-person company with 25% annual turnover, that's $412,500 per year walking out the door. Conservatively.\n\nMost of that turnover is preventable. Not with perks. Not with another ping-pong table.\n\nWith one question, asked consistently, by someone who genuinely wants to know the answer:\n\n\"What are you working toward? And how can we help you get there?\"\n\nThat's Dream Management. And the ROI case is one of the clearest I've seen in 20+ years of consulting.\n\nThe companies implementing the Dream Manager Program are seeing:\n→ 68% reduction in voluntary turnover\n→ 4.8x return on program cost\n→ 91% employee engagement scores\n\nThe investment is a fraction of what they were already spending replacing people.\n\nIf your retention numbers aren't where you want them — let's talk.\n\n→ https://trinityoneconsulting.com/#contact\n\nWhat retention metric keeps you up at night? I'll answer honestly."
+  },
+  {
+    "id": 53,
+    "date": "2026-04-13",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "podcast",
+    "title": "S3 Ep2: The Organization as Architecture",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "excerpt": "Guest episode: how leading architects of culture design organizations where humans thrive."
+  },
+  {
+    "id": 54,
+    "date": "2026-04-14",
+    "brand": "trinity",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "What SAP Business One Taught Me About People",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "120+ implementations. Every success: people bought in BEFORE software installed. Every failure: people informed, not invested.\n\nThat's why Trinity One pairs ERP + Dream Management.\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
+    "id": 55,
+    "date": "2026-04-15",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "The Solopreneur's First 30 Days",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "Week 1: Brand + Positioning. Week 2: Website + Intake. Week 3: Systems + Automation. Week 4: Content + Launch.\n\nNo course. No mastermind. No $50K budget. This is what Forge builds.\n\n→ https://forge.trinityoneconsulting.com/contact"
   },
   {
     "id": 22,
@@ -210,6 +356,16 @@
     "linkedinText": "If you can't answer these 3 questions in 30 seconds, we need to talk.\n\n1. What's the single most time-consuming manual process in your operation?\n\n2. How much does that process cost you per month in labor hours?\n\n3. If you could eliminate it tomorrow, what would your team do with the recovered time?\n\nMost business leaders I work with can answer #1 immediately. They struggle with #2. And #3 stops them cold.\n\nThat's not a failure. That's a signal.\n\nIt means your operation is generating data you're not using, running processes you've never audited, and losing time you haven't quantified.\n\nThat's what Trinity Calibrate's AI Readiness Audit is built to solve. In 60 minutes, we map your operational blind spots and show you exactly where AI creates measurable ROI.\n\nNo generic recommendations. No platform pitch. Just a precision diagnosis of your specific operation.\n\nFree for a limited time → https://calibrate.trinityoneconsulting.com/audit\n\nWhich question tripped you up? Be honest."
   },
   {
+    "id": 56,
+    "date": "2026-04-18",
+    "brand": "cross",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "The Difference Between a Job and a Calling",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "A job pays bills. A career builds skills. A calling transforms you.\n\nThe paradox of Dream Management: invest in someone's personal dreams and they give you their professional best.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
     "id": 25,
     "date": "2026-04-19",
     "brand": "dream",
@@ -218,6 +374,36 @@
     "title": "The 12 Rooms Selfie — Which Room Are You Neglecting?",
     "cta": "https://thedreamdividend.com/#subscribe",
     "linkedinText": "I'll go first. My most neglected room this month: Physical.\n\nThe Dream Manager framework maps your life into 12 rooms:\n\n1. Physical\n2. Emotional\n3. Intellectual\n4. Spiritual\n5. Psychological\n6. Material\n7. Professional\n8. Financial\n9. Creative\n10. Adventurous\n11. Legacy\n12. Character\n\nMost people only live in 3 or 4 of these rooms. The rest? Doors closed. Lights off.\n\nHere's what I've learned as a Certified Dream Manager: the rooms you neglect don't just sit there quietly. They leak into the rooms you're focused on.\n\nNeglect Physical? Your energy drops in Professional.\nNeglect Financial? Your anxiety spikes in Emotional.\nNeglect Legacy? Your sense of purpose in Spiritual erodes.\n\nThe 12 Rooms aren't soft self-help. They're a diagnostic framework for living an integrated life — and for building organizations where integrated humans do their best work.\n\nWhich room are you neglecting right now? Drop it in the comments.\n\nSubscribe to The Dream Dividend for more: https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 57,
+    "date": "2026-04-20",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "podcast",
+    "title": "S3 Ep3: AI as the Dream Amplifier",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "excerpt": "How AI tools help Dream Managers serve more people at a higher level."
+  },
+  {
+    "id": 58,
+    "date": "2026-04-21",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "Document Processing: The Low-Hanging Fruit of AI",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "If your team spends 5+ hours/week on document processing, you're leaving money on the table.\n\n60-70% time reduction. 90%+ accuracy. ROI within 30 days.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
+    "id": 59,
+    "date": "2026-04-22",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "Why Your Website Isn't Converting",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "Most websites are brochures, not sales conversations. Three things that convert: answer the #1 question in 5 sec, one clear next step, zero friction.\n\n→ https://forge.trinityoneconsulting.com/contact"
   },
   {
     "id": 27,
@@ -230,6 +416,34 @@
     "linkedinText": "Every traction problem I've seen traces back to the same root: the people aren't bought in.\n\nAs an EOS Integrator, I've watched organizations build the Accountability Chart, set the Rocks, define the Scorecard — and still stall.\n\nWhy? Because the system is only as strong as the humans running it.\n\nEOS gives you the structure. Dream Management gives you the engine.\n\nWhen your people are pursuing their personal dreams — and they know their employer cares — their engagement isn't manufactured. It's real.\n\nThat's the flywheel:\n→ Dream Management creates genuine engagement\n→ Genuine engagement drives accountability\n→ Accountability fuels traction\n→ Traction creates results that fund more investment in people\n\nI've seen it work in manufacturing. Distribution. Construction. Field services.\n\nThe companies that pair EOS with Dream Management don't just hit their Rocks. They shatter them.\n\nIf you're running EOS and wondering why the people side still feels stuck — let's talk.\n\n→ https://trinityoneconsulting.com/#contact"
   },
   {
+    "id": 60,
+    "date": "2026-04-24",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "blog",
+    "title": "5 Workflows Every Business Should Automate First",
+    "cta": "https://calendly.com/kevin-trinityoneconsulting",
+    "excerpt": "Start here, not with the flashy stuff. The 5 automations that save 10+ hours per week.",
+    "tag": "Trinity Forge",
+    "icon": "🚀",
+    "readTime": "8 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-5-workflows.html",
+      "destPath": "blog/5-workflows-to-automate.html"
+    }
+  },
+  {
+    "id": 61,
+    "date": "2026-04-25",
+    "brand": "dream",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "The Cost of an Unengaged Employee",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "67% not engaged. Each costs $3,400 per $10K salary. For 200 people at $55K = $2.5M/year in lost productivity.\n\nDream Manager Program cost: a fraction of one disengaged worker.\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
     "id": 30,
     "date": "2026-04-26",
     "brand": "cross",
@@ -238,6 +452,106 @@
     "title": "What Recovery Taught Me About Leading Organizations",
     "cta": "https://thedreamdividend.com/#subscribe",
     "linkedinText": "There was a season where I was succeeding professionally and collapsing personally.\n\nI don't talk about this to get sympathy. I talk about it because it's the most important leadership lesson I've ever learned.\n\nRecovery taught me that you can't compartmentalize your life and expect the pieces to hold. The version of me that was crushing it at work was the same version that was falling apart at home. They weren't separate people.\n\nThat's what led me to Dream Management.\n\nBecause most organizations treat their employees the same way I was treating myself — as if the \"work self\" and the \"whole self\" are different people.\n\nThey're not.\n\nWhen someone is drowning in financial stress, they're not bringing their best to work.\nWhen someone has given up on their personal dreams, they're not innovating for yours.\nWhen someone feels unseen as a human being, no bonus will make them stay.\n\nThe Dream Manager Program works because it treats people as integrated beings. Not resources. Not headcount. Human beings with 12 rooms of life that all need attention.\n\nThat's not soft. That's the hardest, most honest thing a leader can do.\n\nSubscribe to The Dream Dividend: https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 62,
+    "date": "2026-04-27",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "podcast",
+    "title": "S3 Ep4: The Middle Market Edge",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "excerpt": "Mid-market companies have the most to gain and the least margin for error."
+  },
+  {
+    "id": 63,
+    "date": "2026-04-28",
+    "brand": "cross",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "Monday Motivation: Build Something That Outlasts You",
+    "cta": "https://trinityoneconsulting.com/",
+    "linkedinText": "Every Monday: Am I building something that outlasts me? Not revenue. A way of thinking.\n\nThe Human + Machine Equation.\n\n→ https://trinityoneconsulting.com/"
+  },
+  {
+    "id": 64,
+    "date": "2026-04-29",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "The 4-Week AI Implementation Timeline",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "Week 1: Discovery. Week 2: Design. Week 3: Build. Week 4: Train & Launch.\n\n4 weeks. Not 18 months. Precision AI, built right.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
+    "id": 65,
+    "date": "2026-04-30",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "The Dream Audit: 5 Questions That Change Everything",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "5 questions every employee answers. The answers are always surprising, moving, and strategic.\n\nWhen you know what people dream about, you know what motivates them.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 66,
+    "date": "2026-05-01",
+    "brand": "trinity",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "The Hiring Crisis Nobody's Talking About",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "You don't have a hiring problem. You have a keeping problem.\n\n$4,700 to hire. 18 months retention. Repeat.\n\nDream Manager costs less than replacing two employees. Reduces turnover 68%.\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
+    "id": 67,
+    "date": "2026-05-02",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "3 Things Every Business Gets Wrong About CRM",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "1. Pick CRM first, then fit process (flip it). 2. Build for complexity (start with 3 stages). 3. Don't automate the boring parts.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
+    "id": 68,
+    "date": "2026-05-03",
+    "brand": "cross",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "Sunday Reflection: What Room Are You Ignoring?",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "I walk through the 12 Rooms every Sunday. The room I'm ignoring always tells me something.\n\nThis week: Creative.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 69,
+    "date": "2026-05-04",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "podcast",
+    "title": "S3 Ep5: When Leaders Pursue Their Own Dreams",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "excerpt": "You can't coach what you haven't lived."
+  },
+  {
+    "id": 70,
+    "date": "2026-05-05",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "The Hidden Cost of Manual Reporting",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "500+ hours/year on reports. $42,500. And they're outdated when finished.\n\nCalibrate: auto-aggregate, 3-5 dashboards, flag anomalies. 80%+ time savings.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
+    "id": 71,
+    "date": "2026-05-06",
+    "brand": "dream",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "Dream Management Isn't Therapy. It's Strategy.",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "Therapy heals the past. Dream Management builds the future.\n\n68% turnover reduction. 4.8x ROI. That's strategy.\n\n→ https://trinityoneconsulting.com/#contact"
   },
   {
     "id": 33,
@@ -250,6 +564,66 @@
     "linkedinText": "Automation isn't about replacing people. It's about giving them their time back.\n\nEvery ops team I work with has the same complaint: \"We spend half our day on things that shouldn't require a human.\"\n\nData entry. Follow-up emails. Report compilation. Status update meetings about status updates.\n\n10 hours a week. Minimum.\n\n10 hours × 50 weeks × $85/hour = $42,500. Per person. Per year.\n\nThat's the ROI of Forge. Not in theory — in recovered time that your team can redirect toward the work that actually moves the needle.\n\nThe businesses that thrive with automation aren't the ones that replace their teams. They're the ones that free their teams to do the work only humans can do.\n\nStrategy. Relationships. Creative problem-solving. The stuff that makes a business actually grow.\n\nIf your team is drowning in manual work, let's talk about what Forge can automate in the first 2 weeks.\n\n→ https://forge.trinityoneconsulting.com/contact"
   },
   {
+    "id": 72,
+    "date": "2026-05-08",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "Why I Built Forge",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "I kept watching the same movie. Brilliant person, real idea, stuck in the build.\n\nForge exists to close that gap.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
+    "id": 73,
+    "date": "2026-05-09",
+    "brand": "cross",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "Three Questions Every Leader Should Ask Weekly",
+    "cta": "https://trinityoneconsulting.com/",
+    "linkedinText": "1. What is my team struggling with? 2. What should a machine be doing? 3. What dream could I support?\n\nPeople + Process + Purpose.\n\n→ https://trinityoneconsulting.com/"
+  },
+  {
+    "id": 74,
+    "date": "2026-05-10",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "Listener Story: Warehouse Lead to Homeowner",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "Marcus. Warehouse lead. 11 years renting. Dream Manager asked the question. 12 months later: homeowner.\n\nAttendance? Perfect. Turnover risk? Zero.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 75,
+    "date": "2026-05-11",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "podcast",
+    "title": "S3 Ep6: Kate Volman on the Future of Dream Management",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "excerpt": "Floyd Consulting CEO on where the methodology is going."
+  },
+  {
+    "id": 76,
+    "date": "2026-05-12",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "Customer Intake: The Workflow Nobody Optimizes",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "Lead comes in → 48 hours of nothing. With Calibrate: auto-CRM, auto-response, auto-assign. Response time under 5 min.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
+    "id": 77,
+    "date": "2026-05-13",
+    "brand": "trinity",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "What ERP Vendors Won't Tell You",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "1. Software works, people might not. 2. Timeline depends on buy-in. 3. ROI assumes change management not in the price. 4. 70% of failures are people failures.\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
     "id": 35,
     "date": "2026-05-14",
     "brand": "calibrate",
@@ -258,6 +632,74 @@
     "title": "AI Isn't Just for Enterprise",
     "cta": "https://calibrate.trinityoneconsulting.com/audit",
     "linkedinText": "You don't need a CTO or a $500K budget to start with AI.\n\nThat's the myth that keeps most SMBs on the sideline. And it's costing them.\n\nThe truth? The most impactful AI implementations I've seen in the last year were at companies with 15–200 employees. Not Fortune 500. Not Silicon Valley.\n\nDistribution companies in the Southeast.\nManufacturing shops in the Midwest.\nConstruction firms that still run on spreadsheets.\n\nThe entry point isn't a massive platform. It's a targeted audit of where your operation is bleeding time.\n\nDocument processing. Customer intake. Reporting. Scheduling. Inventory management.\n\nPick one. Measure the hours. Calculate the cost. Then ask: what would it take to cut that by 60%?\n\nThat's the Calibrate approach. Precision AI, built right. Not a platform sale — a diagnosis followed by a build.\n\nFree AI Readiness Audit → https://calibrate.trinityoneconsulting.com/audit\n\nWhat's the most manual process in your business right now?"
+  },
+  {
+    "id": 78,
+    "date": "2026-05-15",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "blog",
+    "title": "What Operational Intelligence Actually Means",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "excerpt": "BI tells you what happened. OI tells you what to do.",
+    "tag": "Trinity Calibrate",
+    "icon": "🎯",
+    "readTime": "9 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-operational-intelligence.html",
+      "destPath": "blog/what-operational-intelligence-means.html"
+    }
+  },
+  {
+    "id": 79,
+    "date": "2026-05-16",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "The 12 Rooms Challenge: One Room Per Month",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "January: Physical. February: Financial. March: Professional. April: Creative. 8 rooms to go.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 80,
+    "date": "2026-05-17",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "The Automation Stack for a One-Person Business",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "Total cost: $50-150/month. Time saved: 10-15 hours/week.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
+    "id": 81,
+    "date": "2026-05-18",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "podcast",
+    "title": "S3 Ep7: Mid-Season Recap",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "excerpt": "What's crystallizing about the Dream Architects."
+  },
+  {
+    "id": 82,
+    "date": "2026-05-19",
+    "brand": "cross",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "Service, Sacrifice & Purpose",
+    "cta": "https://trinityoneconsulting.com/",
+    "linkedinText": "Service isn't soft. It's the hardest standard to hold.\n\n→ https://trinityoneconsulting.com/"
+  },
+  {
+    "id": 83,
+    "date": "2026-05-20",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "Inventory Management: Where AI Saves 6 Figures",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "3-5% revenue lost to mismanagement. AI cuts that 40-60% year one.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
   },
   {
     "id": 37,
@@ -270,6 +712,216 @@
     "linkedinText": "Most companies buy tools. We build ecosystems.\n\nHere's the Trinity One stack:\n\n→ Dream Manager Program: Invest in your people's personal dreams. Unlock engagement, reduce turnover, build a culture people don't want to leave.\n\n→ Trinity Forge: Launch a new business or product line with AI-powered infrastructure. Brand, website, CRM, automations — all in 2–4 weeks.\n\n→ Trinity Calibrate: Find exactly where AI fits in your existing operations. Readiness audit, precision implementation, measurable ROI in 4–8 weeks.\n\nEach one works independently. Together, they represent the full Human + Machine Equation.\n\nPeople + Technology. Dream Management + AI Implementation.\n\nThis isn't theory. This is what 20+ years of enterprise consulting taught me: you have to invest in both sides.\n\nThe companies that do? They're the ones that scale sustainably, retain their best people, and build something that lasts.\n\n→ trinityoneconsulting.com\n\nWhich piece of the stack does your organization need most right now?"
   },
   {
+    "id": 84,
+    "date": "2026-05-22",
+    "brand": "dream",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "Building Culture in Remote-First Companies",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "Remote work didn't kill culture. Bad leadership did.\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
+    "id": 85,
+    "date": "2026-05-23",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "The Content Engine Every New Business Needs",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "5 LinkedIn posts. 2 blog posts. Email welcome sequence. 30-day calendar.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
+    "id": 86,
+    "date": "2026-05-24",
+    "brand": "cross",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "Weekend Read: The Books That Shaped Trinity One",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "5 books: The Dream Manager. Traction. Hard Thing About Hard Things. Atomic Habits. The Bible.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 87,
+    "date": "2026-05-25",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "podcast",
+    "title": "S3 Ep8: The Dream Economy Is Real",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "excerpt": "The dream economy isn't a metaphor — it's an economic model."
+  },
+  {
+    "id": 88,
+    "date": "2026-05-26",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "The Scheduling Nightmare Every Service Business Knows",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "AI-powered scheduling: 25% less drive time, 15-20% more jobs/day. In 4-8 weeks.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
+    "id": 89,
+    "date": "2026-05-27",
+    "brand": "trinity",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "What I Learned From My Worst ERP Implementation",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "$1.8M disaster. CEO never met with frontline. Sent an email. 23% adoption.\n\nPeople have to be invested, not just informed.\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
+    "id": 90,
+    "date": "2026-05-28",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "The 2-Week Launch: A Real Case Study",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "Day 1-3: Brand. Day 4-7: Website. Day 8-10: CRM. Day 11-14: Content + launch.\n\n14 days. Idea to first client.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
+    "id": 91,
+    "date": "2026-05-29",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "The Legacy Room: What Will You Leave Behind?",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "Room 11: Legacy. The room most people don't enter until it's too late.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 92,
+    "date": "2026-05-30",
+    "brand": "cross",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "End of May: What Worked",
+    "cta": "https://trinityoneconsulting.com/",
+    "linkedinText": "The Human + Machine Equation isn't theory. It's practice.\n\n→ https://trinityoneconsulting.com/"
+  },
+  {
+    "id": 93,
+    "date": "2026-05-31",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "The Question Nobody Asks at Reviews",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "Annual reviews ask if you hit goals. Nobody asks if you grew as a human.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 94,
+    "date": "2026-06-01",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "Construction AI: Where the Industry Is Headed",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "Least digitized industry = enormous ROI opportunity.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
+    "id": 95,
+    "date": "2026-06-02",
+    "brand": "dream",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "The 91% Engagement Number",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "Industry average: 33%. Our programs: 91%. One Dream Manager. One year.\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
+    "id": 96,
+    "date": "2026-06-03",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "Your Brand Isn't Your Logo",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "Your brand is what people say when you're not in the room.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
+    "id": 97,
+    "date": "2026-06-04",
+    "brand": "cross",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "The Podcast That Changed My Business",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "283 episodes. 10.2K subscribers. But the real change: it made me a better consultant.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 98,
+    "date": "2026-06-05",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "Manufacturing AI: Quick Wins",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "Predictive maintenance. Quality control. Scheduling. Inventory. All deliver ROI in 60 days.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
+    "id": 99,
+    "date": "2026-06-06",
+    "brand": "trinity",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "Dream Management for Manufacturing",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "Highest-impact implementations: shop floor. The warehouse lead worried about his mortgage isn't giving best work.\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
+    "id": 100,
+    "date": "2026-06-07",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "Weekend Build: 3 Automations Today",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "Auto-response (20 min). Social scheduling (30 min). Invoice reminders (10 min). 1 hour = 3-5 hrs/week saved.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
+    "id": 101,
+    "date": "2026-06-08",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "podcast",
+    "title": "S3 Ep9: The Ginger Biz Crossover",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "excerpt": "The question that changed the whole conversation."
+  },
+  {
+    "id": 102,
+    "date": "2026-06-09",
+    "brand": "cross",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "The Human + Machine Equation: One Year In",
+    "cta": "https://trinityoneconsulting.com/",
+    "linkedinText": "Back then a thesis. Now a business model.\n\n→ https://trinityoneconsulting.com/"
+  },
+  {
+    "id": 103,
+    "date": "2026-06-10",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "AI Tools That Actually Work for SMBs",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "Total: $100-500/mo. ROI: 10-20x. The expensive part isn't tools — it's knowing which ones.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
+    "id": 104,
+    "date": "2026-06-11",
+    "brand": "trinity",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "The Best Employee You'll Ever Have",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "Your best employee is thinking about leaving. Not because of money. Because they feel like a function.\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
     "id": 42,
     "date": "2026-06-12",
     "brand": "cross",
@@ -278,5 +930,185 @@
     "title": "Father's Day: The Dreamer's Dad",
     "cta": "https://thedreamdividend.com/#subscribe",
     "linkedinText": "Liam asked me last week what my biggest dream is.\n\nI wasn't ready for that question from my own son.\n\nI spend my days helping other people identify their dreams, pursue them, build systems around them. I coach executives through the 12 Rooms. I host a podcast about it.\n\nBut when my kid asked me point blank? I had to sit with it.\n\nHere's what I came up with:\n\nMy biggest dream is to build something that outlasts me — not a company, but a way of thinking. The idea that every human being deserves to have someone in their corner asking, \"What do you want? And how can I help?\"\n\nThat's Dream Management. That's what I try to live at home, on the football field, and in every organization I work with.\n\nHappy Father's Day to every dad out there who's trying to model what it means to pursue a dream while raising kids who'll pursue their own.\n\nIt's the hardest and most important work there is.\n\nThe Dream Dividend podcast is where I explore this every week → https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 105,
+    "date": "2026-06-13",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "The Pricing Page Nobody Talks About",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "Your first price is wrong. That's fine. The market will tell you.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
+    "id": 106,
+    "date": "2026-06-14",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "What My Sons Teach Me About Leadership",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "Coaching your own kids: hardest leadership challenge. They see through everything.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 107,
+    "date": "2026-06-15",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "podcast",
+    "title": "S3 Ep10: One World in a New World Crossover",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "excerpt": "Global perspective on the Dream Economy."
+  },
+  {
+    "id": 108,
+    "date": "2026-06-16",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "Why Your AI Vendor Is Wrong",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "Platforms: $50-200K, 18 months, 40% adoption. Targeted solutions: $5-30K, 4-8 weeks, 90% adoption.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
+    "id": 109,
+    "date": "2026-06-17",
+    "brand": "trinity",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "Dream Manager Program: Month 1",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "Week 1: Audit. Week 2: Sessions. Week 3: Dream Plans. Week 4: Momentum check.\n\nBy day 30, something has shifted.\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
+    "id": 110,
+    "date": "2026-06-18",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "Email Automation 101",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "3 sequences: Welcome (3 emails). Lead Nurture (5). Onboarding (4). That's all you need.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
+    "id": 111,
+    "date": "2026-06-19",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "Juneteenth: Freedom, Dreams & Purpose",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "Freedom without dreams is empty space. Juneteenth reminds us: freedom is the starting point.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 112,
+    "date": "2026-06-20",
+    "brand": "cross",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "Q2 Halfway: What We've Learned",
+    "cta": "https://trinityoneconsulting.com/",
+    "linkedinText": "The Human + Machine Equation isn't just a thesis. It's a playbook.\n\n→ https://trinityoneconsulting.com/"
+  },
+  {
+    "id": 113,
+    "date": "2026-06-21",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "The Data You Already Have",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "You don't need more data. You need intelligence from data you already have.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
+    "id": 114,
+    "date": "2026-06-22",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "podcast",
+    "title": "S3 Ep11: The Economics of Dreaming",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "excerpt": "The ROI of Dream Management — business case fully built."
+  },
+  {
+    "id": 115,
+    "date": "2026-06-23",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "The Launch Day Checklist",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "Website live. Intake working. Payments tested. Calendar functional. Content scheduled. You — rested.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
+    "id": 116,
+    "date": "2026-06-24",
+    "brand": "trinity",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "Why I Became a Certified Dream Manager",
+    "cta": "https://trinityoneconsulting.com/#contact",
+    "linkedinText": "Not because it was good for business. Because I needed it myself. Living in 3 of 12 rooms.\n\n→ https://trinityoneconsulting.com/#contact"
+  },
+  {
+    "id": 117,
+    "date": "2026-06-25",
+    "brand": "calibrate",
+    "targetBrand": "calibrate",
+    "type": "linkedin",
+    "title": "The 90-Day AI Adoption Curve",
+    "cta": "https://calibrate.trinityoneconsulting.com/audit",
+    "linkedinText": "Day 1-30: Skepticism. Day 31-60: Curiosity. Day 61-90: Ownership.\n\n→ https://calibrate.trinityoneconsulting.com/audit"
+  },
+  {
+    "id": 118,
+    "date": "2026-06-26",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "linkedin",
+    "title": "The Dream Wall: Making Dreams Visible",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "linkedinText": "A physical or digital space where employees share achieved dreams. Culture you can't fake.\n\n→ https://thedreamdividend.com/#subscribe"
+  },
+  {
+    "id": 119,
+    "date": "2026-06-27",
+    "brand": "cross",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "Q2 Wrap: What Trinity One Built",
+    "cta": "https://trinityoneconsulting.com/",
+    "linkedinText": "Launched Forge + Calibrate. Season 3. 40+ audits. 4 launch sprints. Q3: scaling.\n\n→ https://trinityoneconsulting.com/"
+  },
+  {
+    "id": 120,
+    "date": "2026-06-28",
+    "brand": "forge",
+    "targetBrand": "forge",
+    "type": "linkedin",
+    "title": "What Comes After Launch Day",
+    "cta": "https://forge.trinityoneconsulting.com/contact",
+    "linkedinText": "Launch is day 1, not the finish line. Ongoing Support covers the critical first 90 days.\n\n→ https://forge.trinityoneconsulting.com/contact"
+  },
+  {
+    "id": 121,
+    "date": "2026-06-29",
+    "brand": "dream",
+    "targetBrand": "dreamdividend",
+    "type": "podcast",
+    "title": "S3 Ep13: Season Finale — What Comes Next",
+    "cta": "https://thedreamdividend.com/#subscribe",
+    "excerpt": "Season 3 closing — themes, takeaways, Season 4 preview."
+  },
+  {
+    "id": 122,
+    "date": "2026-06-30",
+    "brand": "cross",
+    "targetBrand": "trinity",
+    "type": "linkedin",
+    "title": "Looking Ahead: Q3",
+    "cta": "https://trinityoneconsulting.com/",
+    "linkedinText": "Q2 proved the equation. Q3 is about scale.\n\n→ https://trinityoneconsulting.com/"
   }
 ]
