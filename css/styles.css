@@ -8,18 +8,20 @@
   --bg-secondary: #111111;
   --bg-card: #1a1a1a;
   --bg-card-hover: #222222;
-  --green-primary: #046C3C;
-  --green-light: #05894c;
-  --green-dark: #034d2b;
+  --green-primary: #059669;
+  --green-light: #10B981;
+  --green-dark: #047857;
   --blue-accent: #1a3a6b;
   --blue-light: #2a5aa0;
   --text-primary: #ffffff;
   --text-secondary: #b0b0b0;
   --text-muted: #707070;
   --border-color: #2a2a2a;
-  --gradient-hero: linear-gradient(135deg, rgba(4,108,60,0.3) 0%, rgba(10,10,10,1) 40%, rgba(10,10,10,1) 60%, rgba(26,58,107,0.3) 100%);
-  --gradient-green-blue: linear-gradient(135deg, #046C3C, #2a5aa0);
-  --gradient-green-blue-r: linear-gradient(135deg, #2a5aa0, #046C3C);
+  --purple-accent: #7C3AED;
+  --purple-light: #9F67FF;
+  --gradient-hero: linear-gradient(135deg, rgba(52,211,153,0.5) 0%, rgba(20,20,25,0.6) 45%, rgba(20,20,25,0.6) 55%, rgba(159,103,255,0.5) 100%);
+  --gradient-green-blue: linear-gradient(135deg, #34D399, #9F67FF);
+  --gradient-green-blue-r: linear-gradient(135deg, #9F67FF, #10B981);
   --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --max-width: 1200px;
@@ -166,6 +168,82 @@ img {
 }
 
 /* ============================================
+   Audience Tab Switcher
+   ============================================ */
+.audience-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  padding-top: 132px;
+  background: var(--bg-primary);
+}
+
+.audience-tab {
+  flex: 1;
+  max-width: 600px;
+  padding: 1.25rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  letter-spacing: 0.02em;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  transition: all var(--transition);
+  position: relative;
+}
+
+.audience-tab::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-green-blue);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.audience-tab:hover {
+  color: var(--text-secondary);
+  background: rgba(26, 26, 26, 0.8);
+}
+
+.audience-tab.active {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.audience-tab.active::after {
+  opacity: 1;
+}
+
+.audience-tab .tab-subtitle {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+  letter-spacing: 0.05em;
+  text-transform: none;
+}
+
+.audience-tab.active .tab-subtitle {
+  color: var(--text-secondary);
+}
+
+.audience-content {
+  display: none;
+}
+
+.audience-content.active {
+  display: block;
+}
+
+/* ============================================
    Hero Section
    ============================================ */
 .hero {
@@ -187,8 +265,8 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse at 20% 50%, rgba(4,108,60,0.15) 0%, transparent 60%),
-              radial-gradient(ellipse at 80% 50%, rgba(26,58,107,0.15) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 20% 50%, rgba(52,211,153,0.4) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 50%, rgba(159,103,255,0.4) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -206,8 +284,8 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 2rem;
-  background: linear-gradient(135deg, rgba(4,108,60,0.25), rgba(42,90,160,0.25));
-  border: 1px solid rgba(4,108,60,0.4);
+  background: linear-gradient(135deg, rgba(16,185,129,0.25), rgba(159,103,255,0.25));
+  border: 1px solid rgba(16,185,129,0.4);
   color: var(--text-primary);
 }
 
@@ -372,7 +450,7 @@ section {
 
 .offering-card.featured {
   border-color: var(--green-primary);
-  background: linear-gradient(180deg, rgba(4,108,60,0.08) 0%, var(--bg-card) 100%);
+  background: linear-gradient(180deg, rgba(16,185,129,0.08) 0%, var(--bg-card) 100%);
 }
 
 .offering-card.featured::before {
@@ -849,7 +927,7 @@ section {
    ============================================ */
 .cta-section {
   text-align: center;
-  background: linear-gradient(180deg, var(--bg-primary) 0%, rgba(4,108,60,0.08) 30%, rgba(26,58,107,0.08) 70%, var(--bg-primary) 100%);
+  background: linear-gradient(180deg, var(--bg-primary) 0%, rgba(16,185,129,0.08) 30%, rgba(124,58,237,0.08) 70%, var(--bg-primary) 100%);
 }
 
 .cta-section .section-title {

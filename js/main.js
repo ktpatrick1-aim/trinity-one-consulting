@@ -1,3 +1,12 @@
+// Audience tab switcher
+function switchAudience(track) {
+  document.querySelectorAll('.audience-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.audience-content').forEach(c => c.classList.remove('active'));
+  document.getElementById('track-' + track).classList.add('active');
+  document.querySelector('[onclick*="' + track + '"]').classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 // Mobile nav toggle
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav-toggle');

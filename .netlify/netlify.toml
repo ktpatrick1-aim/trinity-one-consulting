@@ -1,10 +1,13 @@
+functionsDirectory = "/Users/kevinpatrick/Documents/GitHub/trinity_one_consulting/functions"
+functionsDirectoryOrigin = "config-v1"
 headersOrigin = "config"
 redirectsOrigin = "config"
 plugins = []
-functionsDirectory = "/Users/kevinpatrick/Documents/GitHub/trinity_one_consulting/functions"
-functionsDirectoryOrigin = "config-v1"
 
 [functions]
+
+[functions.scheduled-publish]
+schedule = "0 12 * * *"
 
 [functions."*"]
 

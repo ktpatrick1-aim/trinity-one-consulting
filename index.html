@@ -34,185 +34,351 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-badge">Certified Dream Manager Program</div>
-      <h1>Unlock Your Organization's <span class="accent">Greatest Asset</span> — Its People</h1>
-      <p>We help companies build cultures where employees are deeply engaged because their personal and professional dreams are being actively pursued. The result? Transformational retention, performance, and growth.</p>
-      <div class="btn-group">
-        <a href="#contact" class="btn btn-primary">Start the Conversation →</a>
-        <a href="#dream-manager" class="btn btn-outline">Learn About Dream Manager</a>
-      </div>
-    </div>
-  </section>
+  <!-- Audience Tab Switcher -->
+  <div class="audience-switcher">
+    <button class="audience-tab active" onclick="switchAudience('individual')">
+      For Individuals
+      <span class="tab-subtitle">Personal Dream Manager Coaching</span>
+    </button>
+    <button class="audience-tab" onclick="switchAudience('organization')">
+      For Organizations
+      <span class="tab-subtitle">Culture, AI & Consulting</span>
+    </button>
+  </div>
 
-  <!-- Services Overview -->
-  <section id="services" class="bg-dark">
-    <div class="container">
-      <div class="section-header center">
-        <div class="section-label">What We Do</div>
-        <h2 class="section-title">Three Ways We Help Organizations Thrive</h2>
-        <p class="section-subtitle">From dream-driven culture to intelligent automation, we meet you where you are and help you get where you want to go.</p>
-      </div>
+  <!-- ═══════════════════════════════════════
+       INDIVIDUAL TRACK
+       ═══════════════════════════════════════ -->
+  <div id="track-individual" class="audience-content active">
 
-      <div class="offerings-grid">
-        <!-- Dream Manager - Featured -->
-        <div class="offering-card featured">
-          <div class="offering-icon">🎯</div>
-          <div class="offering-badge">Flagship Program</div>
-          <h3>The Dream Manager Program</h3>
-          <p>A structured, certified program that pairs employees with a dedicated Dream Manager to identify and pursue their personal and professional dreams — creating profound engagement and loyalty.</p>
-          <ul>
-            <li>Certified Dream Manager facilitation</li>
-            <li>Individual & company-wide programs</li>
-            <li>Measurable ROI on retention & engagement</li>
-            <li>Powered by DreamCompass technology</li>
-          </ul>
-          <a href="#dream-manager" class="offering-link">Explore the Program →</a>
-        </div>
-
-        <!-- AI / Technology -->
-        <div class="offering-card">
-          <div class="offering-icon">⚡</div>
-          <h3>AI & Intelligent Automation</h3>
-          <p>Purpose-built AI tools that help organizations work smarter. From workflow automation to intelligent process optimization, our technology products deliver measurable efficiency gains.</p>
-          <ul>
-            <li>Forge — AI workflow automation platform</li>
-            <li>Calibrate — Intelligent business optimization</li>
-            <li>Custom AI integration & strategy</li>
-          </ul>
-          <a href="#technology" class="offering-link">See Our Technology →</a>
-        </div>
-
-        <!-- ERP Consulting -->
-        <div class="offering-card">
-          <div class="offering-icon">🔧</div>
-          <h3>ERP Consulting</h3>
-          <p>Strategic guidance for organizations navigating ERP implementation, optimization, or migration. We bring hands-on experience to complex system decisions.</p>
-          <ul>
-            <li>Implementation planning & support</li>
-            <li>System optimization & integration</li>
-            <li>Process improvement consulting</li>
-          </ul>
-          <a href="#contact" class="offering-link">Let's Talk →</a>
+    <!-- Individual Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-badge">Certified Dream Manager Coaching</div>
+        <h1>Your Dreams Don't Require <span class="accent">Anyone's Permission</span></h1>
+        <p>Work one-on-one with a Certified Dream Manager to identify, plan, and pursue the dreams that matter most to you. Financial freedom. Career change. Better health. Deeper relationships. Whatever it is — we'll build a plan to get there.</p>
+        <div class="btn-group">
+          <a href="#contact" class="btn btn-primary">Book a Free Discovery Call →</a>
+          <a href="#how-it-works-individual" class="btn btn-outline">How It Works</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Dream Manager Deep Dive -->
-  <section id="dream-manager">
-    <div class="container">
-      <div class="feature-split">
-        <div class="feature-content">
-          <div class="section-label">The Dream Manager Program</div>
-          <h2 class="section-title">When People Pursue Their Dreams, Companies Transform</h2>
-          <p class="section-subtitle">Based on Matthew Kelly's best-selling book, the Dream Manager Program creates a structured pathway for employees to identify, plan, and achieve their personal and professional dreams — with their employer's support.</p>
-          <ul class="feature-list">
-            <li><span class="check">✓</span> Dedicated Dream Manager sessions for every participant</li>
-            <li><span class="check">✓</span> 12-month structured dream identification & planning</li>
-            <li><span class="check">✓</span> DreamCompass platform for tracking and accountability</li>
-            <li><span class="check">✓</span> Manager dashboards with anonymized engagement insights</li>
-            <li><span class="check">✓</span> Quarterly business reviews with measurable outcomes</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary">Bring It to Your Organization →</a>
-        </div>
-        <div class="feature-visual">
-          <div class="feature-visual-card">
-            <div class="stat-grid">
-              <div class="stat-item">
-                <div class="stat-number">68%</div>
-                <div class="stat-label">Reduction in Turnover</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number">4.8x</div>
-                <div class="stat-label">ROI on Program Cost</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number">91%</div>
-                <div class="stat-label">Employee Engagement</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number">200+</div>
-                <div class="stat-label">Dreams Achieved</div>
+    <!-- What is Dream Management -->
+    <section class="bg-dark">
+      <div class="container">
+        <div class="feature-split">
+          <div class="feature-content">
+            <div class="section-label">What Is Dream Management?</div>
+            <h2 class="section-title">A Proven System for Designing the Life You Actually Want</h2>
+            <p class="section-subtitle">Most people have dreams they've never written down, never shared, and never built a plan for. Dream Management changes that. It's a structured, facilitated process — not therapy, not life coaching — that helps you identify what you truly want across every area of your life, then creates the roadmap and accountability to make it real.</p>
+            <p class="section-subtitle" style="margin-top: 1rem;">Based on the work of Matthew Kelly & Floyd Consulting, Dream Management has transformed thousands of lives. Now it's available to you — no employer required.</p>
+          </div>
+          <div class="feature-visual">
+            <div class="feature-visual-card">
+              <h3 style="font-size: 1.1rem; margin-bottom: 1.5rem; text-align: center;">The 12 Areas of Dream Management</h3>
+              <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                <div style="padding:0.6rem 0.75rem; background:rgba(16,185,129,0.1); border-radius:6px; font-size:0.85rem; color:var(--text-secondary);">Physical Health</div>
+                <div style="padding:0.6rem 0.75rem; background:rgba(16,185,129,0.1); border-radius:6px; font-size:0.85rem; color:var(--text-secondary);">Financial</div>
+                <div style="padding:0.6rem 0.75rem; background:rgba(16,185,129,0.1); border-radius:6px; font-size:0.85rem; color:var(--text-secondary);">Intellectual</div>
+                <div style="padding:0.6rem 0.75rem; background:rgba(16,185,129,0.1); border-radius:6px; font-size:0.85rem; color:var(--text-secondary);">Emotional</div>
+                <div style="padding:0.6rem 0.75rem; background:rgba(16,185,129,0.1); border-radius:6px; font-size:0.85rem; color:var(--text-secondary);">Spiritual</div>
+                <div style="padding:0.6rem 0.75rem; background:rgba(16,185,129,0.1); border-radius:6px; font-size:0.85rem; color:var(--text-secondary);">Psychological</div>
+                <div style="padding:0.6rem 0.75rem; background:rgba(16,185,129,0.1); border-radius:6px; font-size:0.85rem; color:var(--text-secondary);">Creative</div>
+                <div style="padding:0.6rem 0.75rem; background:rgba(16,185,129,0.1); border-radius:6px; font-size:0.85rem; color:var(--text-secondary);">Professional</div>
+                <div style="padding:0.6rem 0.75rem; background:rgba(16,185,129,0.1); border-radius:6px; font-size:0.85rem; color:var(--text-secondary);">Adventure</div>
+                <div style="padding:0.6rem 0.75rem; background:rgba(16,185,129,0.1); border-radius:6px; font-size:0.85rem; color:var(--text-secondary);">Legacy</div>
+                <div style="padding:0.6rem 0.75rem; background:rgba(16,185,129,0.1); border-radius:6px; font-size:0.85rem; color:var(--text-secondary);">Character</div>
+                <div style="padding:0.6rem 0.75rem; background:rgba(16,185,129,0.1); border-radius:6px; font-size:0.85rem; color:var(--text-secondary);">Material</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- How It Works -->
-  <section class="bg-dark">
-    <div class="container">
-      <div class="section-header center">
-        <div class="section-label">How It Works</div>
-        <h2 class="section-title">From First Conversation to Cultural Transformation</h2>
-      </div>
-
-      <div class="process-grid">
-        <div class="process-step">
-          <div class="process-number">1</div>
-          <h4>Discovery</h4>
-          <p>We learn about your organization, culture challenges, and goals to design the right approach.</p>
-        </div>
-        <div class="process-step">
-          <div class="process-number">2</div>
-          <h4>Program Design</h4>
-          <p>Customized Dream Manager program structure tailored to your team size, industry, and objectives.</p>
-        </div>
-        <div class="process-step">
-          <div class="process-number">3</div>
-          <h4>Launch & Facilitate</h4>
-          <p>Your certified Dream Manager begins one-on-one sessions. Employees start identifying and pursuing dreams.</p>
-        </div>
-        <div class="process-step">
-          <div class="process-number">4</div>
-          <h4>Measure & Scale</h4>
-          <p>Track engagement, retention, and ROI through DreamCompass. Expand the program across your organization.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technology Section -->
-  <section id="technology">
-    <div class="container">
-      <div class="section-header center">
-        <div class="section-label">Technology</div>
-        <h2 class="section-title">AI-Powered Tools Built for Real Business Impact</h2>
-        <p class="section-subtitle">Our technology products help organizations automate intelligently and operate at their best.</p>
-      </div>
-
-      <div class="offerings-grid" style="grid-template-columns: 1fr 1fr;">
-        <div class="offering-card">
-          <div class="offering-icon">🔥</div>
-          <h3>Forge</h3>
-          <p>AI-powered workflow automation that connects your tools, eliminates manual processes, and lets your team focus on high-value work. Built for operations teams who need results, not complexity.</p>
-          <ul>
-            <li>Intelligent workflow orchestration</li>
-            <li>Cross-platform integration</li>
-            <li>Natural language automation builder</li>
-          </ul>
-          <a href="https://forge.trinityoneconsulting.com" class="offering-link" target="_blank">Visit Forge →</a>
+    <!-- What You Get -->
+    <section>
+      <div class="container">
+        <div class="section-header center">
+          <div class="section-label">What You Get</div>
+          <h2 class="section-title">Personal Dream Manager Coaching</h2>
+          <p class="section-subtitle">Everything you need to move from wishing to doing.</p>
         </div>
 
-        <div class="offering-card">
-          <div class="offering-icon">📊</div>
-          <h3>Calibrate</h3>
-          <p>Intelligent business optimization that analyzes your operations and identifies opportunities to improve efficiency, reduce costs, and make better decisions — powered by AI that understands your data.</p>
-          <ul>
-            <li>Operational analytics & insights</li>
-            <li>AI-driven recommendations</li>
-            <li>Performance benchmarking</li>
-          </ul>
-          <a href="https://calibrate.trinityoneconsulting.com" class="offering-link" target="_blank">Visit Calibrate →</a>
+        <div class="offerings-grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="offering-card featured">
+            <div class="offering-icon">🎯</div>
+            <div class="offering-badge">Core Experience</div>
+            <h3>1-on-1 Dream Manager Sessions</h3>
+            <p>Regular private sessions with your dedicated Certified Dream Manager. We'll identify your dreams, build action plans, and create the accountability structure to make them real.</p>
+            <ul>
+              <li>Bi-weekly or monthly virtual sessions</li>
+              <li>Structured dream identification process</li>
+              <li>Personalized action plans for each dream</li>
+              <li>Ongoing support between sessions</li>
+            </ul>
+          </div>
+
+          <div class="offering-card">
+            <div class="offering-icon">📱</div>
+            <h3>DreamCompass Platform</h3>
+            <p>Track your dreams, milestones, and progress in our purpose-built platform. See how far you've come and stay focused on what's next.</p>
+            <ul>
+              <li>Dream tracking dashboard</li>
+              <li>Milestone & progress visualization</li>
+              <li>Session notes & action items</li>
+              <li>Reflection & journaling tools</li>
+            </ul>
+          </div>
+
+          <div class="offering-card">
+            <div class="offering-icon">🔑</div>
+            <h3>Flexible & Personal</h3>
+            <p>This is about your life, your dreams, your timeline. Sessions fit your schedule, and the process adapts to where you are right now.</p>
+            <ul>
+              <li>Virtual sessions — anywhere you are</li>
+              <li>Flexible scheduling</li>
+              <li>No employer involvement required</li>
+              <li>Completely confidential</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- How It Works - Individual -->
+    <section id="how-it-works-individual" class="bg-dark">
+      <div class="container">
+        <div class="section-header center">
+          <div class="section-label">How It Works</div>
+          <h2 class="section-title">From First Conversation to Living Your Dreams</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-number">1</div>
+            <h4>Free Discovery Call</h4>
+            <p>We'll talk about where you are, where you want to be, and whether Dream Management is the right fit for you.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">2</div>
+            <h4>Dream Identification</h4>
+            <p>Using a structured process across 12 areas of life, we'll uncover the dreams you've been carrying — and some you didn't know you had.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">3</div>
+            <h4>Action Planning</h4>
+            <p>For each dream, we build a specific, actionable plan with milestones, timelines, and the steps to get there.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">4</div>
+            <h4>Pursue & Achieve</h4>
+            <p>Regular sessions keep you accountable, help you navigate obstacles, and celebrate every dream you achieve.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial / Social Proof placeholder -->
+    <section>
+      <div class="container">
+        <div class="section-header center">
+          <div class="section-label">The Dream Dividend Podcast</div>
+          <h2 class="section-title">Hear Stories of Dreams in Action</h2>
+          <p class="section-subtitle">Real conversations about pursuing dreams, building culture, and what happens when people get intentional about the life they want.</p>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="https://thedreamdividend.com" class="btn btn-primary" target="_blank">Listen to The Dream Dividend →</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       ORGANIZATION TRACK
+       ═══════════════════════════════════════ -->
+  <div id="track-organization" class="audience-content">
+
+    <!-- Organization Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">Certified Dream Manager Program</div>
+        <h1>Unlock Your Organization's <span class="accent">Greatest Asset</span> — Its People</h1>
+        <p>We help companies build cultures where employees are deeply engaged because their personal and professional dreams are being actively pursued. The result? Transformational retention, performance, and growth.</p>
+        <div class="btn-group">
+          <a href="#contact" class="btn btn-primary">Start the Conversation →</a>
+          <a href="#dream-manager" class="btn btn-outline">Learn About Dream Manager</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="bg-dark">
+      <div class="container">
+        <div class="section-header center">
+          <div class="section-label">What We Do</div>
+          <h2 class="section-title">Everything Your Organization Needs to Thrive</h2>
+          <p class="section-subtitle">Dream-driven culture, intelligent automation, and strategic consulting — we meet you where you are and help you get where you want to go.</p>
+        </div>
+
+        <div class="offerings-grid">
+          <div class="offering-card featured">
+            <div class="offering-icon">🎯</div>
+            <div class="offering-badge">Flagship Program</div>
+            <h3>The Dream Manager Program</h3>
+            <p>A structured, certified program that pairs employees with a dedicated Dream Manager to identify and pursue their personal and professional dreams — creating profound engagement and loyalty.</p>
+            <ul>
+              <li>Certified Dream Manager facilitation</li>
+              <li>Company-wide culture transformation</li>
+              <li>Measurable ROI on retention & engagement</li>
+              <li>Powered by DreamCompass technology</li>
+            </ul>
+            <a href="#dream-manager" class="offering-link">Explore the Program →</a>
+          </div>
+
+          <div class="offering-card">
+            <div class="offering-icon">⚡</div>
+            <h3>AI & Intelligent Automation</h3>
+            <p>Purpose-built AI tools that help organizations work smarter. From workflow automation to intelligent process optimization, our technology products deliver measurable efficiency gains.</p>
+            <ul>
+              <li>Trinity Forge — AI workflow automation</li>
+              <li>Trinity Calibrate — Business optimization</li>
+              <li>Custom AI integration & strategy</li>
+            </ul>
+            <a href="#technology" class="offering-link">See Our Technology →</a>
+          </div>
+
+          <div class="offering-card">
+            <div class="offering-icon">🔧</div>
+            <h3>ERP Consulting</h3>
+            <p>Strategic guidance for organizations navigating ERP implementation, optimization, or migration. We bring hands-on experience to complex system decisions.</p>
+            <ul>
+              <li>Implementation planning & support</li>
+              <li>System optimization & integration</li>
+              <li>Process improvement consulting</li>
+            </ul>
+            <a href="#contact" class="offering-link">Let's Talk →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dream Manager Deep Dive -->
+    <section id="dream-manager">
+      <div class="container">
+        <div class="feature-split">
+          <div class="feature-content">
+            <div class="section-label">The Dream Manager Program</div>
+            <h2 class="section-title">When People Pursue Their Dreams, Companies Transform</h2>
+            <p class="section-subtitle">Based on Matthew Kelly's best-selling book, the Dream Manager Program creates a structured pathway for employees to identify, plan, and achieve their personal and professional dreams — with their employer's support.</p>
+            <ul class="feature-list">
+              <li><span class="check">✓</span> Dedicated Dream Manager sessions for every participant</li>
+              <li><span class="check">✓</span> 12-month structured dream identification & planning</li>
+              <li><span class="check">✓</span> DreamCompass platform for tracking and accountability</li>
+              <li><span class="check">✓</span> Manager dashboards with anonymized engagement insights</li>
+              <li><span class="check">✓</span> Quarterly business reviews with measurable outcomes</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Bring It to Your Organization →</a>
+          </div>
+          <div class="feature-visual">
+            <div class="feature-visual-card">
+              <div class="stat-grid">
+                <div class="stat-item">
+                  <div class="stat-number">68%</div>
+                  <div class="stat-label">Reduction in Turnover</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">4.8x</div>
+                  <div class="stat-label">ROI on Program Cost</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">91%</div>
+                  <div class="stat-label">Employee Engagement</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">200+</div>
+                  <div class="stat-label">Dreams Achieved</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works - Organization -->
+    <section class="bg-dark">
+      <div class="container">
+        <div class="section-header center">
+          <div class="section-label">How It Works</div>
+          <h2 class="section-title">From First Conversation to Cultural Transformation</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-number">1</div>
+            <h4>Discovery</h4>
+            <p>We learn about your organization, culture challenges, and goals to design the right approach.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">2</div>
+            <h4>Program Design</h4>
+            <p>Customized Dream Manager program structure tailored to your team size, industry, and objectives.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">3</div>
+            <h4>Launch & Facilitate</h4>
+            <p>Your certified Dream Manager begins one-on-one sessions. Employees start identifying and pursuing dreams.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">4</div>
+            <h4>Measure & Scale</h4>
+            <p>Track engagement, retention, and ROI through DreamCompass. Expand the program across your organization.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology">
+      <div class="container">
+        <div class="section-header center">
+          <div class="section-label">Technology</div>
+          <h2 class="section-title">AI-Powered Tools Built for Real Business Impact</h2>
+          <p class="section-subtitle">Our technology products help organizations automate intelligently and operate at their best.</p>
+        </div>
+
+        <div class="offerings-grid" style="grid-template-columns: 1fr 1fr;">
+          <div class="offering-card">
+            <div class="offering-icon">🔥</div>
+            <h3>Trinity Forge</h3>
+            <p>AI-powered workflow automation that connects your tools, eliminates manual processes, and lets your team focus on high-value work. Built for operations teams who need results, not complexity.</p>
+            <ul>
+              <li>Intelligent workflow orchestration</li>
+              <li>Cross-platform integration</li>
+              <li>Natural language automation builder</li>
+            </ul>
+            <a href="https://forge.trinityoneconsulting.com" class="offering-link" target="_blank">Visit Trinity Forge →</a>
+          </div>
+
+          <div class="offering-card">
+            <div class="offering-icon">📊</div>
+            <h3>Trinity Calibrate</h3>
+            <p>Intelligent business optimization that analyzes your operations and identifies opportunities to improve efficiency, reduce costs, and make better decisions — powered by AI that understands your data.</p>
+            <ul>
+              <li>Operational analytics & insights</li>
+              <li>AI-driven recommendations</li>
+              <li>Performance benchmarking</li>
+            </ul>
+            <a href="https://calibrate.trinityoneconsulting.com" class="offering-link" target="_blank">Visit Trinity Calibrate →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
 
   <!-- About -->
   <section id="about" class="bg-dark">
@@ -227,7 +393,7 @@
         </div>
         <div class="about-visual">
           <div style="text-align:center; margin-bottom: 24px;">
-            <img src="images/headshot.jpg" alt="Kevin Patrick — Founder, Trinity One Consulting" style="width:180px;height:180px;border-radius:50%;object-fit:cover;border:3px solid rgba(4,108,60,0.3);">
+            <img src="images/headshot.jpg" alt="Kevin Patrick — Founder, Trinity One Consulting" style="width:180px;height:180px;border-radius:50%;object-fit:cover;border:3px solid rgba(16,185,129,0.3);">
             <h3 style="margin-top:16px;font-size:1.1rem;">Kevin Patrick</h3>
             <p style="font-size:0.85rem;opacity:0.7;margin-top:4px;">Founder & Certified Dream Manager</p>
           </div>
@@ -334,9 +500,10 @@
           <div class="form-group">
             <select name="interest" required>
               <option value="" disabled selected>What are you interested in?</option>
-              <option value="dream-manager">Dream Manager Program</option>
-              <option value="forge">Forge — AI Automation</option>
-              <option value="calibrate">Calibrate — Business Optimization</option>
+              <option value="personal-coaching">Personal Dream Manager Coaching</option>
+              <option value="dream-manager">Dream Manager Program (Organization)</option>
+              <option value="forge">Trinity Forge — AI Automation</option>
+              <option value="calibrate">Trinity Calibrate — Business Optimization</option>
               <option value="erp">ERP Consulting</option>
               <option value="general">General Inquiry</option>
             </select>
