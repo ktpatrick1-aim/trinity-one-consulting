@@ -7,16 +7,16 @@ const schedule = require('./content-schedule.json');
 
 exports.handler = async (event) => {
   if (event.httpMethod === 'OPTIONS') {
-    return { statusCode: 200, headers: corsHeaders(), body: '' };
+    return { statusCode: 200, headers: corsHeaders(event), body: '' };
   }
   if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, headers: corsHeaders(), body: 'Method not allowed' };
+    return { statusCode: 405, headers: corsHeaders(event), body: 'Method not allowed' };
   }
 
   const adminPassword = process.env.ADMIN_PASSWORD;
   const authHeader = event.headers.authorization;
   if (adminPassword && authHeader !== `Bearer ${adminPassword}`) {
-    return { statusCode: 401, headers: corsHeaders(), body: 'Unauthorized' };
+    return { statusCode: 401, headers: corsHeaders(event), body: 'Unauthorized' };
   }
 
   const accessToken = process.env.LINKEDIN_ACCESS_TOKEN;
@@ -33,11 +33,11 @@ exports.handler = async (event) => {
   } else if (body.date) {
     items = schedule.filter(item => item.date === body.date);
   } else {
-    return { statusCode: 400, headers: corsHeaders(), body: JSON.stringify({ error: 'Provide "date", "id", or "date"+"title"' }) };
+    return { statusCode: 400, headers: corsHeaders(event), body: JSON.stringify({ error: 'Provide "date", "id", or "date"+"title"' }) };
   }
 
   if (items.length === 0) {
-    return { statusCode: 404, headers: corsHeaders(), body: JSON.stringify({ error: 'No matching items' }) };
+    return { statusCode: 404, headers: corsHeaders(event), body: JSON.stringify({ error: 'No matching items' }) };
   }
 
   const results = [];
@@ -102,7 +102,7 @@ exports.handler = async (event) => {
 
   return {
     statusCode: 200,
-    headers: corsHeaders(),
+    headers: corsHeaders(event),
     body: JSON.stringify({
       posted: results.filter(r => r.success).length,
       failed: results.filter(r => !r.success).length,
@@ -111,8 +111,16 @@ exports.handler = async (event) => {
   };
 };
 
-function corsHeaders() {
-  return { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Content-Type, Authorization' };
+const ALLOWED_ORIGINS = [
+  'https://trinityoneconsulting.com',
+  'https://www.trinityoneconsulting.com',
+  'https://trinity-one-consulting.netlify.app',
+];
+
+function corsHeaders(event) {
+  const origin = (event && event.headers && event.headers.origin) || '';
+  const allowed = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+  return { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': allowed, 'Access-Control-Allow-Headers': 'Content-Type, Authorization' };
 }
 
 async function deployBlog(item, githubToken) {

@@ -1,10 +1,23 @@
 const fetch = require('node-fetch');
 
+const ALLOWED_ORIGINS = [
+  'https://trinityoneconsulting.com',
+  'https://www.trinityoneconsulting.com',
+  'https://trinity-one-consulting.netlify.app',
+];
+
+function getAllowedOrigin(event) {
+  const origin = event.headers.origin || '';
+  return ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+}
+
 exports.handler = async (event) => {
+  const allowedOrigin = getAllowedOrigin(event);
+
   if (event.httpMethod === 'OPTIONS') {
     return {
       statusCode: 200,
-      headers: { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Content-Type' },
+      headers: { 'Access-Control-Allow-Origin': allowedOrigin, 'Access-Control-Allow-Headers': 'Content-Type' },
       body: ''
     };
   }
@@ -14,7 +27,7 @@ exports.handler = async (event) => {
   }
 
   const headers = {
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': allowedOrigin,
     'Access-Control-Allow-Headers': 'Content-Type',
     'Content-Type': 'application/json'
   };

@@ -1,34 +1,44 @@
 const fetch = require('node-fetch');
 
-const CORS = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-  'Content-Type': 'application/json',
-};
+const ALLOWED_ORIGINS = [
+  'https://trinityoneconsulting.com',
+  'https://www.trinityoneconsulting.com',
+  'https://trinity-one-consulting.netlify.app',
+];
+
+function getCorsHeaders(event) {
+  const origin = (event && event.headers && event.headers.origin) || '';
+  const allowed = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+  return {
+    'Access-Control-Allow-Origin': allowed,
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Content-Type': 'application/json',
+  };
+}
 
 exports.handler = async (event) => {
   if (event.httpMethod === 'OPTIONS') {
-    return { statusCode: 200, headers: CORS, body: '' };
+    return { statusCode: 200, headers: getCorsHeaders(event), body: '' };
   }
 
   const auth = event.headers.authorization || '';
   if (auth !== `Bearer ${process.env.ADMIN_PASSWORD}`) {
-    return { statusCode: 401, headers: CORS, body: 'Unauthorized' };
+    return { statusCode: 401, headers: getCorsHeaders(event), body: 'Unauthorized' };
   }
 
   if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, headers: CORS, body: 'Method not allowed' };
+    return { statusCode: 405, headers: getCorsHeaders(event), body: 'Method not allowed' };
   }
 
   const githubToken = process.env.GITHUB_TOKEN;
   if (!githubToken) {
-    return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: 'GITHUB_TOKEN not set' }) };
+    return { statusCode: 500, headers: getCorsHeaders(event), body: JSON.stringify({ error: 'GITHUB_TOKEN not set' }) };
   }
 
   const { updates } = JSON.parse(event.body);
   if (!updates || !Array.isArray(updates)) {
-    return { statusCode: 400, headers: CORS, body: JSON.stringify({ error: 'No updates provided' }) };
+    return { statusCode: 400, headers: getCorsHeaders(event), body: JSON.stringify({ error: 'No updates provided' }) };
   }
 
   const repo = 'ktpatrick1-aim/trinity-one-consulting';
@@ -42,7 +52,7 @@ exports.handler = async (event) => {
 
     if (!getRes.ok) {
       const err = await getRes.text();
-      return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: `Failed to fetch schedule: ${err}` }) };
+      return { statusCode: 500, headers: getCorsHeaders(event), body: JSON.stringify({ error: `Failed to fetch schedule: ${err}` }) };
     }
 
     const fileData = await getRes.json();
@@ -61,7 +71,7 @@ exports.handler = async (event) => {
     if (changed === 0) {
       return {
         statusCode: 200,
-        headers: CORS,
+        headers: getCorsHeaders(event),
         body: JSON.stringify({ message: 'No changes to save', changed: 0 }),
       };
     }
@@ -86,16 +96,16 @@ exports.handler = async (event) => {
 
     if (!putRes.ok) {
       const err = await putRes.text();
-      return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: `Failed to update: ${err}` }) };
+      return { statusCode: 500, headers: getCorsHeaders(event), body: JSON.stringify({ error: `Failed to update: ${err}` }) };
     }
 
     const putData = await putRes.json();
     return {
       statusCode: 200,
-      headers: CORS,
+      headers: getCorsHeaders(event),
       body: JSON.stringify({ message: 'Schedule updated', changed, commitSha: putData.commit?.sha }),
     };
   } catch (err) {
-    return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: err.message }) };
+    return { statusCode: 500, headers: getCorsHeaders(event), body: JSON.stringify({ error: err.message }) };
   }
 };
