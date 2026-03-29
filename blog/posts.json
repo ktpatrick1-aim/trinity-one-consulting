@@ -1,5 +1,14 @@
 [
   {
+    "slug": "the-human-machine-equation",
+    "title": "The Human + Machine Equation",
+    "excerpt": "Most AI consultants ignore the human side.",
+    "tag": "Human + Machine",
+    "date": "2026-03-29",
+    "readTime": "5 min",
+    "icon": "⚡"
+  },
+  {
     "slug": "3-questions-that-tell-me-if-youre-ready-for-ai",
     "title": "3 Questions That Tell Me If You're Ready for AI",
     "excerpt": "3 questions that tell me in 10 minutes whether a business is ready for AI:",
@@ -52,15 +61,6 @@
     "date": "2026-03-24",
     "readTime": "8 min",
     "icon": "🎯"
-  },
-  {
-    "slug": "the-human-machine-equation",
-    "title": "The Human + Machine Equation",
-    "excerpt": "Most businesses are chasing AI like it's the answer. It's not. It's half the answer. Here's what 20 years of ERP implementations taught me — and what I built because of it.",
-    "tag": "Human + Machine",
-    "date": "2026-03-22",
-    "readTime": "8 min",
-    "icon": "⚡"
   },
   {
     "slug": "why-dream-management-works",
