@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dream Architects Are Here. And They're Redesigning Everything. | The Dream Dividend</title>
+<meta name="description" content="Season 3 of The Dream Dividend launches with a thesis: the next economy isn't built by algorithms. It's built by people who still dare to dream. Here's why that matters more than ever.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#080e0a; --surface:#0f1812; --surface2:#161f18;
+    --teal:#00c9a7; --teal-dim:rgba(0,201,167,0.08); --teal-border:rgba(0,201,167,0.18);
+    --amber:#f0b429; --blue:#4e8ef7; --purple:#a855f7;
+    --text:#e4ede8; --text-muted:#7a9080; --text-dim:#3a5040;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.75;}
+
+  /* NAV */
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(8,14,10,0.94);backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(0,201,167,0.1);
+    padding:0.9rem 2rem;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .nav-brand{font-family:'Fraunces',serif;font-weight:700;font-size:0.95rem;color:var(--teal);text-decoration:none;}
+  .nav-links{display:flex;gap:1.5rem;align-items:center;}
+  .nav-links a{font-size:0.8rem;color:var(--text-muted);text-decoration:none;transition:color 0.15s;}
+  .nav-links a:hover{color:var(--text);}
+  .nav-subscribe{
+    background:var(--teal);color:#080e0a;font-weight:700;font-size:0.78rem;
+    padding:0.4rem 1rem;border-radius:6px;text-decoration:none;transition:background 0.15s;
+  }
+  .nav-subscribe:hover{background:#00ddb8;color:#080e0a !important;}
+
+  /* HERO */
+  .hero{
+    padding:5rem 2rem 0;
+    max-width:800px;margin:0 auto;
+    position:relative;
+  }
+  .season-badge{
+    display:inline-flex;align-items:center;gap:0.5rem;
+    background:var(--teal-dim);border:1px solid var(--teal-border);
+    color:var(--teal);font-size:0.7rem;font-weight:700;letter-spacing:0.1em;
+    text-transform:uppercase;padding:0.35rem 0.9rem;border-radius:999px;
+    margin-bottom:2rem;font-family:'DM Mono',monospace;
+  }
+  .hero h1{
+    font-family:'Fraunces',serif;
+    font-size:clamp(2.5rem,6vw,4.2rem);
+    font-weight:900;line-height:1.05;letter-spacing:-0.03em;
+    margin-bottom:1.5rem;
+  }
+  .hero h1 em{font-style:italic;color:var(--teal);}
+  .hero-deck{
+    font-size:1.15rem;color:var(--text-muted);
+    max-width:660px;font-weight:300;line-height:1.7;
+    margin-bottom:2rem;
+  }
+  .hero-meta{
+    display:flex;align-items:center;gap:1rem;
+    font-size:0.78rem;color:var(--text-dim);
+    padding-bottom:2rem;
+    border-bottom:1px solid rgba(0,201,167,0.08);
+  }
+
+  /* PODCAST PLAYER CARD */
+  .player-card{
+    max-width:800px;margin:3rem auto 0;padding:0 2rem;
+  }
+  .player{
+    background:var(--surface);border:1px solid var(--teal-border);
+    border-radius:14px;padding:1.5rem;
+    display:flex;align-items:center;gap:1.25rem;
+  }
+  .play-btn{
+    width:52px;height:52px;border-radius:50%;
+    background:var(--teal);display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;cursor:pointer;transition:transform 0.15s;
+    font-size:1.2rem;
+  }
+  .play-btn:hover{transform:scale(1.08);}
+  .player-info{flex:1;}
+  .player-ep{font-family:'DM Mono',monospace;font-size:0.68rem;color:var(--text-dim);margin-bottom:0.25rem;}
+  .player-title{font-weight:600;font-size:0.92rem;margin-bottom:0.35rem;}
+  .player-bar{height:3px;background:rgba(255,255,255,0.08);border-radius:2px;position:relative;}
+  .player-fill{height:100%;width:0%;background:var(--teal);border-radius:2px;}
+  .player-time{font-family:'DM Mono',monospace;font-size:0.68rem;color:var(--text-dim);margin-top:0.35rem;}
+  .player-links{display:flex;gap:0.5rem;flex-shrink:0;flex-wrap:wrap;}
+  .pl-link{
+    font-size:0.7rem;font-weight:600;padding:0.35rem 0.75rem;border-radius:6px;
+    border:1px solid var(--teal-border);color:var(--teal);text-decoration:none;
+    transition:all 0.15s;white-space:nowrap;
+  }
+  .pl-link:hover{background:var(--teal-dim);}
+
+  /* ARTICLE */
+  .article-wrap{max-width:720px;margin:0 auto;padding:4rem 2rem;}
+
+  h2{font-family:'Fraunces',serif;font-size:1.9rem;font-weight:700;margin:3.5rem 0 1rem;line-height:1.2;}
+  h3{font-size:1rem;font-weight:600;color:var(--teal);margin:2.25rem 0 0.75rem;text-transform:uppercase;letter-spacing:0.06em;}
+  p{margin-bottom:1.5rem;font-size:1.02rem;color:#c0d0c4;font-weight:300;line-height:1.85;}
+  strong{color:var(--text);font-weight:600;}
+  em{font-style:italic;}
+
+  .pullquote{
+    font-family:'Fraunces',serif;font-size:1.5rem;font-style:italic;
+    font-weight:700;color:var(--text);line-height:1.35;
+    padding:2.25rem 0;
+    border-top:2px solid var(--teal);border-bottom:2px solid var(--teal);
+    margin:3rem 0;text-align:center;
+  }
+
+  /* SEASON THEME CARDS */
+  .theme-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem 0;}
+  .theme-card{
+    background:var(--surface);border:1px solid rgba(255,255,255,0.05);
+    border-radius:10px;padding:1.25rem;transition:border-color 0.2s;
+  }
+  .theme-card:hover{border-color:var(--teal-border);}
+  .theme-num{font-family:'DM Mono',monospace;font-size:0.65rem;color:var(--text-dim);margin-bottom:0.5rem;}
+  .theme-title{font-weight:700;font-size:0.92rem;margin-bottom:0.35rem;}
+  .theme-desc{font-size:0.8rem;color:var(--text-muted);font-weight:300;line-height:1.5;}
+
+  /* GUEST TEASER LIST */
+  .guest-list{margin:1.5rem 0;}
+  .guest-row{
+    display:flex;align-items:center;gap:1rem;
+    padding:0.85rem 0;border-bottom:1px solid rgba(255,255,255,0.04);
+  }
+  .guest-num{font-family:'DM Mono',monospace;font-size:0.8rem;color:var(--text-dim);width:28px;flex-shrink:0;}
+  .guest-title{font-weight:600;font-size:0.88rem;margin-bottom:0.15rem;}
+  .guest-desc{font-size:0.78rem;color:var(--text-muted);font-weight:300;}
+  .guest-tag{
+    margin-left:auto;font-size:0.65rem;font-weight:700;padding:0.2rem 0.5rem;
+    border-radius:4px;white-space:nowrap;flex-shrink:0;
+  }
+  .tag-live{background:rgba(34,197,94,0.12);color:#22c55e;border:1px solid rgba(34,197,94,0.25);}
+  .tag-coming{background:var(--teal-dim);color:var(--teal);border:1px solid var(--teal-border);}
+
+  /* LISTEN BLOCK */
+  .listen-block{
+    background:var(--surface);border:1px solid var(--teal-border);
+    border-radius:12px;padding:1.5rem;margin:2.5rem 0;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    flex-wrap:wrap;
+  }
+  .listen-text{font-weight:600;font-size:0.95rem;}
+  .listen-sub{font-size:0.8rem;color:var(--text-muted);margin-top:2px;font-weight:300;}
+  .listen-btns{display:flex;gap:0.5rem;flex-wrap:wrap;}
+  .listen-btn{
+    padding:0.5rem 1rem;border-radius:7px;font-size:0.78rem;font-weight:700;
+    text-decoration:none;transition:all 0.15s;
+  }
+  .listen-btn.primary{background:var(--teal);color:#080e0a;}
+  .listen-btn.primary:hover{background:#00ddb8;}
+  .listen-btn.secondary{border:1px solid var(--teal-border);color:var(--teal);}
+  .listen-btn.secondary:hover{background:var(--teal-dim);}
+
+  /* CTA */
+  .cta-block{
+    background:var(--surface2);border:1px solid var(--teal-border);
+    border-radius:16px;padding:3rem 2.5rem;text-align:center;
+    margin:4rem 0 2rem;position:relative;overflow:hidden;
+  }
+  .cta-block::before{
+    content:'';position:absolute;bottom:-60px;left:50%;
+    transform:translateX(-50%);width:500px;height:300px;
+    background:radial-gradient(ellipse,rgba(0,201,167,0.1),transparent 70%);
+  }
+  .cta-block h3{font-family:'Fraunces',serif;font-size:1.8rem;font-weight:900;margin-bottom:0.75rem;position:relative;line-height:1.2;}
+  .cta-block p{color:var(--text-muted);margin-bottom:2rem;position:relative;font-size:0.95rem;max-width:500px;margin-left:auto;margin-right:auto;}
+  .cta-btn{
+    display:inline-block;background:var(--teal);color:#080e0a;font-weight:700;
+    font-size:0.95rem;padding:0.9rem 2.25rem;border-radius:8px;
+    text-decoration:none;position:relative;transition:all 0.2s;
+  }
+  .cta-btn:hover{background:#00ddb8;transform:translateY(-1px);}
+  .cta-sub{font-size:0.75rem;color:var(--text-dim);margin-top:1rem;position:relative;}
+  .cta-sub a{color:var(--teal);text-decoration:none;}
+
+  /* FOOTER */
+  .article-footer{border-top:1px solid rgba(255,255,255,0.05);padding:3rem 2rem;max-width:720px;margin:0 auto;}
+  .tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:2rem;}
+  .tag{font-size:0.72rem;font-family:'DM Mono',monospace;color:var(--text-dim);background:var(--surface);border:1px solid rgba(255,255,255,0.05);padding:0.3rem 0.7rem;border-radius:4px;}
+  .author-block{display:flex;gap:1rem;align-items:flex-start;padding:1.5rem;background:var(--surface);border-radius:12px;}
+  .author-avatar{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--teal),#00a08a);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem;color:#080e0a;flex-shrink:0;}
+  .author-name{font-weight:700;font-size:0.95rem;margin-bottom:0.2rem;}
+  .author-title{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.5rem;}
+  .author-bio{font-size:0.82rem;color:var(--text-muted);font-weight:300;line-height:1.5;}
+
+  @media(max-width:640px){.theme-grid{grid-template-columns:1fr;}.player{flex-wrap:wrap;}.player-links{width:100%;}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="https://thedreamdividend.com/" class="nav-brand">The Dream Dividend</a>
+  <div class="nav-links">
+    <a href="https://thedreamdividend.com/#subscribe">Episodes</a>
+    <a href="https://trinityoneconsulting.com/">Trinity One</a>
+    <a href="https://thedreamdividend.com/#subscribe" class="nav-subscribe">Subscribe Free</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="season-badge">🎙 Season 3 · The Dream Dividend · March 2026</div>
+  <h1>The Dream Architects<br>Are Here.<br>And They're <em>Redesigning Everything.</em></h1>
+  <p class="hero-deck">Season 3 of The Dream Dividend launches with a single thesis: the next economy isn't being built by algorithms. It's being built by people who still dare to dream out loud — and who are building organizations, movements, and systems worthy of the humans inside them.</p>
+  <div class="hero-meta">
+    <span>Kevin Patrick</span>
+    <span>·</span>
+    <span>March 24, 2026</span>
+    <span>·</span>
+    <span>8 min read</span>
+    <span>·</span>
+    <span>Season 3 Premiere</span>
+  </div>
+</section>
+
+<div class="hero-image" style="max-width:1200px;margin:2rem auto;padding:0 2rem;"><div style="border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 628" width="100%" height="auto">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1a16"/>
+      <stop offset="100%" stop-color="#060808"/>
+    </linearGradient>
+    <linearGradient id="teal-text-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00ddb8"/>
+      <stop offset="100%" stop-color="#00c9a7"/>
+    </linearGradient>
+    <filter id="title-glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="badge-glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="architects-clip">
+      <text x="580" y="325" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700">ARCHITECTS</text>
+    </clipPath>
+  </defs>
+  <rect width="1200" height="628" fill="url(#bg-grad)"/>
+  <g opacity="0.07" stroke="#00c9a7" fill="none" stroke-width="0.7">
+    <line x1="30" y1="50" x2="520" y2="50"/>
+    <line x1="30" y1="100" x2="480" y2="100"/>
+    <line x1="30" y1="150" x2="500" y2="150"/>
+    <line x1="30" y1="200" x2="460" y2="200"/>
+    <line x1="30" y1="250" x2="510" y2="250"/>
+    <line x1="30" y1="300" x2="440" y2="300"/>
+    <line x1="30" y1="350" x2="490" y2="350"/>
+    <line x1="30" y1="400" x2="470" y2="400"/>
+    <line x1="30" y1="450" x2="520" y2="450"/>
+    <line x1="30" y1="500" x2="450" y2="500"/>
+    <line x1="30" y1="550" x2="480" y2="550"/>
+    <line x1="80" y1="30" x2="80" y2="570"/>
+    <line x1="160" y1="30" x2="160" y2="570"/>
+    <line x1="240" y1="30" x2="240" y2="570"/>
+    <line x1="320" y1="30" x2="320" y2="570"/>
+    <line x1="400" y1="30" x2="400" y2="570"/>
+    <line x1="480" y1="30" x2="480" y2="570"/>
+    <line x1="80" y1="100" x2="160" y2="200"/>
+    <line x1="160" y1="100" x2="80" y2="200"/>
+    <line x1="240" y1="150" x2="320" y2="250"/>
+    <line x1="320" y1="150" x2="240" y2="250"/>
+    <line x1="160" y1="300" x2="240" y2="400"/>
+    <line x1="240" y1="300" x2="160" y2="400"/>
+    <line x1="320" y1="350" x2="400" y2="450"/>
+    <line x1="400" y1="350" x2="320" y2="450"/>
+    <rect x="100" y="120" width="120" height="60" rx="2"/>
+    <rect x="280" y="180" width="100" height="50" rx="2"/>
+    <rect x="140" y="320" width="80" height="70" rx="2"/>
+    <circle cx="360" cy="420" r="30"/>
+    <path d="M100,450 L160,400 L220,450"/>
+  </g>
+  <text x="580" y="195" fill="#00c9a7" font-family="'Courier New', monospace" font-size="16" font-weight="600" letter-spacing="6">SEASON 3</text>
+  <text x="580" y="265" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700">THE DREAM</text>
+  <text x="580" y="325" fill="url(#teal-text-grad)" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" filter="url(#title-glow)">ARCHITECTS</text>
+  <text x="580" y="375" fill="#ffffff" font-family="Georgia, serif" font-size="20" font-style="italic" opacity="0.8">Designing the Next Economy.</text>
+  <g transform="translate(580, 410)" filter="url(#badge-glow)">
+    <rect x="0" y="0" width="280" height="36" rx="18" fill="none" stroke="#00c9a7" stroke-width="1.5"/>
+    <rect x="0" y="0" width="280" height="36" rx="18" fill="#00c9a7" opacity="0.08"/>
+    <text x="140" y="23" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle" font-weight="600" letter-spacing="1">The Dream Dividend Podcast</text>
+  </g>
+  <g transform="translate(0, 540)">
+    <rect x="0" y="0" width="1200" height="88" fill="#080c08" opacity="0.8"/>
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#00c9a7" stroke-width="0.5" opacity="0.2"/>
+    <text x="600" y="40" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle" opacity="0.5" letter-spacing="2">
+      <tspan fill="#00c9a7" font-weight="600">283</tspan> Episodes
+      <tspan dx="30" fill="#00c9a7" font-weight="600">10.2K</tspan> Subscribers
+      <tspan dx="30" fill="#00c9a7" font-weight="600">New Season</tspan> Now Live
+    </text>
+    <circle cx="430" cy="34" r="2" fill="#00c9a7" opacity="0.3"/>
+    <circle cx="620" cy="34" r="2" fill="#00c9a7" opacity="0.3"/>
+  </g>
+</svg></div></div>
+
+<div class="player-card">
+  <div class="player">
+    <div class="play-btn">▶</div>
+    <div class="player-info">
+      <div class="player-ep">S3 EP. 01 · 47 MIN</div>
+      <div class="player-title">The Dream Architects: Designing the Next Economy</div>
+      <div class="player-bar"><div class="player-fill"></div></div>
+      <div class="player-time">0:00 / 47:12</div>
+    </div>
+    <div class="player-links">
+      <a class="pl-link" href="https://podcasts.apple.com/us/podcast/the-dream-dividend" target="_blank">Apple</a>
+      <a class="pl-link" href="https://open.spotify.com/show/thedreamdividend" target="_blank">Spotify</a>
+      <a class="pl-link" href="https://thedreamdividend.com/#subscribe" target="_blank">All Platforms</a>
+    </div>
+  </div>
+</div>
+
+<article class="article-wrap">
+
+  <p style="font-size:1.1rem;color:var(--text);font-weight:400;margin-top:3rem;">Two hundred and eighty-three episodes. Three seasons. A community of over ten thousand leaders, entrepreneurs, HR professionals, culture builders, and human beings who refuse to let their organizations be less than what they could be.</p>
+
+  <p>If you've been here since the beginning, thank you. You've watched this podcast grow from a conversation about Dream Management into something broader — a running argument, made in real time, that people and their dreams are the most underutilized strategic asset in every organization on earth.</p>
+
+  <p>Season 3 picks up that argument and takes it further than we've ever gone.</p>
+
+  <div class="pullquote">"The next economy isn't built by algorithms. It's built by people who still dare to dream."</div>
+
+  <h2>Why "The Dream Architects"?</h2>
+
+  <p>I've been sitting on this season theme for about six months, waiting for it to feel right. And what made it click was a conversation I had with a plant manager in Louisville — a guy who runs a 200-person manufacturing operation and who, two years ago, launched a Dream Manager program against the advice of every consultant and CFO he talked to.</p>
+
+  <p>His company's turnover dropped 68% in 18 months. His engagement scores went from 54% to 91%. Three of his best people, who had been quietly interviewing elsewhere, were still there — and had each taken on expanded roles they designed themselves.</p>
+
+  <p>I asked him what he thought happened. He said: <em>"I stopped managing a workforce and started architecting a place where people wanted to build their lives."</em></p>
+
+  <p>That's it. That's the whole season. That's the whole thesis.</p>
+
+  <p>The Dream Architects aren't necessarily famous. They're not always venture-backed or TED-talked. They're the people in organizations of every size, industry, and geography who are quietly doing the hard, human work of building something worthy of the people inside it. This season, we're going to find them, learn from them, and make the case — loudly, with data — that what they're doing is the future of business.</p>
+
+  <h2>What Season 3 Covers</h2>
+
+  <p>Every season of The Dream Dividend has had a through-line. Season 1 established the Dream Management framework. Season 2 — <em>The Dream Economy</em> — made the macro case that people-first business is not just humane but economically superior.</p>
+
+  <p>Season 3 goes inside the architecture. The mechanics. How do you actually build an organization where people are pursuing their dreams? What does it look like in a distribution center? A construction company? A tech startup? A school? A middle school football team?</p>
+
+  <div class="theme-grid">
+    <div class="theme-card">
+      <div class="theme-num">THEME 01</div>
+      <div class="theme-title">The Human + Machine Equation</div>
+      <div class="theme-desc">AI optimizes operations. Dream Management optimizes people. This season explores how the best organizations are deploying both — and why you can't succeed with only one side of the equation.</div>
+    </div>
+    <div class="theme-card">
+      <div class="theme-num">THEME 02</div>
+      <div class="theme-title">The Real ROI of Dreams</div>
+      <div class="theme-desc">The data behind Dream Management is extraordinary. This season we go deep on the numbers — turnover reduction, engagement scores, productivity gains — and the human stories behind every metric.</div>
+    </div>
+    <div class="theme-card">
+      <div class="theme-num">THEME 03</div>
+      <div class="theme-title">Designing for the Whole Person</div>
+      <div class="theme-desc">The 12 Rooms of Life are back — and this season we explore what happens when organizations start caring about all 12, not just the professional ones. Spoiler: everything changes.</div>
+    </div>
+    <div class="theme-card">
+      <div class="theme-num">THEME 04</div>
+      <div class="theme-title">Personal Architectures</div>
+      <div class="theme-desc">KP solo episodes on his own journey — recovery, rebuilding, coaching, fatherhood, faith. The Dream Dividend has always been personal. This season goes deeper.</div>
+    </div>
+  </div>
+
+  <h2>Season 3 Episodes (Live + Coming)</h2>
+
+  <div class="guest-list">
+    <div class="guest-row">
+      <div class="guest-num">E01</div>
+      <div>
+        <div class="guest-title">The Dream Architects: Designing the Next Economy</div>
+        <div class="guest-desc">Season premiere — KP solo. The full thesis. Why this season, why now, and what the Dream Architects are building.</div>
+      </div>
+      <div class="guest-tag tag-live">Live Now</div>
+    </div>
+    <div class="guest-row">
+      <div class="guest-num">E02</div>
+      <div>
+        <div class="guest-title">Designing Human-First Organizations</div>
+        <div class="guest-desc">Guest episode — culture architects building companies where people are the architecture, not just the occupants.</div>
+      </div>
+      <div class="guest-tag tag-coming">Apr 8</div>
+    </div>
+    <div class="guest-row">
+      <div class="guest-num">E03</div>
+      <div>
+        <div class="guest-title">AI as the Dream Amplifier</div>
+        <div class="guest-desc">How AI tools are letting Dream Managers serve more people at a higher level. The Human + Machine Equation in practice.</div>
+      </div>
+      <div class="guest-tag tag-coming">Apr 15</div>
+    </div>
+    <div class="guest-row">
+      <div class="guest-num">E04</div>
+      <div>
+        <div class="guest-title">The Middle Market Edge</div>
+        <div class="guest-desc">Why mid-market companies (50–500 employees) are the biggest winners when Dream Management is implemented at scale.</div>
+      </div>
+      <div class="guest-tag tag-coming">Apr 22</div>
+    </div>
+    <div class="guest-row">
+      <div class="guest-num">E05</div>
+      <div>
+        <div class="guest-title">When Leaders Pursue Their Own Dreams</div>
+        <div class="guest-desc">KP personal episode — the recovery journey, the hard seasons, and what happens when the coach starts taking his own advice.</div>
+      </div>
+      <div class="guest-tag tag-coming">Apr 29</div>
+    </div>
+    <div class="guest-row" style="border:none">
+      <div class="guest-num">E06+</div>
+      <div>
+        <div class="guest-title">And much more through June...</div>
+        <div class="guest-desc">Guest crossovers, LeaderImpact episode, Ginger Biz collaboration, mid-season solo recap, and the season finale.</div>
+      </div>
+      <div class="guest-tag tag-coming">Ongoing</div>
+    </div>
+  </div>
+
+  <div class="listen-block">
+    <div>
+      <div class="listen-text">Subscribe so you don't miss a single episode.</div>
+      <div class="listen-sub">New episodes drop every Tuesday. Free on all platforms.</div>
+    </div>
+    <div class="listen-btns">
+      <a class="listen-btn primary" href="https://thedreamdividend.com/#subscribe">Subscribe Free</a>
+      <a class="listen-btn secondary" href="https://podcasts.apple.com/us/podcast/the-dream-dividend">Apple Podcasts</a>
+      <a class="listen-btn secondary" href="https://open.spotify.com/show/thedreamdividend">Spotify</a>
+    </div>
+  </div>
+
+  <h2>A Personal Note to Start the Season</h2>
+
+  <p>Every season of this podcast has started with a version of the same question: <em>What's the most important thing I can do with my time and attention right now, for the people listening?</em></p>
+
+  <p>When I launched this show, I was a Dream Manager in practice — working with organizations to implement Matthew Kelly's program, watching what happened when companies started investing in their people's dreams, being genuinely stunned by the results. The podcast was a way to share that.</p>
+
+  <p>But something has shifted. The landscape of work has changed faster in the last three years than in the previous twenty. AI is restructuring entire industries. Remote work has fractured team cohesion. Engagement numbers are at historic lows. And the most vulnerable people in that equation — the ones who don't have the luxury of remotely working or the educational background to pivot easily — are the ones most at risk of being left behind by a future that's being built without them in the room.</p>
+
+  <p>The Dream Architects are the people fighting that. Not by slowing down technology — that's not a battle worth fighting. But by insisting that human beings belong at the center of every organization that technology serves.</p>
+
+  <p>I've never been more convinced that this work matters. I've also never been more energized to do it.</p>
+
+  <p>Season 3 is for the builders. The architects. The people who look at their organization — or their idea, or their career, or their life — and say: <em>this can be better. It should be better. And I'm going to build it better.</em></p>
+
+  <p>Welcome to Season 3. Let's build something.</p>
+
+  <div class="cta-block">
+    <h3>Dream Bigger.<br>Lead Better.<br>Achieve More.</h3>
+    <p>Subscribe to The Dream Dividend and join 10,000+ leaders building organizations where people and technology both operate at their full potential.</p>
+    <a href="https://thedreamdividend.com/#subscribe" class="cta-btn">Subscribe Free →</a>
+    <div class="cta-sub">Ready to bring Dream Management to your organization? <a href="https://trinityoneconsulting.com/#contact">Start the conversation at Trinity One.</a></div>
+  </div>
+
+</article>
+
+<footer class="article-footer">
+  <div class="tags">
+    <span class="tag">Dream Dividend</span><span class="tag">Season 3</span><span class="tag">Dream Architects</span>
+    <span class="tag">Dream Management</span><span class="tag">Leadership</span><span class="tag">Podcast</span>
+    <span class="tag">Human + Machine</span><span class="tag">Organizational Culture</span>
+  </div>
+  <div class="author-block">
+    <div class="author-avatar">KP</div>
+    <div>
+      <div class="author-name">Kevin Patrick</div>
+      <div class="author-title">Host, The Dream Dividend · Founder, Trinity One Consulting · Certified Dream Manager</div>
+      <div class="author-bio">283 episodes in and still convinced this is the most important work in business right now. Kevin Patrick helps organizations build cultures where people genuinely want to show up — through Dream Management, AI implementation, and 20+ years of hard-earned operational wisdom.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
