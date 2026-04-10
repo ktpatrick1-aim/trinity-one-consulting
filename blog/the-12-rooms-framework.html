@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 12 Rooms Framework: A Complete Guide to Living an Integrated Life | Trinity One Consulting</title>
+<meta name="description" content="Most people only live in 3 of their 12 rooms. The 12 Rooms Framework from Matthew Kelly's Dream Manager Program reveals why whole-person development drives 68% turnover reduction and 4.8x ROI.">
+<meta name="author" content="Kevin Patrick">
+<meta name="keywords" content="12 Rooms Framework, Dream Manager Program, Matthew Kelly, Floyd Consulting, employee retention, whole-person development, integrated life, Dream Management">
+
+<!-- Open Graph -->
+<meta property="og:title" content="The 12 Rooms Framework: A Complete Guide to Living an Integrated Life">
+<meta property="og:description" content="Most people only live in 3 of their 12 rooms. Here's the framework that changes everything — for individuals and the organizations that invest in them.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://trinityoneconsulting.com/blog/12-rooms-guide">
+<meta property="og:site_name" content="Trinity One Consulting">
+<meta property="og:image" content="https://trinityoneconsulting.com/images/blog-12-rooms-og.jpg">
+<meta property="article:published_time" content="2026-03-24">
+<meta property="article:author" content="Kevin Patrick">
+<meta property="article:tag" content="Dream Management">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The 12 Rooms Framework: A Complete Guide to Living an Integrated Life">
+<meta name="twitter:description" content="Most people only live in 3 of their 12 rooms. Here's the framework that changes everything.">
+<meta name="twitter:image" content="https://trinityoneconsulting.com/images/blog-12-rooms-og.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0c10;
+    --surface: #10131a;
+    --surface2: #181c24;
+    --teal: #00c9a7;
+    --teal-dim: rgba(0,201,167,0.08);
+    --teal-border: rgba(0,201,167,0.2);
+    --blue: #4e8ef7;
+    --text: #e8eef4;
+    --text-muted: #7a8a9a;
+    --text-dim: #3a4a5a;
+    --gold: #f0b429;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', system-ui, sans-serif; line-height: 1.75; }
+
+  /* NAV */
+  .nav {
+    position: sticky; top:0; z-index:50;
+    background: rgba(10,12,16,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,201,167,0.1);
+    padding: 1rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-brand { font-weight: 700; font-size: 0.9rem; color: var(--teal); text-decoration: none; }
+  .nav-back { font-size: 0.8rem; color: var(--text-muted); text-decoration: none; }
+
+  /* HERO */
+  .hero {
+    padding: 6rem 2rem 5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .brand-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--teal-dim);
+    border: 1px solid var(--teal-border);
+    color: var(--teal);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    margin-bottom: 2rem;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .hero h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 em { font-style: italic; color: var(--teal); }
+  .hero-deck {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 620px;
+    font-weight: 300;
+    line-height: 1.65;
+    margin-bottom: 1.75rem;
+  }
+  .hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+  }
+  .hero-divider { color: var(--text-dim); }
+
+  /* HERO IMAGE PLACEHOLDER */
+  .hero-image {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+  .hero-image-inner {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: var(--surface);
+    aspect-ratio: 1200 / 628;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+  }
+
+  /* STAT BAND */
+  .stat-band {
+    background: var(--surface);
+    border-top: 1px solid rgba(0,201,167,0.1);
+    border-bottom: 1px solid rgba(0,201,167,0.1);
+    margin: 0 0 4rem;
+  }
+  .stat-band-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+  }
+  .stat-item {
+    padding: 0 1.5rem;
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-item:first-child { padding-left: 0; }
+  .stat-n { font-family: 'Fraunces', serif; font-size: 2.4rem; font-weight: 900; color: var(--teal); line-height: 1; margin-bottom: 0.3rem; letter-spacing: -0.03em; }
+  .stat-l { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.4; }
+
+  /* ARTICLE */
+  .article-wrap { max-width: 720px; margin: 0 auto; padding: 0 2rem 5rem; }
+  h2 { font-family: 'Fraunces', Georgia, serif; font-size: 1.8rem; font-weight: 700; margin: 3.5rem 0 1rem; line-height: 1.2; }
+  h3 { font-size: 1rem; font-weight: 600; color: var(--teal); margin: 2rem 0 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  p { margin-bottom: 1.5rem; font-size: 1.02rem; color: #c0ccd8; font-weight: 300; line-height: 1.8; }
+  strong { color: var(--text); font-weight: 600; }
+
+  .pullquote {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.4;
+    padding: 2rem 0;
+    border-top: 2px solid var(--teal);
+    border-bottom: 2px solid var(--teal);
+    margin: 3rem 0;
+    text-align: center;
+  }
+
+  /* 12 ROOMS GRID */
+  .rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 2.5rem 0;
+  }
+  .room-card {
+    background: var(--surface);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 10px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .room-card:hover { border-color: var(--teal-border); transform: translateY(-2px); }
+  .room-icon { font-size: 1.4rem; margin-bottom: 0.5rem; }
+  .room-name { font-size: 0.82rem; font-weight: 600; color: var(--text); margin-bottom: 0.15rem; }
+  .room-num { font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.1em; }
+
+  /* ROOM DETAIL CARDS */
+  .room-detail {
+    background: var(--surface);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 1.75rem;
+    margin: 1.5rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .room-detail::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px; height: 100%;
+    background: var(--teal);
+    opacity: 0.5;
+  }
+  .room-detail-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .room-detail-icon { font-size: 1.3rem; }
+  .room-detail-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .room-detail p { margin-bottom: 0.75rem; font-size: 0.95rem; }
+  .room-detail .room-question {
+    font-style: italic;
+    color: var(--teal);
+    font-weight: 500;
+    font-size: 0.92rem;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  /* INTERCONNECT VISUAL */
+  .interconnect-box {
+    background: var(--surface2);
+    border: 1px solid var(--teal-border);
+    border-radius: 14px;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    text-align: center;
+  }
+  .interconnect-box h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+  .interconnect-example {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+  }
+  .interconnect-arrow { color: var(--teal); font-weight: 700; }
+
+  /* CASE STUDY */
+  .case-study {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    border: 1px solid rgba(255,255,255,0.06);
+    position: relative;
+    overflow: hidden;
+  }
+  .case-study::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px; height: 100%;
+    background: linear-gradient(180deg, var(--teal), transparent);
+  }
+  .case-study-label { font-size: 0.68rem; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 0.75rem; }
+  .case-study-quote { font-family: 'Fraunces', Georgia, serif; font-size: 1.1rem; font-style: italic; color: var(--text); margin-bottom: 1rem; line-height: 1.5; }
+  .case-study-result { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.06); }
+  .result-n { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 900; color: var(--teal); }
+  .result-l { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* CTA */
+  .cta-block {
+    background: var(--surface2);
+    border: 1px solid var(--teal-border);
+    border-radius: 16px;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    margin: 4rem 0 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-block::before {
+    content:''; position: absolute;
+    bottom: -60px; left: 50%;
+    transform: translateX(-50%);
+    width: 400px; height: 250px;
+    background: radial-gradient(ellipse, rgba(0,201,167,0.1), transparent 70%);
+  }
+  .cta-block h3 { font-family: 'Fraunces', Georgia, serif; font-size: 1.8rem; font-weight: 900; margin-bottom: 0.75rem; position:relative; line-height: 1.2; text-transform: none; letter-spacing: -0.02em; color: var(--text); }
+  .cta-block p { color: var(--text-muted); margin-bottom: 2rem; position:relative; font-size:0.95rem; max-width:480px; margin-left:auto; margin-right:auto; }
+  .cta-btn {
+    display: inline-block;
+    background: var(--teal);
+    color: #0a0c10;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.9rem 2.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s;
+  }
+  .cta-btn:hover { background: #00ddb8; transform: translateY(-1px); }
+  .cta-sub { font-size: 0.75rem; color: var(--text-dim); margin-top: 1rem; position:relative; }
+  .cta-sub a { color: var(--teal); text-decoration: none; }
+
+  .inline-cta {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem;
+    background: var(--teal-dim);
+    border: 1px solid var(--teal-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s;
+  }
+  .inline-cta:hover { border-color: var(--teal); }
+  .inline-cta-text { font-weight: 600; font-size: 0.95rem; }
+  .inline-cta-sub { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; font-weight: 300; }
+  .inline-cta-arrow { color: var(--teal); font-size: 1.25rem; flex-shrink: 0; }
+
+  /* FOOTER */
+  .article-footer { border-top: 1px solid rgba(255,255,255,0.05); padding: 3rem 2rem; max-width: 720px; margin: 0 auto; }
+  .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+  .tag { font-size: 0.72rem; color: var(--text-dim); background: var(--surface); border: 1px solid rgba(255,255,255,0.06); padding: 0.3rem 0.7rem; border-radius: 4px; }
+  .author-block { display: flex; gap: 1rem; align-items: flex-start; padding: 1.5rem; background: var(--surface); border-radius: 12px; }
+  .author-avatar { width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, var(--teal), #00a08a); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; color: #0a0c10; flex-shrink: 0; }
+  .author-name { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.2rem; }
+  .author-title { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  .author-bio { font-size: 0.82rem; color: var(--text-muted); font-weight: 300; line-height: 1.5; }
+
+  @media (max-width: 640px) {
+    .hero { padding: 4rem 1.5rem 3rem; }
+    .stat-band-inner { grid-template-columns: repeat(2, 1fr); }
+    .rooms-grid { grid-template-columns: repeat(2, 1fr); }
+    .article-wrap { padding: 0 1.5rem 4rem; }
+    .cta-block { padding: 2rem 1.5rem; }
+    .room-detail { padding: 1.25rem; }
+  }
+  @media (max-width: 400px) {
+    .rooms-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="https://trinityoneconsulting.com/" class="nav-brand">Trinity One Consulting</a>
+  <a href="https://trinityoneconsulting.com/blog/" class="nav-back">&larr; All Articles</a>
+</nav>
+
+<section class="hero">
+  <div class="brand-tag">&#x1F49A; Dream Management &middot; 10 min read</div>
+  <h1>The 12 Rooms Framework:<br>A Complete Guide to Living<br>an <em>Integrated Life</em></h1>
+  <p class="hero-deck">Most people only live in 3 of their 12 rooms. They go to work, come home, scroll their phone, and repeat. What about the other 9 rooms? That's where the transformation happens &mdash; for individuals and the organizations brave enough to invest in them.</p>
+  <div class="hero-meta">
+    <span>Kevin Patrick</span>
+    <span class="hero-divider">&middot;</span>
+    <span>March 24, 2026</span>
+    <span class="hero-divider">&middot;</span>
+    <span>10 min read</span>
+  </div>
+</section>
+
+<div class="hero-image" style="max-width:1200px;margin:2rem auto;padding:0 2rem;"><div style="border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 628" width="100%" height="auto">
+  <defs>
+    <radialGradient id="bg-grad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#0f1218"/>
+      <stop offset="100%" stop-color="#0a0c10"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft-shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="teal-glow-outer">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feFlood flood-color="#00c9a7" flood-opacity="0.15" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="628" fill="url(#bg-grad)"/>
+
+  <!-- Subtle grid lines -->
+  <g opacity="0.025" stroke="#00c9a7" fill="none" stroke-width="0.5">
+    <line x1="0" y1="157" x2="1200" y2="157"/>
+    <line x1="0" y1="314" x2="1200" y2="314"/>
+    <line x1="0" y1="471" x2="1200" y2="471"/>
+    <line x1="300" y1="0" x2="300" y2="628"/>
+    <line x1="600" y1="0" x2="600" y2="628"/>
+    <line x1="900" y1="0" x2="900" y2="628"/>
+  </g>
+
+  <!-- Corner accent lines -->
+  <line x1="40" y1="40" x2="100" y2="40" stroke="#00c9a7" stroke-width="0.5" opacity="0.2"/>
+  <line x1="40" y1="40" x2="40" y2="100" stroke="#00c9a7" stroke-width="0.5" opacity="0.2"/>
+  <line x1="1160" y1="40" x2="1100" y2="40" stroke="#00c9a7" stroke-width="0.5" opacity="0.2"/>
+  <line x1="1160" y1="40" x2="1160" y2="100" stroke="#00c9a7" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Title: THE 12 ROOMS FRAMEWORK -->
+  <text x="600" y="62" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="15" font-weight="600" letter-spacing="5" text-anchor="middle" opacity="0.9">THE 12 ROOMS FRAMEWORK</text>
+  <line x1="420" y1="74" x2="780" y2="74" stroke="#00c9a7" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- 4x3 Grid: starts x=115, y=95, card=220x115, gap=18 -->
+  <!-- LIT rooms: Physical (0,0), Professional (2,1), Creative (0,2) -->
+
+  <!-- Row 1 -->
+  <!-- Physical - LIT -->
+  <g transform="translate(115, 95)" filter="url(#teal-glow-outer)">
+    <rect width="220" height="115" rx="8" fill="#0d1214" stroke="#00ddb8" stroke-width="1.8"/>
+    <rect width="220" height="115" rx="8" fill="#00c9a7" opacity="0.05"/>
+    <!-- Door shape -->
+    <rect x="88" y="18" width="44" height="58" rx="4" fill="none" stroke="#00ddb8" stroke-width="1.2" opacity="0.5"/>
+    <circle cx="124" cy="48" r="2.5" fill="#00ddb8" opacity="0.7"/>
+    <!-- Light from door -->
+    <polygon points="88,76 132,76 148,115 72,115" fill="#00c9a7" opacity="0.04"/>
+    <text x="110" y="100" fill="#00ddb8" font-family="system-ui, sans-serif" font-size="11.5" text-anchor="middle" font-weight="600" letter-spacing="2">PHYSICAL</text>
+    <circle cx="202" cy="14" r="3.5" fill="#00ddb8" opacity="0.7"/>
+  </g>
+
+  <!-- Emotional - DIM -->
+  <g transform="translate(353, 95)" filter="url(#soft-shadow)">
+    <rect width="220" height="115" rx="8" fill="#0d1214" stroke="#1a2228" stroke-width="1" opacity="0.7"/>
+    <rect x="88" y="18" width="44" height="58" rx="4" fill="none" stroke="#00c9a7" stroke-width="0.7" opacity="0.2"/>
+    <circle cx="124" cy="48" r="2.5" fill="#00c9a7" opacity="0.15"/>
+    <text x="110" y="100" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="11.5" text-anchor="middle" font-weight="500" letter-spacing="2" opacity="0.35">EMOTIONAL</text>
+  </g>
+
+  <!-- Intellectual - DIM -->
+  <g transform="translate(591, 95)" filter="url(#soft-shadow)">
+    <rect width="220" height="115" rx="8" fill="#0d1214" stroke="#1a2228" stroke-width="1" opacity="0.7"/>
+    <rect x="88" y="18" width="44" height="58" rx="4" fill="none" stroke="#00c9a7" stroke-width="0.7" opacity="0.2"/>
+    <circle cx="124" cy="48" r="2.5" fill="#00c9a7" opacity="0.15"/>
+    <text x="110" y="100" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="11.5" text-anchor="middle" font-weight="500" letter-spacing="2" opacity="0.35">INTELLECTUAL</text>
+  </g>
+
+  <!-- Spiritual - DIM -->
+  <g transform="translate(829, 95)" filter="url(#soft-shadow)">
+    <rect width="220" height="115" rx="8" fill="#0d1214" stroke="#1a2228" stroke-width="1" opacity="0.7"/>
+    <rect x="88" y="18" width="44" height="58" rx="4" fill="none" stroke="#00c9a7" stroke-width="0.7" opacity="0.2"/>
+    <circle cx="124" cy="48" r="2.5" fill="#00c9a7" opacity="0.15"/>
+    <text x="110" y="100" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="11.5" text-anchor="middle" font-weight="500" letter-spacing="2" opacity="0.35">SPIRITUAL</text>
+  </g>
+
+  <!-- Row 2 -->
+  <!-- Psychological - DIM -->
+  <g transform="translate(115, 228)" filter="url(#soft-shadow)">
+    <rect width="220" height="115" rx="8" fill="#0d1214" stroke="#1a2228" stroke-width="1" opacity="0.7"/>
+    <rect x="88" y="18" width="44" height="58" rx="4" fill="none" stroke="#00c9a7" stroke-width="0.7" opacity="0.2"/>
+    <circle cx="124" cy="48" r="2.5" fill="#00c9a7" opacity="0.15"/>
+    <text x="110" y="100" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="10.5" text-anchor="middle" font-weight="500" letter-spacing="2" opacity="0.35">PSYCHOLOGICAL</text>
+  </g>
+
+  <!-- Material - DIM -->
+  <g transform="translate(353, 228)" filter="url(#soft-shadow)">
+    <rect width="220" height="115" rx="8" fill="#0d1214" stroke="#1a2228" stroke-width="1" opacity="0.7"/>
+    <rect x="88" y="18" width="44" height="58" rx="4" fill="none" stroke="#00c9a7" stroke-width="0.7" opacity="0.2"/>
+    <circle cx="124" cy="48" r="2.5" fill="#00c9a7" opacity="0.15"/>
+    <text x="110" y="100" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="11.5" text-anchor="middle" font-weight="500" letter-spacing="2" opacity="0.35">MATERIAL</text>
+  </g>
+
+  <!-- Professional - LIT -->
+  <g transform="translate(591, 228)" filter="url(#teal-glow-outer)">
+    <rect width="220" height="115" rx="8" fill="#0d1214" stroke="#00ddb8" stroke-width="1.8"/>
+    <rect width="220" height="115" rx="8" fill="#00c9a7" opacity="0.05"/>
+    <rect x="88" y="18" width="44" height="58" rx="4" fill="none" stroke="#00ddb8" stroke-width="1.2" opacity="0.5"/>
+    <circle cx="124" cy="48" r="2.5" fill="#00ddb8" opacity="0.7"/>
+    <polygon points="88,76 132,76 148,115 72,115" fill="#00c9a7" opacity="0.04"/>
+    <text x="110" y="100" fill="#00ddb8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" font-weight="600" letter-spacing="2">PROFESSIONAL</text>
+    <circle cx="202" cy="14" r="3.5" fill="#00ddb8" opacity="0.7"/>
+  </g>
+
+  <!-- Financial - DIM -->
+  <g transform="translate(829, 228)" filter="url(#soft-shadow)">
+    <rect width="220" height="115" rx="8" fill="#0d1214" stroke="#1a2228" stroke-width="1" opacity="0.7"/>
+    <rect x="88" y="18" width="44" height="58" rx="4" fill="none" stroke="#00c9a7" stroke-width="0.7" opacity="0.2"/>
+    <circle cx="124" cy="48" r="2.5" fill="#00c9a7" opacity="0.15"/>
+    <text x="110" y="100" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="11.5" text-anchor="middle" font-weight="500" letter-spacing="2" opacity="0.35">FINANCIAL</text>
+  </g>
+
+  <!-- Row 3 -->
+  <!-- Creative - LIT -->
+  <g transform="translate(115, 361)" filter="url(#teal-glow-outer)">
+    <rect width="220" height="115" rx="8" fill="#0d1214" stroke="#00ddb8" stroke-width="1.8"/>
+    <rect width="220" height="115" rx="8" fill="#00c9a7" opacity="0.05"/>
+    <rect x="88" y="18" width="44" height="58" rx="4" fill="none" stroke="#00ddb8" stroke-width="1.2" opacity="0.5"/>
+    <circle cx="124" cy="48" r="2.5" fill="#00ddb8" opacity="0.7"/>
+    <polygon points="88,76 132,76 148,115 72,115" fill="#00c9a7" opacity="0.04"/>
+    <text x="110" y="100" fill="#00ddb8" font-family="system-ui, sans-serif" font-size="11.5" text-anchor="middle" font-weight="600" letter-spacing="2">CREATIVE</text>
+    <circle cx="202" cy="14" r="3.5" fill="#00ddb8" opacity="0.7"/>
+  </g>
+
+  <!-- Adventurous - DIM -->
+  <g transform="translate(353, 361)" filter="url(#soft-shadow)">
+    <rect width="220" height="115" rx="8" fill="#0d1214" stroke="#1a2228" stroke-width="1" opacity="0.7"/>
+    <rect x="88" y="18" width="44" height="58" rx="4" fill="none" stroke="#00c9a7" stroke-width="0.7" opacity="0.2"/>
+    <circle cx="124" cy="48" r="2.5" fill="#00c9a7" opacity="0.15"/>
+    <text x="110" y="100" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" font-weight="500" letter-spacing="2" opacity="0.35">ADVENTUROUS</text>
+  </g>
+
+  <!-- Legacy - DIM -->
+  <g transform="translate(591, 361)" filter="url(#soft-shadow)">
+    <rect width="220" height="115" rx="8" fill="#0d1214" stroke="#1a2228" stroke-width="1" opacity="0.7"/>
+    <rect x="88" y="18" width="44" height="58" rx="4" fill="none" stroke="#00c9a7" stroke-width="0.7" opacity="0.2"/>
+    <circle cx="124" cy="48" r="2.5" fill="#00c9a7" opacity="0.15"/>
+    <text x="110" y="100" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="11.5" text-anchor="middle" font-weight="500" letter-spacing="2" opacity="0.35">LEGACY</text>
+  </g>
+
+  <!-- Character - DIM -->
+  <g transform="translate(829, 361)" filter="url(#soft-shadow)">
+    <rect width="220" height="115" rx="8" fill="#0d1214" stroke="#1a2228" stroke-width="1" opacity="0.7"/>
+    <rect x="88" y="18" width="44" height="58" rx="4" fill="none" stroke="#00c9a7" stroke-width="0.7" opacity="0.2"/>
+    <circle cx="124" cy="48" r="2.5" fill="#00c9a7" opacity="0.15"/>
+    <text x="110" y="100" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="11.5" text-anchor="middle" font-weight="500" letter-spacing="2" opacity="0.35">CHARACTER</text>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="600" y="528" fill="#ffffff" font-family="Georgia, serif" font-size="28" text-anchor="middle" font-weight="400" letter-spacing="0.5">Most people only live in 3.</text>
+  <text x="600" y="558" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle" font-weight="400" letter-spacing="1" opacity="0.6">Which rooms are you neglecting?</text>
+
+  <!-- Decorative bottom line -->
+  <line x1="500" y1="575" x2="700" y2="575" stroke="#00c9a7" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- Trinity One Consulting branding -->
+  <text x="1155" y="608" fill="#00c9a7" font-family="system-ui, sans-serif" font-size="9" text-anchor="end" font-weight="500" letter-spacing="1.5" opacity="0.35">TRINITY ONE CONSULTING</text>
+
+  <!-- Dream Manager badge -->
+  <text x="45" y="608" fill="#ffffff" font-family="Georgia, serif" font-size="9" font-weight="400" letter-spacing="0.5" opacity="0.25">The Dream Manager Program</text>
+</svg>
+</div>
+</div>
+
+<div class="stat-band">
+  <div class="stat-band-inner">
+    <div class="stat-item">
+      <div class="stat-n">12</div>
+      <div class="stat-l">Rooms of<br>Life</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-n">68%</div>
+      <div class="stat-l">Turnover<br>Reduction</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-n">4.8x</div>
+      <div class="stat-l">Measured<br>ROI</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-n">3</div>
+      <div class="stat-l">Rooms Most<br>People Use</div>
+    </div>
+  </div>
+</div>
+
+<article class="article-wrap">
+
+  <h2>Imagine Your Life Is a House</h2>
+
+  <p>Here's a metaphor that'll stick with you. Picture your life as a house with 12 rooms. Each room represents a different dimension of who you are &mdash; your health, your relationships, your finances, your faith, your ambition, your creativity.</p>
+
+  <p>Now here's the uncomfortable truth: <strong>most people only spend time in 2 or 3 of those rooms.</strong> They live in the Professional room, maybe dip into the Financial room when the bills come due, and occasionally visit the Physical room when their doctor scares them enough. The other 9 rooms? Doors closed. Lights off. Gathering dust.</p>
+
+  <p>This metaphor comes from Matthew Kelly, the New York Times bestselling author and founder of Floyd Consulting, whose <strong>Dream Manager Program</strong> has fundamentally changed how leading organizations think about their people. And it's the foundation of everything we do at Trinity One.</p>
+
+  <div class="pullquote">"An organization can only become the best version of itself to the extent that the people inside it are becoming the best versions of themselves."</div>
+
+  <p>That's not a feel-good bumper sticker. It's an operating principle. And the 12 Rooms Framework is how you put it into practice.</p>
+
+  <h2>The 12 Rooms: Your Whole Life, Mapped</h2>
+
+  <p>Let's walk through each room. As you read these, be honest with yourself &mdash; when's the last time you actually stepped inside each one?</p>
+
+  <div class="rooms-grid">
+    <div class="room-card"><div class="room-icon">&#x1F4AA;</div><div class="room-name">Physical</div><div class="room-num">Room 1</div></div>
+    <div class="room-card"><div class="room-icon">&#x2764;&#xFE0F;</div><div class="room-name">Emotional</div><div class="room-num">Room 2</div></div>
+    <div class="room-card"><div class="room-icon">&#x1F4DA;</div><div class="room-name">Intellectual</div><div class="room-num">Room 3</div></div>
+    <div class="room-card"><div class="room-icon">&#x1F54A;&#xFE0F;</div><div class="room-name">Spiritual</div><div class="room-num">Room 4</div></div>
+    <div class="room-card"><div class="room-icon">&#x1F9E0;</div><div class="room-name">Psychological</div><div class="room-num">Room 5</div></div>
+    <div class="room-card"><div class="room-icon">&#x1F3E0;</div><div class="room-name">Material</div><div class="room-num">Room 6</div></div>
+    <div class="room-card"><div class="room-icon">&#x1F4BC;</div><div class="room-name">Professional</div><div class="room-num">Room 7</div></div>
+    <div class="room-card"><div class="room-icon">&#x1F4B0;</div><div class="room-name">Financial</div><div class="room-num">Room 8</div></div>
+    <div class="room-card"><div class="room-icon">&#x1F3A8;</div><div class="room-name">Creative</div><div class="room-num">Room 9</div></div>
+    <div class="room-card"><div class="room-icon">&#x1F30D;</div><div class="room-name">Adventurous</div><div class="room-num">Room 10</div></div>
+    <div class="room-card"><div class="room-icon">&#x1F3DB;&#xFE0F;</div><div class="room-name">Legacy</div><div class="room-num">Room 11</div></div>
+    <div class="room-card"><div class="room-icon">&#x2B50;</div><div class="room-name">Character</div><div class="room-num">Room 12</div></div>
+  </div>
+
+  <h3>Room 1 &mdash; Physical</h3>
+  <div class="room-detail">
+    <div class="room-detail-header">
+      <span class="room-detail-icon">&#x1F4AA;</span>
+      <span class="room-detail-title">Your Body, Your Foundation</span>
+    </div>
+    <p>This is the room most people know they're neglecting. It's your energy, your vitality, the vessel that carries every other dream you have. Health isn't just about not being sick &mdash; it's about having the energy to show up fully in every other room.</p>
+    <p class="room-question">When's the last time you felt truly, physically alive &mdash; not just "not tired"?</p>
+  </div>
+
+  <h3>Room 2 &mdash; Emotional</h3>
+  <div class="room-detail">
+    <div class="room-detail-header">
+      <span class="room-detail-icon">&#x2764;&#xFE0F;</span>
+      <span class="room-detail-title">Your Relationships &amp; Inner World</span>
+    </div>
+    <p>Your marriage. Your friendships. Your relationship with your kids. But also your relationship with yourself &mdash; your capacity for joy, vulnerability, and honest connection. This room leaks into every other room faster than you'd think. When this room is cold, everything else feels harder.</p>
+    <p class="room-question">If the people closest to you rated the quality of your presence from 1 to 10, what would they say?</p>
+  </div>
+
+  <h3>Room 3 &mdash; Intellectual</h3>
+  <div class="room-detail">
+    <div class="room-detail-header">
+      <span class="room-detail-icon">&#x1F4DA;</span>
+      <span class="room-detail-title">Your Mind, Sharpened</span>
+    </div>
+    <p>This isn't about degrees or IQ. It's about curiosity. Are you still learning? Are you reading books that challenge you, having conversations that stretch you, asking questions you don't already know the answers to? Intellectual stagnation is one of the silent killers of engagement &mdash; at work and at home.</p>
+    <p class="room-question">What was the last thing you learned that genuinely changed how you think?</p>
+  </div>
+
+  <h3>Room 4 &mdash; Spiritual</h3>
+  <div class="room-detail">
+    <div class="room-detail-header">
+      <span class="room-detail-icon">&#x1F54A;&#xFE0F;</span>
+      <span class="room-detail-title">Your Sense of Purpose &amp; Connection</span>
+    </div>
+    <p>For some people this is faith. For others it's meditation, nature, or a deep sense of meaning. Whatever form it takes, this room is about connection to something bigger than yourself. It's the room that gives the other 11 rooms their "why." Without it, achievement feels hollow.</p>
+    <p class="room-question">Do you have a daily practice that grounds you in something bigger than your to-do list?</p>
+  </div>
+
+  <h3>Room 5 &mdash; Psychological</h3>
+  <div class="room-detail">
+    <div class="room-detail-header">
+      <span class="room-detail-icon">&#x1F9E0;</span>
+      <span class="room-detail-title">Your Self-Awareness &amp; Mental Health</span>
+    </div>
+    <p>This is the room where you do the inner work. Understanding your triggers, your patterns, the stories you tell yourself. It's therapy, it's coaching, it's the hard conversation with the mirror. Organizations that ignore this room wonder why their top performers burn out. You can't pour from a cracked cup.</p>
+    <p class="room-question">What's the story you keep telling yourself that might not be true anymore?</p>
+  </div>
+
+  <h3>Room 6 &mdash; Material</h3>
+  <div class="room-detail">
+    <div class="room-detail-header">
+      <span class="room-detail-icon">&#x1F3E0;</span>
+      <span class="room-detail-title">Your Environment &amp; Possessions</span>
+    </div>
+    <p>Your home. Your car. The physical environment you've built around yourself. This isn't about materialism &mdash; it's about stewardship. Do the material things in your life serve your dreams, or have they become a source of stress? A cluttered environment reflects a cluttered mind, and a well-tended space creates room for clarity.</p>
+    <p class="room-question">Does the space you live and work in energize you or drain you?</p>
+  </div>
+
+  <a href="https://thedreamdividend.com/#subscribe" class="inline-cta" target="_blank" rel="noopener">
+    <div>
+      <div class="inline-cta-text">Subscribe to The Dream Dividend</div>
+      <div class="inline-cta-sub">The podcast where we unpack frameworks like this every week.</div>
+    </div>
+    <span class="inline-cta-arrow">&rarr;</span>
+  </a>
+
+  <h3>Room 7 &mdash; Professional</h3>
+  <div class="room-detail">
+    <div class="room-detail-header">
+      <span class="room-detail-icon">&#x1F4BC;</span>
+      <span class="room-detail-title">Your Career &amp; Contribution</span>
+    </div>
+    <p>Here's the room most people live in. Your job, your career trajectory, your professional identity. But here's what most organizations miss: professional growth doesn't happen in isolation. An employee who's struggling in their Financial room or their Emotional room can't fully show up in this one. You can't separate the person from the professional.</p>
+    <p class="room-question">Are you building a career that excites you, or just maintaining one that pays you?</p>
+  </div>
+
+  <h3>Room 8 &mdash; Financial</h3>
+  <div class="room-detail">
+    <div class="room-detail-header">
+      <span class="room-detail-icon">&#x1F4B0;</span>
+      <span class="room-detail-title">Your Relationship with Money</span>
+    </div>
+    <p>Not just how much you make &mdash; how you relate to it. Financial stress is one of the top drivers of disengagement at work. When someone's drowning in debt or living paycheck to paycheck, asking them to "bring their best self to work" is almost cruel. This room is about freedom, security, and the peace that comes from having a plan.</p>
+    <p class="room-question">If you lost your income today, how many months could you sustain your current life?</p>
+  </div>
+
+  <h3>Room 9 &mdash; Creative</h3>
+  <div class="room-detail">
+    <div class="room-detail-header">
+      <span class="room-detail-icon">&#x1F3A8;</span>
+      <span class="room-detail-title">Your Expression &amp; Imagination</span>
+    </div>
+    <p>When's the last time you made something just because it felt good? Painting, writing, cooking, building, playing music &mdash; creativity isn't a luxury. It's a human need. And the organizations that encourage it, even indirectly, unlock a level of innovation and problem-solving that spreadsheets can't explain.</p>
+    <p class="room-question">What's something creative you used to love that you've abandoned?</p>
+  </div>
+
+  <h3>Room 10 &mdash; Adventurous</h3>
+  <div class="room-detail">
+    <div class="room-detail-header">
+      <span class="room-detail-icon">&#x1F30D;</span>
+      <span class="room-detail-title">Your Appetite for the New</span>
+    </div>
+    <p>Travel. New experiences. Stepping outside the routine. This room is about the dreams that make your eyes light up when you talk about them. It's the trip you've been "going to take someday," the skill you've been meaning to learn, the experience that scares you a little. Adventure keeps us alive. Without it, we're just existing.</p>
+    <p class="room-question">What's on your bucket list that you haven't made a single move toward?</p>
+  </div>
+
+  <h3>Room 11 &mdash; Legacy</h3>
+  <div class="room-detail">
+    <div class="room-detail-header">
+      <span class="room-detail-icon">&#x1F3DB;&#xFE0F;</span>
+      <span class="room-detail-title">Your Impact Beyond Yourself</span>
+    </div>
+    <p>What will you leave behind? Legacy isn't just about what you build &mdash; it's about who you shape. It's mentoring the next generation, giving back to your community, living in a way that ripples forward. This room often gets ignored until later in life, but the organizations that help people think about legacy early create a depth of loyalty that money can't buy.</p>
+    <p class="room-question">If your life ended tomorrow, what would people say you stood for?</p>
+  </div>
+
+  <h3>Room 12 &mdash; Character</h3>
+  <div class="room-detail">
+    <div class="room-detail-header">
+      <span class="room-detail-icon">&#x2B50;</span>
+      <span class="room-detail-title">Your Integrity &amp; Virtue</span>
+    </div>
+    <p>This is the master room. The room that holds all the others together. Character is about who you are when nobody's watching. It's honesty, discipline, patience, courage. It's the daily choice to do what's right even when it's hard. Every other room improves when this room is strong. Every other room suffers when this room is neglected.</p>
+    <p class="room-question">In which area of your life is there the biggest gap between who you are and who you want to be?</p>
+  </div>
+
+  <h2>The Rooms Are Connected &mdash; And That Changes Everything</h2>
+
+  <p>Here's what most people miss: <strong>the 12 rooms aren't separate apartments. They share walls.</strong> When one room floods, the water doesn't stay contained. It leaks through the floor into every room below it.</p>
+
+  <div class="interconnect-box">
+    <h4>How Neglect Cascades</h4>
+    <div class="interconnect-example">
+      <span>Financial stress</span>
+      <span class="interconnect-arrow">&rarr;</span>
+      <span>Emotional strain</span>
+      <span class="interconnect-arrow">&rarr;</span>
+      <span>Physical decline</span>
+      <span class="interconnect-arrow">&rarr;</span>
+      <span>Professional disengagement</span>
+    </div>
+    <div class="interconnect-example">
+      <span>Spiritual emptiness</span>
+      <span class="interconnect-arrow">&rarr;</span>
+      <span>Psychological drift</span>
+      <span class="interconnect-arrow">&rarr;</span>
+      <span>Creative shutdown</span>
+      <span class="interconnect-arrow">&rarr;</span>
+      <span>Legacy paralysis</span>
+    </div>
+  </div>
+
+  <p>Think about it. That team member who's "not engaged" at work? Maybe they're not disengaged from their job. Maybe they're drowning in their Financial room and it's flooding into their Professional room. That leader who's becoming irritable and short-tempered? Maybe their Emotional room has been locked shut for years and the pressure is building.</p>
+
+  <p>You can't fix a Professional problem with a Professional solution when the root cause lives in a completely different room.</p>
+
+  <p>This is the insight that makes the Dream Manager Program so different from every other retention strategy, leadership development tool, or employee engagement initiative on the market. <strong>It treats people as whole human beings.</strong> Not as resources. Not as "human capital." As people &mdash; with dreams that span all 12 rooms.</p>
+
+  <div class="pullquote">"You can't build a great company with people who are falling apart in every other area of their life. And you can't fall apart in every area of your life and build a great company."</div>
+
+  <h2>Why This Matters for Business (And the Numbers Prove It)</h2>
+
+  <p>If you're a leader reading this, you might be thinking: "This sounds great, Kevin, but I run a business. I can't be my employees' life coach." I hear you. And I'd push back &mdash; gently but firmly.</p>
+
+  <p>You don't have to be their life coach. But you do have to recognize that disengagement, turnover, quiet quitting, burnout &mdash; these aren't just HR problems. They're <strong>whole-person problems showing up at work.</strong></p>
+
+  <div class="case-study">
+    <div class="case-study-label">The Dream Manager Impact</div>
+    <p class="case-study-quote">Organizations implementing the Dream Manager Program through Floyd Consulting's certified process consistently see results that redefine what's possible in employee engagement.</p>
+    <div class="case-study-result">
+      <div class="result-item">
+        <div class="result-n">68%</div>
+        <div class="result-l">Turnover Reduction</div>
+      </div>
+      <div class="result-item">
+        <div class="result-n">4.8x</div>
+        <div class="result-l">Measured ROI</div>
+      </div>
+      <div class="result-item">
+        <div class="result-n">2x</div>
+        <div class="result-l">Engagement Scores</div>
+      </div>
+      <div class="result-item">
+        <div class="result-n">90%+</div>
+        <div class="result-l">Participation Rate</div>
+      </div>
+    </div>
+  </div>
+
+  <p>Those numbers aren't theoretical. They come from real organizations &mdash; manufacturers, healthcare systems, hospitality companies, school districts &mdash; that made a bet on their people. They said: "We're going to invest in the whole person, not just the employee." And the return on that investment was staggering.</p>
+
+  <p>Here's why: when you help someone get their Financial room in order, they stop worrying about money at work. When you help them reconnect with their Adventurous room, they bring fresh energy to their team. When you give them space to work on their Character room, they become the kind of leader who develops others without being asked.</p>
+
+  <p><strong>Dream Management works because it treats the cause, not the symptom.</strong></p>
+
+  <h2>How to Start: Open One Door at a Time</h2>
+
+  <p>You don't have to renovate all 12 rooms at once. In fact, trying to do that is a recipe for overwhelm. The power of this framework is in the awareness it creates. Here's where to start:</p>
+
+  <p><strong>Step 1: Take an honest inventory.</strong> Walk through all 12 rooms mentally. Which ones feel warm, lived-in, intentional? Which ones have you avoided? Rate each one from 1 to 10. No judgment &mdash; just honesty.</p>
+
+  <p><strong>Step 2: Identify the room that's leaking.</strong> Which neglected room is causing the most collateral damage? That's your starting point. Not the room you think you "should" work on &mdash; the one that, if you fixed it, would improve three other rooms with it.</p>
+
+  <p><strong>Step 3: Set one dream in that room.</strong> Not a goal. A dream. Goals are things you check off. Dreams are things that pull you forward. There's a difference. Write it down. Say it out loud. Share it with someone who'll hold you to it.</p>
+
+  <p><strong>Step 4: Get a guide.</strong> This is where Dream Management comes in. A certified Dream Manager doesn't tell people what to dream &mdash; they create the structure, accountability, and support that turns dormant dreams into lived reality. It's the difference between knowing you should change and actually changing.</p>
+
+  <a href="https://trinityoneconsulting.com/#contact" class="inline-cta">
+    <div>
+      <div class="inline-cta-text">Ready to bring Dream Management to your organization?</div>
+      <div class="inline-cta-sub">Let's start the conversation about what's possible.</div>
+    </div>
+    <span class="inline-cta-arrow">&rarr;</span>
+  </a>
+
+  <h2>The Real Question</h2>
+
+  <p>The 12 Rooms Framework isn't complicated. It's convicting. Because once you see it, you can't unsee it. You'll notice which rooms in your own life need attention. You'll see why that high-performer on your team is suddenly checked out. You'll understand why ping-pong tables and free snacks aren't moving the needle on engagement.</p>
+
+  <p>The real question isn't whether the 12 Rooms Framework is valid. It's been proven in thousands of lives across hundreds of organizations.</p>
+
+  <p>The real question is: <strong>how many rooms in your house are you actually living in?</strong></p>
+
+  <p>And the braver question for leaders: <strong>what would happen if you helped every person in your organization open a few more doors?</strong></p>
+
+  <p>That's what Dream Management does. That's what we help organizations implement at Trinity One. And the results &mdash; 68% turnover reduction, 4.8x ROI, teams that actually want to be there &mdash; those results speak for themselves.</p>
+
+  <p>It starts with a conversation. Let's have one.</p>
+
+  <!-- PRIMARY CTA -->
+  <div class="cta-block">
+    <h3>Start the Conversation</h3>
+    <p>Find out how the Dream Manager Program can transform your organization from the inside out &mdash; one room, one dream, one person at a time.</p>
+    <a href="https://trinityoneconsulting.com/#contact" class="cta-btn">Let's Talk &rarr;</a>
+    <div class="cta-sub">Or subscribe to <a href="https://thedreamdividend.com/#subscribe" target="_blank" rel="noopener">The Dream Dividend Podcast</a> for weekly insights.</div>
+  </div>
+
+</article>
+
+<footer class="article-footer">
+  <div class="tags">
+    <span class="tag">Dream Management</span>
+    <span class="tag">12 Rooms Framework</span>
+    <span class="tag">Employee Retention</span>
+    <span class="tag">Matthew Kelly</span>
+    <span class="tag">Whole-Person Development</span>
+    <span class="tag">Floyd Consulting</span>
+  </div>
+  <div class="author-block">
+    <div class="author-avatar">KP</div>
+    <div>
+      <div class="author-name">Kevin Patrick</div>
+      <div class="author-title">Founder, Trinity One Consulting</div>
+      <div class="author-bio">Kevin partners with organizations to implement the Dream Manager Program, helping leaders invest in the whole person &mdash; not just the employee. He believes that when people become the best versions of themselves, the business results follow.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
