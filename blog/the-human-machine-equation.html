@@ -3,119 +3,287 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Human + Machine Equation | Trinity One Ecosystem</title>
-<meta name="description" content="Most AI consultants ignore the human side.">
-<meta property="og:title" content="The Human + Machine Equation">
-<meta property="og:description" content="Most AI consultants ignore the human side.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://trinityoneconsulting.com/blog/the-human-machine-equation.html">
-<meta name="twitter:card" content="summary_large_image">
+<title>The Human + Machine Equation | Trinity One Consulting</title>
+<meta name="description" content="After 20+ years implementing ERP systems, I kept watching the same thing happen. The technology worked. The people didn't. Here's what I learned — and what I built because of it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0c10;--surface:#13161d;--surface2:#1c2029;--text:#e8eaf0;--muted:#7a8094;--accent:#f59e0b;--accent-bg:rgba(245,158,11,0.08);}
-*{box-sizing:border-box;margin:0;padding:0;}
-body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif;line-height:1.7;font-size:17px;}
-nav{position:sticky;top:0;z-index:50;background:rgba(10,12,16,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.06);padding:0.75rem 2rem;display:flex;align-items:center;justify-content:space-between;}
-nav a{color:var(--muted);text-decoration:none;font-size:0.85rem;}
-nav .brand{color:var(--text);font-family:Georgia,serif;font-weight:700;font-size:1.1rem;}
-nav .brand span{color:var(--accent);}
-.hero{padding:4rem 2rem 2rem;max-width:800px;margin:0 auto;text-align:center;}
-.hero .tag{display:inline-block;padding:0.3rem 0.8rem;border-radius:999px;font-size:0.75rem;font-weight:600;background:var(--accent-bg);color:var(--accent);border:1px solid rgba(255,255,255,0.1);margin-bottom:1rem;letter-spacing:0.03em;}
-.hero h1{font-family:Georgia,serif;font-size:2.4rem;font-weight:700;line-height:1.15;margin-bottom:1rem;letter-spacing:-0.02em;}
-.hero .date{color:var(--muted);font-size:0.85rem;}
-.hero-image{max-width:900px;margin:2rem auto;padding:0 2rem;}
-.hero-image>div{border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);background:var(--surface);min-height:200px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:0.85rem;padding:3rem;}
-.hook{max-width:800px;margin:0 auto 2rem;padding:1.5rem 2rem;font-family:Georgia,serif;font-size:1.25rem;font-style:italic;color:var(--accent);text-align:center;border-left:3px solid var(--accent);background:var(--accent-bg);border-radius:0 8px 8px 0;}
-article{max-width:720px;margin:0 auto;padding:0 2rem 3rem;}
-article p{margin-bottom:1.25rem;color:rgba(232,234,240,0.88);}
-article h2{font-family:Georgia,serif;font-size:1.5rem;margin:2.5rem 0 1rem;color:var(--text);}
-.cta-section{max-width:720px;margin:2rem auto;padding:2.5rem;background:var(--surface);border:1px solid rgba(255,255,255,0.08);border-radius:12px;text-align:center;}
-.cta-section h3{font-family:Georgia,serif;font-size:1.3rem;margin-bottom:0.75rem;}
-.cta-section p{color:var(--muted);margin-bottom:1.25rem;font-size:0.95rem;}
-.cta-btn{display:inline-block;padding:0.75rem 2rem;background:var(--accent);color:#fff;text-decoration:none;border-radius:8px;font-weight:600;font-size:0.95rem;transition:opacity 0.2s;}
-.cta-btn:hover{opacity:0.85;}
-.author{max-width:720px;margin:3rem auto;padding:2rem;display:flex;gap:1.25rem;align-items:center;border-top:1px solid rgba(255,255,255,0.06);}
-.author-info h4{font-size:1rem;margin-bottom:0.25rem;}
-.author-info p{color:var(--muted);font-size:0.8rem;line-height:1.5;}
-.avatar{width:56px;height:56px;border-radius:50%;background:var(--accent-bg);border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:700;color:var(--accent);flex-shrink:0;}
-footer{text-align:center;padding:2rem;color:var(--muted);font-size:0.75rem;border-top:1px solid rgba(255,255,255,0.04);}
-@media(max-width:640px){.hero h1{font-size:1.75rem;}.hook{font-size:1.05rem;}article{font-size:16px;}}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1714;
+    --ink-soft: #3d3a36;
+    --ink-muted: #7a756e;
+    --paper: #faf8f4;
+    --paper-warm: #f3efe8;
+    --rule: #e8e3db;
+    --amber: #D97706;
+    --amber-light: #FEF3C7;
+    --green: #059669;
+    --blue: #2563EB;
+    --purple: #7C3AED;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  html { font-size: 18px; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  .hero { width: 100%; background: var(--ink); position: relative; overflow: hidden; }
+  .hero svg { display: block; width: 100%; height: auto; }
+  .article-wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 80px; }
+  .meta { display: flex; align-items: center; gap: 16px; padding: 32px 0 28px; border-bottom: 1px solid var(--rule); margin-bottom: 40px; flex-wrap: wrap; }
+  .meta-brand { font-size: 0.65rem; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--paper); background: var(--green); padding: 4px 12px; border-radius: 2px; }
+  .meta-date { font-size: 0.75rem; color: var(--ink-muted); letter-spacing: 0.5px; }
+  .meta-read { font-size: 0.75rem; color: var(--ink-muted); margin-left: auto; }
+  h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.5px; color: var(--ink); margin-bottom: 20px; }
+  .deck { font-family: var(--serif); font-style: italic; font-size: 1.15rem; color: var(--ink-soft); line-height: 1.6; margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--rule); }
+  p { margin-bottom: 1.5rem; color: var(--ink-soft); }
+  p:last-child { margin-bottom: 0; }
+  .divider { display: flex; align-items: center; gap: 16px; margin: 48px 0; }
+  .divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+  .divider-mark { font-size: 1rem; color: var(--ink-muted); font-family: var(--serif); }
+  blockquote { margin: 48px 0; padding: 32px 36px; background: var(--paper-warm); border-left: 3px solid var(--amber); border-radius: 0 4px 4px 0; }
+  blockquote p { font-family: var(--serif); font-style: italic; font-size: 1.25rem; line-height: 1.6; color: var(--ink); margin: 0; }
+  .equation { margin: 48px 0; padding: 40px; background: var(--ink); border-radius: 8px; text-align: center; }
+  .equation-line { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+  .eq-pill { font-family: var(--serif); font-size: 1rem; font-weight: 700; color: var(--paper); padding: 10px 24px; border-radius: 4px; letter-spacing: 0.5px; }
+  .eq-pill.ai { background: var(--blue); }
+  .eq-pill.dm { background: var(--purple); }
+  .eq-pill.result { background: var(--green); font-size: 1.1rem; }
+  .eq-op { font-family: var(--serif); font-size: 1.5rem; color: var(--amber); font-weight: 700; }
+  .equation-sub { font-size: 0.75rem; color: #7a756e; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 20px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 48px 0; }
+  @media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
+  .col-card { padding: 28px 24px; border-radius: 6px; border: 1px solid var(--rule); }
+  .col-card.machines { border-top: 3px solid var(--blue); }
+  .col-card.people { border-top: 3px solid var(--purple); }
+  .col-label { font-size: 0.65rem; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+  .col-card.machines .col-label { color: var(--blue); }
+  .col-card.people .col-label { color: var(--purple); }
+  .col-card h3 { font-family: var(--serif); font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 12px; line-height: 1.3; }
+  .col-card p { font-size: 0.85rem; line-height: 1.7; margin: 0; }
+  .divisions { margin: 48px 0; display: grid; gap: 16px; }
+  .div-card { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; padding: 24px 28px; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+  .div-icon { width: 44px; height: 44px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+  .div-icon.forge { background: #FEF3C7; }
+  .div-icon.calibrate { background: #EFF6FF; }
+  .div-icon.dream { background: #F5F3FF; }
+  .div-name { font-size: 0.65rem; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; }
+  .div-name.forge { color: var(--amber); }
+  .div-name.calibrate { color: var(--blue); }
+  .div-name.dream { color: var(--purple); }
+  .div-card h3 { font-family: var(--serif); font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; line-height: 1.3; }
+  .div-card p { font-size: 0.82rem; line-height: 1.7; color: var(--ink-muted); margin: 0; }
+  .cta-block { margin-top: 56px; padding: 40px; background: var(--paper-warm); border: 1px solid var(--rule); border-radius: 8px; text-align: center; }
+  .cta-block h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; color: var(--ink); margin-bottom: 12px; }
+  .cta-block p { font-size: 0.9rem; color: var(--ink-muted); max-width: 440px; margin: 0 auto 28px; }
+  .cta-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .cta-btn { display: inline-block; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.5px; padding: 12px 24px; border-radius: 4px; text-decoration: none; transition: opacity 0.15s; }
+  .cta-btn:hover { opacity: 0.85; }
+  .cta-btn.primary { background: var(--ink); color: var(--paper); }
+  .cta-btn.secondary { background: transparent; color: var(--ink); border: 1px solid var(--rule); }
+  .author { display: flex; gap: 20px; align-items: flex-start; margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--rule); }
+  .author-avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--ink); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 1.2rem; color: var(--amber); font-weight: 700; flex-shrink: 0; }
+  .author-name { font-weight: 500; font-size: 0.9rem; color: var(--ink); margin-bottom: 4px; }
+  .author-title { font-size: 0.78rem; color: var(--ink-muted); line-height: 1.5; }
+  .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--rule); }
+  .tag { font-size: 0.7rem; padding: 4px 12px; border-radius: 2px; background: var(--paper-warm); color: var(--ink-muted); border: 1px solid var(--rule); text-decoration: none; }
+  strong { font-weight: 500; color: var(--ink); }
+  .intro-large { font-size: 1.1rem; color: var(--ink); font-weight: 400; line-height: 1.75; margin-bottom: 1.5rem; }
+  /* Back link */
+  .back-link { display: inline-block; padding: 16px 24px; font-size: 0.8rem; color: var(--ink-muted); text-decoration: none; letter-spacing: 0.5px; }
+  .back-link:hover { color: var(--ink); }
 </style>
 </head>
 <body>
-<nav>
-  <a href="https://trinityoneconsulting.com" class="brand">Trinity <span>One</span></a>
-  <a href="https://trinityoneconsulting.com/blog/">← Back to Blog</a>
-</nav>
+<a href="/blog/" class="back-link">&larr; Back to Blog</a>
 <div class="hero">
-  <span class="tag">Trinity One Ecosystem</span>
+  <svg viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:auto;">
+    <defs>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#0f0d0a"/>
+        <stop offset="100%" style="stop-color:#1e1a14"/>
+      </linearGradient>
+      <radialGradient id="amberGlow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" style="stop-color:#D97706;stop-opacity:0.15"/>
+        <stop offset="100%" style="stop-color:#D97706;stop-opacity:0"/>
+      </radialGradient>
+      <radialGradient id="blueGlow" cx="25%" cy="60%" r="40%">
+        <stop offset="0%" style="stop-color:#2563EB;stop-opacity:0.12"/>
+        <stop offset="100%" style="stop-color:#2563EB;stop-opacity:0"/>
+      </radialGradient>
+      <radialGradient id="purpleGlow" cx="75%" cy="60%" r="40%">
+        <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:0.12"/>
+        <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:0"/>
+      </radialGradient>
+    </defs>
+    <rect width="1200" height="520" fill="url(#bgGrad)"/>
+    <rect width="1200" height="520" fill="url(#amberGlow)"/>
+    <rect width="1200" height="520" fill="url(#blueGlow)"/>
+    <rect width="1200" height="520" fill="url(#purpleGlow)"/>
+    <g opacity="0.04" stroke="#D97706" stroke-width="0.5">
+      <line x1="0" y1="104" x2="1200" y2="104"/><line x1="0" y1="208" x2="1200" y2="208"/>
+      <line x1="0" y1="312" x2="1200" y2="312"/><line x1="0" y1="416" x2="1200" y2="416"/>
+      <line x1="240" y1="0" x2="240" y2="520"/><line x1="480" y1="0" x2="480" y2="520"/>
+      <line x1="720" y1="0" x2="720" y2="520"/><line x1="960" y1="0" x2="960" y2="520"/>
+    </g>
+    <circle cx="290" cy="260" r="120" fill="none" stroke="#2563EB" stroke-width="1" opacity="0.3"/>
+    <circle cx="290" cy="260" r="90" fill="none" stroke="#2563EB" stroke-width="0.5" opacity="0.2"/>
+    <circle cx="290" cy="260" r="60" fill="#2563EB" fill-opacity="0.12" stroke="#2563EB" stroke-width="1.5" opacity="0.6"/>
+    <g transform="translate(265,237)" opacity="0.7">
+      <rect x="0" y="0" width="50" height="36" rx="4" fill="none" stroke="#2563EB" stroke-width="1.5"/>
+      <line x1="8" y1="10" x2="42" y2="10" stroke="#2563EB" stroke-width="1" opacity="0.6"/>
+      <line x1="8" y1="18" x2="35" y2="18" stroke="#2563EB" stroke-width="1" opacity="0.6"/>
+      <line x1="8" y1="26" x2="28" y2="26" stroke="#2563EB" stroke-width="1" opacity="0.6"/>
+      <rect x="18" y="36" width="14" height="8" fill="none" stroke="#2563EB" stroke-width="1"/>
+      <line x1="10" y1="44" x2="40" y2="44" stroke="#2563EB" stroke-width="1.5"/>
+    </g>
+    <text x="290" y="338" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="10" letter-spacing="3" fill="#2563EB" opacity="0.8" font-weight="500">AI · OPERATIONS</text>
+    <circle cx="910" cy="260" r="120" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.3"/>
+    <circle cx="910" cy="260" r="90" fill="none" stroke="#7C3AED" stroke-width="0.5" opacity="0.2"/>
+    <circle cx="910" cy="260" r="60" fill="#7C3AED" fill-opacity="0.12" stroke="#7C3AED" stroke-width="1.5" opacity="0.6"/>
+    <g transform="translate(885, 228)" opacity="0.7">
+      <circle cx="25" cy="14" r="10" fill="none" stroke="#7C3AED" stroke-width="1.5"/>
+      <path d="M5,46 C5,32 45,32 45,46" fill="none" stroke="#7C3AED" stroke-width="1.5"/>
+    </g>
+    <text x="910" y="338" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="10" letter-spacing="3" fill="#7C3AED" opacity="0.8" font-weight="500">PEOPLE · DREAMS</text>
+    <line x1="410" y1="260" x2="540" y2="260" stroke="#D97706" stroke-width="1" opacity="0.4" stroke-dasharray="4,4"/>
+    <line x1="660" y1="260" x2="790" y2="260" stroke="#D97706" stroke-width="1" opacity="0.4" stroke-dasharray="4,4"/>
+    <circle cx="600" cy="260" r="32" fill="#D97706" fill-opacity="0.15" stroke="#D97706" stroke-width="1.5" opacity="0.8"/>
+    <line x1="600" y1="244" x2="600" y2="276" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="584" y1="260" x2="616" y2="260" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="570" y1="310" x2="630" y2="310" stroke="#D97706" stroke-width="1.5" opacity="0.5"/>
+    <line x1="570" y1="322" x2="630" y2="322" stroke="#D97706" stroke-width="1.5" opacity="0.5"/>
+    <rect x="490" y="346" width="220" height="38" rx="4" fill="#059669" fill-opacity="0.15" stroke="#059669" stroke-width="1" opacity="0.8"/>
+    <text x="600" y="370" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="11" letter-spacing="1.5" fill="#34d399" font-weight="500">WINNING ORGANIZATIONS</text>
+    <text x="48" y="52" font-family="'DM Sans', sans-serif" font-size="11" letter-spacing="3" fill="#D97706" opacity="0.9" font-weight="500">TRINITY ONE CONSULTING</text>
+    <line x1="48" y1="58" x2="260" y2="58" stroke="#D97706" stroke-width="0.5" opacity="0.3"/>
+    <text x="600" y="98" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="42" fill="#faf8f4" font-weight="700" letter-spacing="-1">The Human + Machine Equation</text>
+    <text x="600" y="136" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="17" fill="#a09890" font-style="italic">Why the next decade belongs to companies that master both</text>
+    <text x="1152" y="488" text-anchor="end" font-family="'DM Sans', sans-serif" font-size="10" letter-spacing="1" fill="#5a5550" opacity="0.8">MARCH 22, 2026</text>
+    <g opacity="0.15" stroke="#D97706" stroke-width="1">
+      <path d="M24,24 L24,48 M24,24 L48,24" fill="none"/>
+      <path d="M1176,24 L1176,48 M1176,24 L1152,24" fill="none"/>
+      <path d="M24,496 L24,472 M24,496 L48,496" fill="none"/>
+      <path d="M1176,496 L1176,472 M1176,496 L1152,496" fill="none"/>
+    </g>
+  </svg>
+</div>
+<article class="article-wrap">
+  <div class="meta">
+    <span class="meta-brand">Trinity One Consulting</span>
+    <span class="meta-date">March 22, 2026</span>
+    <span class="meta-read">8 min read</span>
+  </div>
   <h1>The Human + Machine Equation</h1>
-  <p class="date">March 29, 2026 · Kevin Patrick</p>
-</div>
-<div class="hero-image" style="max-width:1200px;margin:2rem auto;padding:0 2rem;"><div style="border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 628" width="100%" height="auto">
-  <defs>
-    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.06"/>
-      <stop offset="100%" stop-color="#0a0c10" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="blur"><feGaussianBlur stdDeviation="2"/></filter>
-  </defs>
-  <rect width="1200" height="628" fill="#0a0c10"/>
-  <rect width="1200" height="628" fill="url(#glow)"/>
-  <line x1="0" y1="0" x2="1200" y2="628" stroke="#f59e0b" stroke-width="0.3" opacity="0.03"/>
-      <line x1="1200" y1="0" x2="0" y2="628" stroke="#f59e0b" stroke-width="0.3" opacity="0.03"/>
-      <circle cx="600" cy="314" r="100" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.05"/>
-      <text x="580" y="320" font-family="Georgia,serif" font-size="40" fill="#f59e0b" opacity="0.08">+</text>
-  <!-- Brand tag -->
-  <rect x="500" y="140" width="250" height="28" rx="14" fill="rgba(245,158,11,0.15)" x="475"/>
-  <text x="600" y="159" text-anchor="middle" font-family="Courier New,monospace" font-size="11" font-weight="600" fill="#f59e0b" letter-spacing="0.1em">TRINITY ONE ECOSYSTEM</text>
-  <!-- Title -->
-  <text x="600" y="280" text-anchor="middle" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#e8eaf0">The Human + Machine Equation</text>
-  <!-- Hook -->
-  <text x="600" y="374" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#7a8094" opacity="0.8">Most AI consultants ignore the human side.</text>
-  <!-- Accent line -->
-  <rect x="550" y="411" width="100" height="2" rx="1" fill="#f59e0b" opacity="0.4"/>
-  <!-- Bottom brand -->
-  <text x="1160" y="608" text-anchor="end" font-family="Courier New,monospace" font-size="10" fill="#f59e0b" opacity="0.3">trinityoneconsulting.com</text>
-</svg></div></div>
-<div class="hook">Most AI consultants ignore the human side.</div>
-<article>
-<p>Most AI consultants ignore the human side.</p>
-<p>Most culture consultants ignore technology.</p>
-<p>I've spent 20+ years watching both sides make the same mistake in different directions.</p>
-<p>The AI folks build brilliant automation that nobody uses because the team never bought in.</p>
-<h2 style="font-family:Georgia,serif;font-size:1.5rem;margin:2.5rem 0 1rem;color:var(--accent);">The culture folks build engaged, motivated...</h2>
-<p>The culture folks build engaged, motivated teams that burn out because manual processes are eating them alive.</p>
-<p>Neither side is wrong. Both sides are incomplete.</p>
-<p>That's the Human + Machine Equation — and it's the core thesis behind everything I build at Trinity One.</p>
-<p>AI optimizes operations.</p>
-<p>Dream Management optimizes people.</p>
-<p>Both are required.</p>
-<p>Neither alone is sufficient.</p>
-<p>Here's what I know: the highest-performing organizations I've ever seen aren't the ones with the best technology. They're not the ones with the best culture, either.</p>
-<p>They're the ones who figured out that people and machines work best when they're designed to serve each other.</p>
-<p style="padding-left:1.5rem;border-left:2px solid var(--accent);margin:0.75rem 0;opacity:0.9;">→ Dream Manager Program, for the human side: trinityoneconsulting.com</p>
-<p style="padding-left:1.5rem;border-left:2px solid var(--accent);margin:0.75rem 0;opacity:0.9;">→ Trinity Forge, if you're launching: forge.trinityoneconsulting.com</p>
-<p style="padding-left:1.5rem;border-left:2px solid var(--accent);margin:0.75rem 0;opacity:0.9;">→ Trinity Calibrate, for AI in your operations: calibrate.trinityoneconsulting.com</p>
-<p>Which side of this equation is your organization underinvesting in right now?</p>
-
+  <p class="deck">Most businesses are chasing AI like it's the answer. It's not. It's half the answer. Here's what 20 years of ERP implementations taught me — and what I built because of it.</p>
+  <p class="intro-large">Most businesses are chasing AI like it's the answer.</p>
+  <p>It's not. It's half the answer.</p>
+  <p>After 20+ years implementing ERP systems across hundreds of organizations, I kept watching the same thing happen. We'd deploy world-class technology — perfectly configured, thoroughly tested, on time and on budget — and six months later the client was struggling.</p>
+  <p>Not because the system failed.</p>
+  <p>Because the <strong>people</strong> did.</p>
+  <p>Disengaged teams resist change. Burned-out managers don't champion new tools. Employees who feel unseen find workarounds, cut corners, and quietly disengage — no matter how good the software is.</p>
+  <p>That's the gap nobody in the technology world wants to talk about.</p>
+  <p>So I went looking for the other half of the equation.</p>
+  <div class="divider"><span class="divider-mark">✦</span></div>
+  <p>I became a Certified Dream Manager because Matthew Kelly's premise stopped me cold:</p>
+  <blockquote>
+    <p>The most important thing you can do for your organization is help your people pursue their dreams.</p>
+  </blockquote>
+  <p>Not a motivational poster. A business strategy.</p>
+  <p>When people believe their workplace is invested in their actual life — not just their output — everything changes. Retention. Engagement. Performance. Culture. The numbers are real. The ROI is measurable.</p>
+  <p>But here's what I've found that nobody's putting together yet:</p>
+  <p><strong>Dream Management and AI aren't competing priorities. They're the two levers that move everything.</strong></p>
+  <div class="divider"><span class="divider-mark">✦</span></div>
+  <div class="equation">
+    <div class="equation-line">
+      <span class="eq-pill ai">AI Operations</span>
+      <span class="eq-op">+</span>
+      <span class="eq-pill dm">Dream Management</span>
+      <span class="eq-op">=</span>
+      <span class="eq-pill result">Winning Organizations</span>
+    </div>
+    <div class="equation-sub">The Human + Machine Equation</div>
+  </div>
+  <p>Think about it this way:</p>
+  <div class="two-col">
+    <div class="col-card machines">
+      <div class="col-label">AI Optimizes</div>
+      <h3>Your Operations</h3>
+      <p>It eliminates the manual work, the repetitive tasks, the bottlenecks that drain time and money. It compresses months of setup into weeks. It finds the 40% efficiency you didn't know you were leaving on the table.</p>
+    </div>
+    <div class="col-card people">
+      <div class="col-label">Dream Management Optimizes</div>
+      <h3>Your People</h3>
+      <p>It builds the engagement, the trust, and the discretionary effort that no software can manufacture. It's the reason people actually <em>use</em> the systems you build, <em>champion</em> the change you need, and <em>stay</em> when everyone else is poaching your talent.</p>
+    </div>
+  </div>
+  <p>One without the other is incomplete.</p>
+  <p>A company that deploys AI without addressing its people culture will <strong>automate its dysfunction.</strong></p>
+  <p>A company that invests in its people without modernizing its operations will <strong>love its way into irrelevance.</strong></p>
+  <p>The equation is both. Always both.</p>
+  <div class="divider"><span class="divider-mark">✦</span></div>
+  <p>That's why Trinity One Consulting exists — and why we built three divisions around this belief:</p>
+  <div class="divisions">
+    <div class="div-card">
+      <div class="div-icon forge">⚡</div>
+      <div>
+        <div class="div-name forge">Trinity Forge</div>
+        <h3>Launch with AI from Day One</h3>
+        <p>We help entrepreneurs compress months of startup infrastructure into a 2–4 week AI-powered sprint. Brand, website, CRM, automated workflows, and a go-live plan — everything a new business needs to launch with the infrastructure of a company twice its size.</p>
+      </div>
+    </div>
+    <div class="div-card">
+      <div class="div-icon calibrate">🎯</div>
+      <div>
+        <div class="div-name calibrate">Trinity Calibrate</div>
+        <h3>Find Where AI Moves the Needle</h3>
+        <p>We help established SMBs identify the specific places in their operations where AI creates measurable ROI — then we build it, deploy it, and train their team to sustain it. No guesswork. No bloated timelines. ROI in 60–90 days.</p>
+      </div>
+    </div>
+    <div class="div-card">
+      <div class="div-icon dream">✨</div>
+      <div>
+        <div class="div-name dream">The Dream Manager Program</div>
+        <h3>Build the Culture That Holds It All Together</h3>
+        <p>A structured, certified program that pairs employees with a dedicated Dream Manager to identify and pursue their personal and professional dreams — creating the engagement, loyalty, and discretionary effort that makes everything else work.</p>
+      </div>
+    </div>
+  </div>
+  <p>The companies that will win the next decade aren't betting on machines alone. They're not betting on people alone either.</p>
+  <p>They're solving the Human + Machine Equation.</p>
+  <p>That's the work. That's the belief. That's what this season is about.</p>
+  <div class="cta-block">
+    <h2>Ready to work on both sides of the equation?</h2>
+    <p>Whether you're launching something new, optimizing an established operation, or building a culture that actually retains people — let's talk.</p>
+    <div class="cta-links">
+      <a href="https://trinityoneconsulting.com" class="cta-btn primary">Start the Conversation</a>
+      <a href="https://thedreamdividend.com" class="cta-btn secondary">Listen to The Dream Dividend →</a>
+    </div>
+  </div>
+  <div class="author">
+    <img src="/images/headshot.jpg" alt="Kevin Patrick" class="author-avatar" style="object-fit:cover;">
+    <div>
+      <div class="author-name">Kevin Patrick</div>
+      <div class="author-title">Fractional COO &amp; EOS Integrator · Certified Dream Manager · Founder, Trinity One Consulting · Host, The Dream Dividend Podcast</div>
+    </div>
+  </div>
+  <div class="tags">
+    <a href="#" class="tag">Human + Machine</a>
+    <a href="#" class="tag">Dream Manager</a>
+    <a href="#" class="tag">AI Strategy</a>
+    <a href="#" class="tag">Leadership</a>
+    <a href="#" class="tag">Future of Work</a>
+    <a href="#" class="tag">Employee Engagement</a>
+    <a href="#" class="tag">Trinity One</a>
+    <a href="#" class="tag">ERP</a>
+  </div>
 </article>
-<div class="cta-section" style="margin:2rem auto;max-width:720px;padding:0 2rem;">
-  <div style="padding:2.5rem;background:var(--surface);border:1px solid rgba(255,255,255,0.08);border-radius:12px;text-align:center;">
-    <h3>Ready to Start the Conversation?</h3>
-    <p>Whether you're exploring Dream Management, AI implementation, or launching a new business — it starts with one conversation.</p>
-    <a href="https://trinityoneconsulting.com/" class="cta-btn" target="_blank" rel="noopener">Book a Free Consultation →</a>
-  </div>
-</div>
-<div class="author">
-  <div class="avatar">KP</div>
-  <div class="author-info">
-    <h4>Kevin Patrick</h4>
-    <p>Certified Dream Manager, EOS Integrator & Founder of Trinity One Consulting. 20+ years helping organizations unlock the potential of their people and technology.</p>
-  </div>
-</div>
-<footer>
-  <p>© 2026 Trinity One Consulting. All rights reserved.</p>
-  <p style="margin-top:0.5rem;"><a href="https://trinityoneconsulting.com" style="color:var(--accent);text-decoration:none;">trinityoneconsulting.com</a></p>
-</footer>
 </body>
 </html>

@@ -87,7 +87,62 @@ exports.handler = async (event) => {
       }
     }
 
-    // LinkedIn disabled for now
+    // ── SOCIAL MEDIA POSTING ──
+    // Posts to all configured platforms: LinkedIn (personal + orgs), Facebook Page, Instagram
+    if (item.socialText || item.linkedinText) {
+      const socialText = item.socialText || item.linkedinText;
+      const articleUrl = item.cta || null;
+
+      // LinkedIn — personal profile
+      if (accessToken && personUrn) {
+        try {
+          const liResult = await postToLinkedIn(item, { type: 'personal', author: `urn:li:person:${personUrn}` }, accessToken, socialText);
+          results.push(liResult);
+          console.log(`[linkedin-personal] ${liResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title}`);
+        } catch (err) {
+          results.push({ itemId: item.id, title: item.title, action: 'linkedin', target: 'personal', success: false, error: err.message });
+        }
+      }
+
+      // LinkedIn — org pages
+      for (const [orgName, orgId] of [['trinity', orgTrinity], ['dreamdividend', orgDream]]) {
+        if (orgId && accessToken) {
+          try {
+            const orgResult = await postToLinkedIn(item, { type: `org-${orgName}`, author: `urn:li:organization:${orgId}` }, accessToken, socialText);
+            results.push(orgResult);
+            console.log(`[linkedin-${orgName}] ${orgResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title}`);
+          } catch (err) {
+            results.push({ itemId: item.id, title: item.title, action: 'linkedin', target: `org-${orgName}`, success: false, error: err.message });
+          }
+        }
+      }
+
+      // Facebook Page
+      const fbPageToken = process.env.FB_PAGE_TOKEN;
+      const fbPageId = process.env.FB_PAGE_ID;
+      if (fbPageToken && fbPageId) {
+        try {
+          const fbResult = await postToFacebookPage(item, fbPageId, fbPageToken, socialText, articleUrl);
+          results.push(fbResult);
+          console.log(`[facebook-page] ${fbResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title}`);
+        } catch (err) {
+          results.push({ itemId: item.id, title: item.title, action: 'facebook', target: 'page', success: false, error: err.message });
+        }
+      }
+
+      // Instagram (requires imageUrl in schedule item)
+      const igAccountId = process.env.IG_ACCOUNT_ID;
+      const igToken = process.env.IG_PAGE_TOKEN || fbPageToken;
+      if (igAccountId && igToken && item.imageUrl) {
+        try {
+          const igResult = await postToInstagram(item, igAccountId, igToken, socialText, articleUrl);
+          results.push(igResult);
+          console.log(`[instagram] ${igResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title}`);
+        } catch (err) {
+          results.push({ itemId: item.id, title: item.title, action: 'instagram', target: 'business', success: false, error: err.message });
+        }
+      }
+    }
   }
 
   const summary = {
@@ -242,13 +297,14 @@ async function updatePostsJson(item, githubToken, repoOverride) {
 }
 
 // ── Post to LinkedIn ──
-async function postToLinkedIn(item, target, accessToken) {
+async function postToLinkedIn(item, target, accessToken, socialText) {
+  const text = socialText || item.linkedinText || item.socialText;
   const postBody = {
     author: target.author,
     lifecycleState: 'PUBLISHED',
     specificContent: {
       'com.linkedin.ugc.ShareContent': {
-        shareCommentary: { text: item.linkedinText },
+        shareCommentary: { text },
         shareMediaCategory: item.cta ? 'ARTICLE' : 'NONE',
       },
     },
@@ -284,5 +340,110 @@ async function postToLinkedIn(item, target, accessToken) {
     success: res.status === 201,
     postId: responseData?.id || null,
     error: res.status !== 201 ? responseData : null,
+  };
+}
+
+// ── Post to Facebook Page ──
+async function postToFacebookPage(item, pageId, pageToken, socialText, articleUrl) {
+  const params = new URLSearchParams();
+  params.append('access_token', pageToken);
+  params.append('message', socialText);
+  if (articleUrl) {
+    params.append('link', articleUrl);
+  }
+
+  const res = await fetch(`https://graph.facebook.com/v21.0/${pageId}/feed`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: params.toString(),
+  });
+
+  const data = await res.json();
+  return {
+    itemId: item.id,
+    title: item.title,
+    action: 'facebook',
+    target: 'page',
+    success: !!data.id,
+    status: res.status,
+    postId: data.id || null,
+    error: data.error || null,
+  };
+}
+
+// ── Post to Instagram ──
+// Two-step: create media container, then publish
+async function postToInstagram(item, igAccountId, accessToken, socialText, articleUrl) {
+  // Build caption — IG doesn't support clickable links in captions
+  let caption = socialText;
+  if (articleUrl) {
+    caption += '\n\n\ud83d\udd17 Link in bio';
+  }
+  if (caption.length > 2200) {
+    caption = caption.substring(0, 2197) + '...';
+  }
+
+  // Step 1: Create media container
+  const createParams = new URLSearchParams();
+  createParams.append('image_url', item.imageUrl);
+  createParams.append('caption', caption);
+  createParams.append('access_token', accessToken);
+
+  const createRes = await fetch(`https://graph.facebook.com/v21.0/${igAccountId}/media`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: createParams.toString(),
+  });
+  const createData = await createRes.json();
+
+  if (!createData.id) {
+    return { itemId: item.id, title: item.title, action: 'instagram', target: 'business', success: false, error: createData.error || createData };
+  }
+
+  const containerId = createData.id;
+
+  // Step 2: Poll until ready
+  let ready = false;
+  let attempts = 0;
+  while (!ready && attempts < 10) {
+    const statusRes = await fetch(
+      `https://graph.facebook.com/v21.0/${containerId}?fields=status_code&access_token=${accessToken}`
+    );
+    const statusData = await statusRes.json();
+    if (statusData.status_code === 'FINISHED') {
+      ready = true;
+    } else if (statusData.status_code === 'ERROR') {
+      return { itemId: item.id, title: item.title, action: 'instagram', target: 'business', success: false, error: 'Container processing failed' };
+    } else {
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      attempts++;
+    }
+  }
+
+  if (!ready) {
+    return { itemId: item.id, title: item.title, action: 'instagram', target: 'business', success: false, error: 'Container processing timed out' };
+  }
+
+  // Step 3: Publish
+  const publishParams = new URLSearchParams();
+  publishParams.append('creation_id', containerId);
+  publishParams.append('access_token', accessToken);
+
+  const publishRes = await fetch(`https://graph.facebook.com/v21.0/${igAccountId}/media_publish`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: publishParams.toString(),
+  });
+  const publishData = await publishRes.json();
+
+  return {
+    itemId: item.id,
+    title: item.title,
+    action: 'instagram',
+    target: 'business',
+    success: !!publishData.id,
+    status: publishRes.status,
+    postId: publishData.id || null,
+    error: publishData.error || null,
   };
 }

@@ -68,10 +68,11 @@ exports.handler = async (event) => {
     const lastName = nameParts.slice(1).join(' ') || firstName;
 
     const interestLabels = {
-      'dream-manager': 'Dream Manager Program',
-      'forge': 'Forge - AI Automation',
-      'calibrate': 'Calibrate - Business Optimization',
-      'erp': 'ERP Consulting',
+      'fractional-coo': 'Fractional COO / EOS Integrator',
+      'personal-coaching': 'Personal Dream Manager Coaching',
+      'dream-manager': 'Dream Manager Program (Organization)',
+      'forge': 'Trinity Forge - AI Business Launch',
+      'calibrate': 'Trinity Calibrate - AI Optimization',
       'general': 'General Inquiry'
     };
 
