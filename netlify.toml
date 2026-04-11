@@ -33,3 +33,9 @@
   from = "/blog/culture-eats-strategy"
   to = "/blog/culture-eats-strategy.html"
   status = 200
+
+# Branded booking page
+[[redirects]]
+  from = "/call"
+  to = "/call.html"
+  status = 200

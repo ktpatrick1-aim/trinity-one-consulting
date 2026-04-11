@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Discovery Call | Trinity One Consulting</title>
+  <meta name="description" content="Book a 30-minute discovery call with Kevin Patrick to talk about how the Dream Manager methodology can transform your team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+  <style>
+    /* /call page — shorter hero so the booking widget sits above the fold on most screens */
+    .hero.hero-call {
+      min-height: auto;
+      padding: 10rem 2rem 3rem;
+    }
+    .hero-call .hero-attribution {
+      margin-top: 1.25rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+    }
+
+    /* Calendly section */
+    .booking-section {
+      padding: 2rem 0 5rem;
+      background: var(--bg-primary);
+    }
+    .booking-section .calendly-inline-widget {
+      min-width: 320px;
+      min-height: 760px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+    }
+    .booking-fallback {
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .booking-fallback a {
+      color: var(--green-light);
+      text-decoration: underline;
+    }
+    .booking-fallback a:hover {
+      color: var(--text-primary);
+    }
+
+    /* Reassurance bullets */
+    .reassurance-section {
+      padding: 0 0 6rem;
+      background: var(--bg-primary);
+    }
+    .reassurance-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .reassurance-item {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      background: var(--bg-card);
+    }
+    .reassurance-item .icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .reassurance-item .label {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    @media (max-width: 720px) {
+      .reassurance-grid { grid-template-columns: 1fr; }
+      .hero.hero-call { padding: 8rem 1.25rem 2rem; }
+      .booking-section .calendly-inline-widget { min-height: 1000px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation (mirrors home page exactly) -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="images/logo.png" alt="Trinity One Consulting" class="nav-logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/index.html#services">How I Work</a></li>
+        <li><a href="/index.html#dream-manager">The Dream Manager Difference</a></li>
+        <li><a href="/index.html#technology">AI &amp; Technology</a></li>
+        <li><a href="/index.html#about">About</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="/call" class="nav-cta">Book a Call</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero-call">
+    <div class="hero-content">
+      <div class="hero-badge">Discovery Call</div>
+      <h1>Book a 30-Minute <span class="accent">Discovery Call</span></h1>
+      <p>Let's talk about how the Dream Manager methodology can transform your team.</p>
+      <div class="hero-attribution">Hosted by Kevin Patrick — Fractional COO, EOS Integrator &amp; Certified Dream Manager</div>
+    </div>
+  </section>
+
+  <!-- Calendly Embed -->
+  <section class="booking-section">
+    <div class="container">
+      <div
+        id="calendly-widget"
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/kevin-trinityoneconsulting?utm_source=trinityone&utm_medium=web&utm_campaign=discovery_call&primary_color=059669&background_color=0a0a0a&text_color=ffffff&hide_gdpr_banner=1&embed_type=Inline&embed_domain=trinityoneconsulting.com">
+      </div>
+      <p class="booking-fallback">
+        Having trouble with the embed?
+        <a href="https://calendly.com/kevin-trinityoneconsulting?utm_source=trinityone&utm_medium=web&utm_campaign=discovery_call" target="_blank" rel="noopener">Book directly here</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Reassurance -->
+  <section class="reassurance-section">
+    <div class="container">
+      <div class="reassurance-grid">
+        <div class="reassurance-item">
+          <span class="icon">⏱</span>
+          <div class="label">30 minutes, no obligation</div>
+        </div>
+        <div class="reassurance-item">
+          <span class="icon">👋</span>
+          <div class="label">Direct conversation with Kevin, not a sales rep</div>
+        </div>
+        <div class="reassurance-item">
+          <span class="icon">📅</span>
+          <div class="label">Calendar holds your slot instantly</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (mirrors home page exactly) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo-col">
+          <a href="/">
+            <img src="images/logo.png" alt="Trinity One Consulting" class="footer-logo-img">
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/index.html#services">Fractional COO &amp; Integrator</a></li>
+            <li><a href="/index.html#dream-manager">Dream Manager</a></li>
+            <li><a href="/index.html#technology">Trinity Forge</a></li>
+            <li><a href="/index.html#technology">Trinity Calibrate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="blog/">Blog</a></li>
+            <li><a href="https://thedreamdividend.com" target="_blank">The Dream Dividend Podcast</a></li>
+            <li><a href="/call">Book a Call</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/company/trinityoneconsulting" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:info@trinityoneconsulting.com">Email Us</a></li>
+            <li><a href="/call">Book a Call</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-about">
+          <p>AI optimizes operations. Dream Manager optimizes people. Kevin Patrick delivers both — as your Fractional COO &amp; Integrator.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Trinity One Consulting. All rights reserved. The Dream Manager Program is based on the work of Matthew Kelly &amp; Floyd Consulting. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+    UTM passthrough: merge any incoming utm_* params from window.location.search
+    into the Calendly embed URL BEFORE widget.js initializes. Brand UTMs
+    (utm_source, utm_medium, utm_campaign) are hard-coded above and stay locked;
+    visitor-supplied params (utm_content, utm_term, etc.) are appended.
+  -->
+  <script>
+    (function () {
+      var widget = document.getElementById('calendly-widget');
+      if (!widget) return;
+      var incoming = new URLSearchParams(window.location.search);
+      var existing = new URL(widget.getAttribute('data-url'));
+      incoming.forEach(function (value, key) {
+        if (key.indexOf('utm_') === 0 && !existing.searchParams.has(key)) {
+          existing.searchParams.set(key, value);
+        }
+      });
+      widget.setAttribute('data-url', existing.toString());
+    })();
+  </script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
