@@ -1,0 +1,17 @@
+# Trinity One v2 — Redirect Rules
+# Legacy single-page anchors → new dedicated pages (preserves ?utm_* via :splat)
+/#fractional-coo           /fractional-coo           301!
+/#dream-manager-program    /dream-manager-program    301!
+/#dream-manager-coaching   /dream-manager-coaching   301!
+/#about                    /about                    301!
+
+# Legacy path variants people may have linked
+/services/fractional-coo        /fractional-coo            301!
+/services/dream-manager         /dream-manager-program     301!
+/coaching                       /dream-manager-coaching    301!
+/dream-manager                  /dream-manager-program     301!
+
+# Splat forms — catch any query-string variant
+/fractional-coo/*               /fractional-coo/:splat     301!
+/dream-manager-program/*        /dream-manager-program/:splat 301!
+/dream-manager-coaching/*       /dream-manager-coaching/:splat 301!

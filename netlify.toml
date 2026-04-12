@@ -34,6 +34,27 @@
   to = "/blog/culture-eats-strategy.html"
   status = 200
 
+# New v2 pages — pretty URLs
+[[redirects]]
+  from = "/fractional-coo"
+  to = "/fractional-coo.html"
+  status = 200
+
+[[redirects]]
+  from = "/dream-manager-program"
+  to = "/dream-manager-program.html"
+  status = 200
+
+[[redirects]]
+  from = "/dream-manager-coaching"
+  to = "/dream-manager-coaching.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
 # Branded booking page
 [[redirects]]
   from = "/call"
