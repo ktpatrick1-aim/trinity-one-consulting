@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1F3A"/>
+      <stop offset="100%" stop-color="#1C3D5A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="60" y="60" width="6" height="80" fill="#D4A24C"/>
+  <text x="90" y="120" font-family="Georgia, serif" font-size="28" fill="#D4A24C" letter-spacing="4">TRINITY ONE CONSULTING</text>
+  <text x="60" y="280" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#FFFFFF">Unlock Your Organization's</text>
+  <text x="60" y="360" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#D4A24C">Greatest Asset &#x2014; Its People</text>
+  <text x="60" y="450" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#B8C5D6">Fractional COO &#xB7; Dream Manager &#xB7; AI Implementation</text>
+  <text x="60" y="560" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#8A9CB5">trinityoneconsulting.com</text>
+</svg>

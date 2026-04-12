@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0B1F3A"/><stop offset="100%" stop-color="#123050"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="60" y="60" width="6" height="80" fill="#D4A24C"/>
+  <text x="90" y="120" font-family="Georgia, serif" font-size="26" fill="#D4A24C" letter-spacing="4">FRACTIONAL COO &#xB7; EOS INTEGRATOR</text>
+  <text x="60" y="270" font-family="Georgia, serif" font-size="68" font-weight="bold" fill="#FFFFFF">A Fractional COO Who</text>
+  <text x="60" y="345" font-family="Georgia, serif" font-size="68" font-weight="bold" fill="#FFFFFF">Runs Both Sides of</text>
+  <text x="60" y="420" font-family="Georgia, serif" font-size="68" font-weight="bold" fill="#D4A24C">the Equation</text>
+  <text x="60" y="500" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#B8C5D6">Systems + People. Certified EOS Integrator + Dream Manager.</text>
+  <text x="60" y="570" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#8A9CB5">trinityoneconsulting.com/fractional-coo</text>
+</svg>

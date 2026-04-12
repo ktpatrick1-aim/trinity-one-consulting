@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0B1F3A"/><stop offset="100%" stop-color="#1F3A5C"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="60" y="60" width="6" height="80" fill="#D4A24C"/>
+  <text x="90" y="120" font-family="Georgia, serif" font-size="26" fill="#D4A24C" letter-spacing="4">1-ON-1 DREAM MANAGER COACHING</text>
+  <text x="60" y="290" font-family="Georgia, serif" font-size="76" font-weight="bold" fill="#FFFFFF">Your Dreams Don't</text>
+  <text x="60" y="375" font-family="Georgia, serif" font-size="76" font-weight="bold" fill="#D4A24C">Require Permission.</text>
+  <text x="60" y="470" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#B8C5D6">A structured methodology across 12 domains of life.</text>
+  <text x="60" y="570" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#8A9CB5">trinityoneconsulting.com/dream-manager-coaching</text>
+</svg>
