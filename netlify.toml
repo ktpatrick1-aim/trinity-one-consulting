@@ -60,3 +60,7 @@
   from = "/call"
   to = "/call.html"
   status = 200
+
+[[edge_functions]]
+  function = "track-visitor"
+  path = "/*"
