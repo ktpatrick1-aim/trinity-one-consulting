@@ -1,0 +1,9 @@
+{
+  "model": "claude-sonnet-4-6",
+  "notes": {
+    "project": "Trinity One / Trinity Forge / Trinity Calibrate",
+    "rationale": "Sonnet default — client-facing content, brand voice, and marketing quality matters here",
+    "override_cheap": "ck for quick copy edits, meta descriptions, or repeatable content blocks",
+    "override_heavy": "co for full campaign strategy, persona development, or GTM planning"
+  }
+}
