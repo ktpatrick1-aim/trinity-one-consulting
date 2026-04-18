@@ -15,7 +15,7 @@ export default async function handler(request, context) {
 
   const SUPABASE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
   const IPINFO_TOKEN = Deno.env.get('IPINFO_TOKEN');
-  const SITE_NAME = Deno.env.get('SITE_NAME') || 'unknown';
+  const SITE_NAME = 'trinity-one';
 
   const ip = context.ip || request.headers.get('x-forwarded-for')?.split(',')[0]?.trim();
   if (!ip || !SUPABASE_KEY) return response;
