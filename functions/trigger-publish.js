@@ -74,6 +74,7 @@ exports.handler = async (event) => {
         'ktpatrick1-aim/trinity_forge',
         'ktpatrick1-aim/trinity_calibrate',
         'ktpatrick1-aim/thedreamdividend',
+        'ktpatrick1-aim/trinity-cadence-web',
       ];
       for (const subRepo of allSubBrandRepos) {
         try {

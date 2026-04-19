@@ -755,8 +755,278 @@
     "icon": "\ud83d\udc9a"
   },
   {
-    "id": 66,
+    "id": 123,
     "date": "2026-05-01",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "The Operator: Why Every Visionary Needs One",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "The Visionary dreams. The Operator delivers. Most companies struggle because one of these seats is missing \u2014 or the same person is trying to fill both.",
+    "tag": "Trinity Cadence",
+    "icon": "\u2699\ufe0f",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-the-operator-why-every-visionary-needs-one.html",
+      "destPath": "blog/the-operator-why-every-visionary-needs-one.html"
+    }
+  },
+  {
+    "id": 124,
+    "date": "2026-05-02",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "Running a Disciplined Operating Cadence",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "The companies that scale aren't the ones with the best strategy. They're the ones with the most disciplined rhythm.",
+    "tag": "Trinity Cadence",
+    "icon": "\ud83c\udfaf",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-running-a-disciplined-operating-cadence.html",
+      "destPath": "blog/running-a-disciplined-operating-cadence.html"
+    }
+  },
+  {
+    "id": 125,
+    "date": "2026-05-03",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "The Huddle: How the Best Leadership Teams Run Their Week",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "90 minutes, same time every week, non-negotiable. The Huddle is where leadership teams turn noise into decisions.",
+    "tag": "Trinity Cadence",
+    "icon": "\ud83e\udd1d",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-the-huddle-how-the-best-leadership-teams-run-their-week.html",
+      "destPath": "blog/the-huddle-how-the-best-leadership-teams-run-their-week.html"
+    }
+  },
+  {
+    "id": 126,
+    "date": "2026-05-04",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "The Recalibration: What a Real Quarterly Session Looks Like",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "Off-site. Phones away. Two days. The Recalibration is where you stop executing long enough to check your bearings.",
+    "tag": "Trinity Cadence",
+    "icon": "\ud83e\udded",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-the-recalibration-what-a-real-quarterly-session-looks-like.html",
+      "destPath": "blog/the-recalibration-what-a-real-quarterly-session-looks-like.html"
+    }
+  },
+  {
+    "id": 127,
+    "date": "2026-05-05",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "The Reset: The Annual Session That Shapes the Year",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "Once a year, you step back, look at the whole business, and ask the only question that matters: are we still building what we said we'd build?",
+    "tag": "Trinity Cadence",
+    "icon": "\ud83d\udd01",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-the-reset-the-annual-session-that-shapes-the-year.html",
+      "destPath": "blog/the-reset-the-annual-session-that-shapes-the-year.html"
+    }
+  },
+  {
+    "id": 128,
+    "date": "2026-05-06",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "The Blueprint: A Single Page That Runs the Company",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "If your strategy doesn't fit on one page, your team can't run on it. The Blueprint is the document everyone returns to.",
+    "tag": "Trinity Cadence",
+    "icon": "\ud83d\udcd0",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-the-blueprint-a-single-page-that-runs-the-company.html",
+      "destPath": "blog/the-blueprint-a-single-page-that-runs-the-company.html"
+    }
+  },
+  {
+    "id": 129,
+    "date": "2026-05-07",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "The Seat Map: Why Org Charts Lie and What to Build Instead",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "An org chart shows who reports to who. A Seat Map shows who owns what. The difference is everything.",
+    "tag": "Trinity Cadence",
+    "icon": "\ud83d\uddfa\ufe0f",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-the-seat-map-why-org-charts-lie-and-what-to-build-instead.html",
+      "destPath": "blog/the-seat-map-why-org-charts-lie-and-what-to-build-instead.html"
+    }
+  },
+  {
+    "id": 130,
+    "date": "2026-05-08",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "The Pulse: The Weekly Scorecard That Ends the 'How Are We Doing?' Meeting",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "Five to fifteen numbers. Reviewed every week. Red, yellow, green. If you can't run your business on this, you need better numbers \u2014 not more meetings.",
+    "tag": "Trinity Cadence",
+    "icon": "\ud83d\udcca",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-the-pulse-the-weekly-scorecard-that-ends-the-how-are-we-doing-meeting.html",
+      "destPath": "blog/the-pulse-the-weekly-scorecard-that-ends-the-how-are-we-doing-meeting.html"
+    }
+  },
+  {
+    "id": 131,
+    "date": "2026-05-09",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "The Forge Loop: Surface, Shape, Solve",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "Every leadership team has a list of problems. Almost none have a disciplined way to resolve them. The Forge Loop fixes that.",
+    "tag": "Trinity Cadence",
+    "icon": "\ud83d\udd25",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-the-forge-loop-surface-shape-solve.html",
+      "destPath": "blog/the-forge-loop-surface-shape-solve.html"
+    }
+  },
+  {
+    "id": 132,
+    "date": "2026-05-10",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "The Fit Check: Grasp, Drive, and Capacity",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "Before you replace someone, run the Fit Check. Three factors tell you whether you have a coaching problem, a role problem, or a hiring problem.",
+    "tag": "Trinity Cadence",
+    "icon": "\u2705",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-the-fit-check-grasp-drive-and-capacity.html",
+      "destPath": "blog/the-fit-check-grasp-drive-and-capacity.html"
+    }
+  },
+  {
+    "id": 133,
+    "date": "2026-05-11",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "Playbooks: When Lived By All, the Business Runs Without You",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "A process you wrote down isn't a Playbook. A Playbook is a process lived by everyone \u2014 same way, every time.",
+    "tag": "Trinity Cadence",
+    "icon": "\ud83d\udcd8",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-playbooks-when-lived-by-all-the-business-runs-without-you.html",
+      "destPath": "blog/playbooks-when-lived-by-all-the-business-runs-without-you.html"
+    }
+  },
+  {
+    "id": 134,
+    "date": "2026-05-12",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "AI-Assisted Facilitation: When the Machine Runs Your Huddle",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "The hardest job in every leadership meeting is facilitating it. What if the facilitator never gets tired, biased, or distracted?",
+    "tag": "Trinity Cadence",
+    "icon": "\ud83e\udd16",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-ai-assisted-facilitation-when-the-machine-runs-your-huddle.html",
+      "destPath": "blog/ai-assisted-facilitation-when-the-machine-runs-your-huddle.html"
+    }
+  },
+  {
+    "id": 135,
+    "date": "2026-05-13",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "True North: The Difference Between Purpose and a Mission Statement",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "A mission statement hangs on a wall. True North drives every decision in the building. If your team can't name yours, you don't have one.",
+    "tag": "Trinity Cadence",
+    "icon": "\ud83e\udded",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-true-north-the-difference-between-purpose-and-a-mission-statement.html",
+      "destPath": "blog/true-north-the-difference-between-purpose-and-a-mission-statement.html"
+    }
+  },
+  {
+    "id": 136,
+    "date": "2026-05-14",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "The Check-In: A Quarterly 1:1 That Actually Means Something",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "Annual reviews are theater. The Check-In \u2014 60 minutes, four times a year, on the same five questions \u2014 is the conversation that builds a company.",
+    "tag": "Trinity Cadence",
+    "icon": "\ud83d\udcac",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-the-check-in-a-quarterly-1-1-that-actually-means-something.html",
+      "destPath": "blog/the-check-in-a-quarterly-1-1-that-actually-means-something.html"
+    }
+  },
+  {
+    "id": 137,
+    "date": "2026-05-15",
+    "brand": "cadence",
+    "targetBrand": "cadence",
+    "type": "blog",
+    "title": "Cadence + Dream Manager: The Human + Machine Equation",
+    "cta": "https://cadence.trinityoneconsulting.com/#contact",
+    "excerpt": "Trinity Cadence is the operating system for your business. Dream Manager is the operating system for your people. Run both \u2014 or watch competitors who do.",
+    "tag": "Trinity Cadence",
+    "icon": "\u26a1",
+    "readTime": "6 min",
+    "blog": {
+      "repo": "ktpatrick1-aim/trinity-one-consulting",
+      "sourceFile": "blog-cadence-plus-dream-manager-the-human-plus-machine-equation.html",
+      "destPath": "blog/cadence-plus-dream-manager-the-human-plus-machine-equation.html"
+    }
+  },
+  {
+    "id": 66,
+    "date": "2026-05-16",
     "brand": "trinity",
     "targetBrand": "trinity",
     "type": "blog",
@@ -775,7 +1045,7 @@
   },
   {
     "id": 67,
-    "date": "2026-05-02",
+    "date": "2026-05-17",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
@@ -794,7 +1064,7 @@
   },
   {
     "id": 68,
-    "date": "2026-05-03",
+    "date": "2026-05-18",
     "brand": "cross",
     "targetBrand": "dreamdividend",
     "type": "blog",
@@ -813,7 +1083,7 @@
   },
   {
     "id": 69,
-    "date": "2026-05-04",
+    "date": "2026-05-19",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "podcast",
@@ -823,7 +1093,7 @@
   },
   {
     "id": 70,
-    "date": "2026-05-05",
+    "date": "2026-05-20",
     "brand": "calibrate",
     "targetBrand": "calibrate",
     "type": "blog",
@@ -842,7 +1112,7 @@
   },
   {
     "id": 71,
-    "date": "2026-05-06",
+    "date": "2026-05-21",
     "brand": "dream",
     "targetBrand": "trinity",
     "type": "blog",
@@ -861,7 +1131,7 @@
   },
   {
     "id": 33,
-    "date": "2026-05-07",
+    "date": "2026-05-22",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
@@ -880,7 +1150,7 @@
   },
   {
     "id": 72,
-    "date": "2026-05-08",
+    "date": "2026-05-23",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
@@ -899,7 +1169,7 @@
   },
   {
     "id": 73,
-    "date": "2026-05-09",
+    "date": "2026-05-24",
     "brand": "cross",
     "targetBrand": "trinity",
     "type": "blog",
@@ -918,7 +1188,7 @@
   },
   {
     "id": 74,
-    "date": "2026-05-10",
+    "date": "2026-05-25",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "blog",
@@ -937,7 +1207,7 @@
   },
   {
     "id": 75,
-    "date": "2026-05-11",
+    "date": "2026-05-26",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "podcast",
@@ -947,7 +1217,7 @@
   },
   {
     "id": 76,
-    "date": "2026-05-12",
+    "date": "2026-05-27",
     "brand": "calibrate",
     "targetBrand": "calibrate",
     "type": "blog",
@@ -966,7 +1236,7 @@
   },
   {
     "id": 77,
-    "date": "2026-05-13",
+    "date": "2026-05-28",
     "brand": "trinity",
     "targetBrand": "trinity",
     "type": "blog",
@@ -985,7 +1255,7 @@
   },
   {
     "id": 35,
-    "date": "2026-05-14",
+    "date": "2026-05-29",
     "brand": "calibrate",
     "targetBrand": "calibrate",
     "type": "blog",
@@ -1004,7 +1274,7 @@
   },
   {
     "id": 78,
-    "date": "2026-05-15",
+    "date": "2026-05-30",
     "brand": "calibrate",
     "targetBrand": "calibrate",
     "type": "blog",
@@ -1022,7 +1292,7 @@
   },
   {
     "id": 79,
-    "date": "2026-05-16",
+    "date": "2026-05-31",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "blog",
@@ -1041,7 +1311,7 @@
   },
   {
     "id": 80,
-    "date": "2026-05-17",
+    "date": "2026-06-01",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
@@ -1060,7 +1330,7 @@
   },
   {
     "id": 81,
-    "date": "2026-05-18",
+    "date": "2026-06-02",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "podcast",
@@ -1070,7 +1340,7 @@
   },
   {
     "id": 82,
-    "date": "2026-05-19",
+    "date": "2026-06-03",
     "brand": "cross",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1089,7 +1359,7 @@
   },
   {
     "id": 83,
-    "date": "2026-05-20",
+    "date": "2026-06-04",
     "brand": "calibrate",
     "targetBrand": "calibrate",
     "type": "blog",
@@ -1108,7 +1378,7 @@
   },
   {
     "id": 37,
-    "date": "2026-05-21",
+    "date": "2026-06-05",
     "brand": "cross",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1127,7 +1397,7 @@
   },
   {
     "id": 84,
-    "date": "2026-05-22",
+    "date": "2026-06-06",
     "brand": "dream",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1146,7 +1416,7 @@
   },
   {
     "id": 85,
-    "date": "2026-05-23",
+    "date": "2026-06-07",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
@@ -1165,7 +1435,7 @@
   },
   {
     "id": 86,
-    "date": "2026-05-24",
+    "date": "2026-06-08",
     "brand": "cross",
     "targetBrand": "dreamdividend",
     "type": "blog",
@@ -1184,7 +1454,7 @@
   },
   {
     "id": 87,
-    "date": "2026-05-25",
+    "date": "2026-06-09",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "podcast",
@@ -1194,7 +1464,7 @@
   },
   {
     "id": 88,
-    "date": "2026-05-26",
+    "date": "2026-06-10",
     "brand": "calibrate",
     "targetBrand": "calibrate",
     "type": "blog",
@@ -1213,7 +1483,7 @@
   },
   {
     "id": 89,
-    "date": "2026-05-27",
+    "date": "2026-06-11",
     "brand": "trinity",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1232,7 +1502,7 @@
   },
   {
     "id": 90,
-    "date": "2026-05-28",
+    "date": "2026-06-12",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
@@ -1251,7 +1521,7 @@
   },
   {
     "id": 91,
-    "date": "2026-05-29",
+    "date": "2026-06-13",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "blog",
@@ -1270,7 +1540,7 @@
   },
   {
     "id": 92,
-    "date": "2026-05-30",
+    "date": "2026-06-14",
     "brand": "cross",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1289,7 +1559,7 @@
   },
   {
     "id": 93,
-    "date": "2026-05-31",
+    "date": "2026-06-15",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "blog",
@@ -1308,7 +1578,7 @@
   },
   {
     "id": 94,
-    "date": "2026-06-01",
+    "date": "2026-06-16",
     "brand": "calibrate",
     "targetBrand": "calibrate",
     "type": "blog",
@@ -1327,7 +1597,7 @@
   },
   {
     "id": 95,
-    "date": "2026-06-02",
+    "date": "2026-06-17",
     "brand": "dream",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1346,7 +1616,7 @@
   },
   {
     "id": 96,
-    "date": "2026-06-03",
+    "date": "2026-06-18",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
@@ -1365,7 +1635,7 @@
   },
   {
     "id": 97,
-    "date": "2026-06-04",
+    "date": "2026-06-19",
     "brand": "cross",
     "targetBrand": "dreamdividend",
     "type": "blog",
@@ -1384,7 +1654,7 @@
   },
   {
     "id": 98,
-    "date": "2026-06-05",
+    "date": "2026-06-20",
     "brand": "calibrate",
     "targetBrand": "calibrate",
     "type": "blog",
@@ -1403,7 +1673,7 @@
   },
   {
     "id": 99,
-    "date": "2026-06-06",
+    "date": "2026-06-21",
     "brand": "trinity",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1422,7 +1692,7 @@
   },
   {
     "id": 100,
-    "date": "2026-06-07",
+    "date": "2026-06-22",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
@@ -1441,7 +1711,7 @@
   },
   {
     "id": 101,
-    "date": "2026-06-08",
+    "date": "2026-06-23",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "podcast",
@@ -1451,7 +1721,7 @@
   },
   {
     "id": 102,
-    "date": "2026-06-09",
+    "date": "2026-06-24",
     "brand": "cross",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1470,7 +1740,7 @@
   },
   {
     "id": 103,
-    "date": "2026-06-10",
+    "date": "2026-06-25",
     "brand": "calibrate",
     "targetBrand": "calibrate",
     "type": "blog",
@@ -1489,7 +1759,7 @@
   },
   {
     "id": 104,
-    "date": "2026-06-11",
+    "date": "2026-06-26",
     "brand": "trinity",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1508,7 +1778,7 @@
   },
   {
     "id": 42,
-    "date": "2026-06-12",
+    "date": "2026-06-27",
     "brand": "cross",
     "targetBrand": "dreamdividend",
     "type": "blog",
@@ -1527,7 +1797,7 @@
   },
   {
     "id": 105,
-    "date": "2026-06-13",
+    "date": "2026-06-28",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
@@ -1546,7 +1816,7 @@
   },
   {
     "id": 106,
-    "date": "2026-06-14",
+    "date": "2026-06-29",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "blog",
@@ -1565,7 +1835,7 @@
   },
   {
     "id": 107,
-    "date": "2026-06-15",
+    "date": "2026-06-30",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "podcast",
@@ -1575,7 +1845,7 @@
   },
   {
     "id": 108,
-    "date": "2026-06-16",
+    "date": "2026-07-01",
     "brand": "calibrate",
     "targetBrand": "calibrate",
     "type": "blog",
@@ -1594,7 +1864,7 @@
   },
   {
     "id": 109,
-    "date": "2026-06-17",
+    "date": "2026-07-02",
     "brand": "trinity",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1613,7 +1883,7 @@
   },
   {
     "id": 110,
-    "date": "2026-06-18",
+    "date": "2026-07-03",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
@@ -1632,7 +1902,7 @@
   },
   {
     "id": 111,
-    "date": "2026-06-19",
+    "date": "2026-07-04",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "blog",
@@ -1651,7 +1921,7 @@
   },
   {
     "id": 112,
-    "date": "2026-06-20",
+    "date": "2026-07-05",
     "brand": "cross",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1670,7 +1940,7 @@
   },
   {
     "id": 113,
-    "date": "2026-06-21",
+    "date": "2026-07-06",
     "brand": "calibrate",
     "targetBrand": "calibrate",
     "type": "blog",
@@ -1689,7 +1959,7 @@
   },
   {
     "id": 114,
-    "date": "2026-06-22",
+    "date": "2026-07-07",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "podcast",
@@ -1699,7 +1969,7 @@
   },
   {
     "id": 115,
-    "date": "2026-06-23",
+    "date": "2026-07-08",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
@@ -1718,7 +1988,7 @@
   },
   {
     "id": 116,
-    "date": "2026-06-24",
+    "date": "2026-07-09",
     "brand": "trinity",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1737,7 +2007,7 @@
   },
   {
     "id": 117,
-    "date": "2026-06-25",
+    "date": "2026-07-10",
     "brand": "calibrate",
     "targetBrand": "calibrate",
     "type": "blog",
@@ -1756,7 +2026,7 @@
   },
   {
     "id": 118,
-    "date": "2026-06-26",
+    "date": "2026-07-11",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "blog",
@@ -1775,7 +2045,7 @@
   },
   {
     "id": 119,
-    "date": "2026-06-27",
+    "date": "2026-07-12",
     "brand": "cross",
     "targetBrand": "trinity",
     "type": "blog",
@@ -1794,7 +2064,7 @@
   },
   {
     "id": 120,
-    "date": "2026-06-28",
+    "date": "2026-07-13",
     "brand": "forge",
     "targetBrand": "forge",
     "type": "blog",
@@ -1813,7 +2083,7 @@
   },
   {
     "id": 121,
-    "date": "2026-06-29",
+    "date": "2026-07-14",
     "brand": "dream",
     "targetBrand": "dreamdividend",
     "type": "podcast",
@@ -1823,7 +2093,7 @@
   },
   {
     "id": 122,
-    "date": "2026-06-30",
+    "date": "2026-07-15",
     "brand": "cross",
     "targetBrand": "trinity",
     "type": "blog",
