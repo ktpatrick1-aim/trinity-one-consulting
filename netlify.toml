@@ -60,3 +60,9 @@
   from = "/call"
   to = "/call.html"
   status = 200
+
+# Partner Promise
+[[redirects]]
+  from = "/partner-promise"
+  to = "/partner-promise.html"
+  status = 200

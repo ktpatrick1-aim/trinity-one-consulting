@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Primary Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Trinity Cadence Partner Promise | Trinity One Consulting</title>
+  <meta name="description" content="Six commitments, in writing, from Trinity One Consulting to every Practitioner who brings a client onto Trinity Cadence. No poaching. No quiet reassignment. Your methodology, your relationship.">
+  <link rel="canonical" href="https://trinityoneconsulting.com/partner-promise">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Trinity One Consulting">
+  <meta property="og:title" content="The Trinity Cadence Partner Promise | Trinity One Consulting">
+  <meta property="og:description" content="Six commitments, in writing, from Trinity One Consulting to every Practitioner who partners with Trinity Cadence.">
+  <meta property="og:url" content="https://trinityoneconsulting.com/partner-promise">
+  <meta property="og:image" content="https://trinityoneconsulting.com/og/og-trinity-one-hub.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Trinity Cadence Partner Promise">
+  <meta name="twitter:description" content="Six commitments, in writing, from Trinity One Consulting to every Trinity Cadence Practitioner partner.">
+  <meta name="twitter:image" content="https://trinityoneconsulting.com/og/og-trinity-one-hub.png">
+
+  <!-- GTM -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K4H8LQW7');</script>
+
+  <!-- JSON-LD: Policy -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "The Trinity Cadence Partner Promise",
+    "description": "Six commitments from Trinity One Consulting to every Practitioner who partners with Trinity Cadence.",
+    "url": "https://trinityoneconsulting.com/partner-promise",
+    "publisher": { "@type": "Organization", "name": "Trinity One Consulting" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    /* ===== Partner Promise — page-specific ===== */
+    .promise-intro-section { padding: 5rem 0 2rem; }
+    .promise-intro-card {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2.5rem clamp(1.5rem, 4vw, 3rem);
+      position: relative;
+      overflow: hidden;
+    }
+    .promise-intro-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--gradient-green-blue);
+    }
+    .promise-intro-card p {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+    .promise-intro-card p + p { margin-top: 1rem; }
+    .promise-intro-card .intro-label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--green-light);
+      margin-bottom: 1rem;
+    }
+
+    .commitments-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .commitment-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: all var(--transition);
+    }
+    .commitment-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--gradient-green-blue);
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+    .commitment-card:hover {
+      border-color: var(--green-primary);
+      transform: translateY(-4px);
+    }
+    .commitment-card:hover::before { opacity: 1; }
+
+    .commitment-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--gradient-green-blue);
+      color: #0a0a0a;
+      font-weight: 800;
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 6px 20px rgba(16,185,129,0.25);
+    }
+
+    .commitment-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+
+    .commitment-card p {
+      color: var(--text-secondary);
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    .promise-closing {
+      max-width: 760px;
+      margin: 4rem auto 0;
+      padding: 2rem;
+      border-left: 3px solid var(--green-primary);
+      background: rgba(16,185,129,0.04);
+      border-radius: 0 12px 12px 0;
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      font-style: italic;
+    }
+
+    .promise-signature {
+      max-width: 760px;
+      margin: 2rem auto 0;
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+    .promise-signature .sig-name {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      background: var(--gradient-green-blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline-block;
+    }
+    .promise-signature .sig-meta { color: var(--text-muted); display: block; }
+    .promise-signature a { color: var(--green-light); }
+    .promise-signature a:hover { color: var(--text-primary); }
+
+    .promise-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.85rem 1.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: transparent;
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      font-family: var(--font-body);
+      transition: all var(--transition);
+    }
+    .btn-ghost:hover {
+      border-color: var(--purple-light);
+      color: var(--text-primary);
+    }
+
+    @media (max-width: 768px) {
+      .commitments-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== Print styles ===== */
+    @media print {
+      @page { size: letter; margin: 0.6in 0.7in; }
+      body {
+        background: #ffffff !important;
+        color: #1a1a2e !important;
+      }
+      .nav, .footer, .cta-section, .promise-actions { display: none !important; }
+      .hero {
+        min-height: auto !important;
+        padding: 0 0 20px !important;
+        background: #ffffff !important;
+        text-align: left !important;
+      }
+      .hero::before { display: none !important; }
+      .hero-content { max-width: 100% !important; }
+      .hero-badge {
+        background: transparent !important;
+        border: 1px solid #059669 !important;
+        color: #059669 !important;
+      }
+      .hero h1 { color: #1a1a2e !important; font-size: 22pt; }
+      .hero h1 .accent { -webkit-text-fill-color: #059669 !important; color: #059669 !important; }
+      .hero p { color: #334155 !important; font-size: 10.5pt; }
+      section { padding: 1rem 0 !important; background: #ffffff !important; }
+      .section-label { color: #059669 !important; }
+      .section-title, h2, h3 { color: #1a1a2e !important; }
+      .promise-intro-card, .commitment-card {
+        background: #ffffff !important;
+        border: 1px solid #e2e8f0 !important;
+        page-break-inside: avoid;
+      }
+      .promise-intro-card p, .commitment-card p { color: #475569 !important; }
+      .commitment-number {
+        background: #059669 !important;
+        color: #ffffff !important;
+        box-shadow: none !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .commitments-grid { grid-template-columns: 1fr 1fr !important; gap: 0.75rem !important; }
+      .promise-closing {
+        background: transparent !important;
+        border-left-color: #059669 !important;
+        color: #334155 !important;
+      }
+      .promise-signature .sig-name {
+        -webkit-text-fill-color: #1a1a2e !important;
+        color: #1a1a2e !important;
+      }
+      .promise-signature .sig-meta { color: #64748b !important; }
+      .promise-signature a { color: #059669 !important; }
+    }
+  </style>
+</head>
+<body>
+  <!-- GTM (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4H8LQW7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="images/logo.png" alt="Trinity One Consulting" class="nav-logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/fractional-coo">Fractional COO</a></li>
+        <li><a href="/dream-manager-program">Dream Manager Program</a></li>
+        <li><a href="/dream-manager-coaching">1-on-1 Coaching</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/call" class="nav-cta">Start a Conversation</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">The Trinity Cadence Partner Promise</div>
+      <h1>Our Commitment to <span class="accent">Practitioners</span></h1>
+      <p>Trinity Cadence is a product of Trinity One Consulting. When a Practitioner brings a client onto the platform, the last thing they need is the parent company angling for their seat. So we wrote it down — six commitments, in plain language.</p>
+      <div class="promise-actions">
+        <a href="/call" class="btn btn-primary">Talk to Kevin &rarr;</a>
+        <button type="button" class="btn-ghost" onclick="window.print()">Print / Save as PDF</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="promise-intro-section bg-dark">
+    <div class="container">
+      <div class="promise-intro-card">
+        <span class="intro-label">A Note From Kevin</span>
+        <p>I built Trinity Cadence because I needed it — as a Fractional COO and Integrator running cadence with my own clients. When I decided to make it available to other Practitioners, I made myself a promise: the tool would support your work, never compete with it.</p>
+        <p>You bring the clients. You bring the methodology. You bring the trust that was built over years of sitting in the Integrator seat with them. Trinity Cadence should amplify that work — not quietly angle to replace you. Here's how we make sure that stays true.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commitments -->
+  <section>
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label">Six Commitments</div>
+        <h2 class="section-title">What We Promise, In Writing</h2>
+        <p class="section-subtitle">These commitments apply to every Practitioner who brings a client organization onto Trinity Cadence — including certified EOS Integrators, Fractional COOs, business coaches, and facilitators.</p>
+      </div>
+
+      <div class="commitments-grid">
+
+        <div class="commitment-card">
+          <div class="commitment-number">1</div>
+          <h3>No Direct Consulting to Partner Clients</h3>
+          <p>Trinity One Consulting will not offer Fractional COO, Integrator, or consulting services to any client organization brought onto Trinity Cadence by a partner — for the duration of the partner relationship and 12 months after.</p>
+        </div>
+
+        <div class="commitment-card">
+          <div class="commitment-number">2</div>
+          <h3>No Poaching</h3>
+          <p>Trinity Cadence will not market consulting, facilitation, or implementation services directly to organizations with an active partner relationship. Product communications (feature updates, billing) are the only outbound contact.</p>
+        </div>
+
+        <div class="commitment-card">
+          <div class="commitment-number">3</div>
+          <h3>Transparent Attribution</h3>
+          <p>Partner-referred organizations are permanently tagged in the system. Attribution is visible to both the partner and Trinity Cadence. There is no mechanism to quietly reassign a client.</p>
+        </div>
+
+        <div class="commitment-card">
+          <div class="commitment-number">4</div>
+          <h3>Client Continuity</h3>
+          <p>If a partner disengages from a client, the client retains full access to Trinity Cadence at standard per-seat rates. No lock-in through the partner. No data loss. The client's history, Blueprint, Pulse data, and Playbooks remain intact.</p>
+        </div>
+
+        <div class="commitment-card">
+          <div class="commitment-number">5</div>
+          <h3>Partner-First Communication</h3>
+          <p>Product changes, pricing updates, and roadmap shifts are communicated to partners before they reach partner clients. Partners are never surprised by a change their client sees first.</p>
+        </div>
+
+        <div class="commitment-card">
+          <div class="commitment-number">6</div>
+          <h3>Your Methodology, Your Relationship</h3>
+          <p>Trinity Cadence is a platform, not a methodology. Partners bring their own facilitation style, coaching approach, and client relationship. Trinity Cadence supports the work — it does not replace the Practitioner.</p>
+        </div>
+
+      </div>
+
+      <div class="promise-closing">
+        This isn't a legal contract. It's a professional commitment from one Practitioner to another. If you have questions about how this applies to a specific situation, I'm a phone call away.
+      </div>
+
+      <div class="promise-signature">
+        <div class="sig-name">Kevin Patrick</div>
+        <span class="sig-meta">Fractional COO &amp; Integrator</span>
+        <span class="sig-meta">Founder, Trinity One Consulting</span>
+        <span class="sig-meta"><a href="mailto:kevin@trinityoneconsulting.com">kevin@trinityoneconsulting.com</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label">Partner With Us</div>
+        <h2 class="section-title">See Trinity Cadence From the Practitioner Side</h2>
+        <p class="section-subtitle">Practitioner pricing, attribution, and the Founding Partner Program live on the Trinity Cadence site. The commitments above apply the moment you bring your first client in.</p>
+      </div>
+
+      <div style="text-align: center; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="https://cadence.trinityoneconsulting.com/pricing.html" class="btn btn-primary" target="_blank" rel="noopener">See Practitioner Pricing &rarr;</a>
+        <a href="/call" class="btn btn-outline">Book a Partner Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo-col">
+          <a href="/">
+            <img src="images/logo.png" alt="Trinity One Consulting" class="footer-logo-img">
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/fractional-coo">Fractional COO & Integrator</a></li>
+            <li><a href="/dream-manager-program">Dream Manager Program</a></li>
+            <li><a href="/dream-manager-coaching">1-on-1 Coaching</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/partner-promise">Partner Promise</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="https://thedreamdividend.com" target="_blank" rel="noopener">The Dream Dividend Podcast</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/company/trinityoneconsulting" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:info@trinityoneconsulting.com">Email Us</a></li>
+            <li><a href="/call">Book a Call</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-about">
+          <p>AI optimizes operations. Dream Manager optimizes people. Kevin Patrick delivers both — as your Fractional COO & Integrator.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Trinity One Consulting. All rights reserved. The Dream Manager Program is based on the work of Matthew Kelly &amp; Floyd Consulting. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+<!-- RB2B Visitor Identification -->
+<script>!function(key) {if (window.reb2b) return;window.reb2b = {loaded: true};var s = document.createElement("script");s.async = true;s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";document.getElementsByTagName("script")[0].parentNode.insertBefore(s, document.getElementsByTagName("script")[0]);}("GNLKQH78R96Q");</script>
+</body>
+</html>
