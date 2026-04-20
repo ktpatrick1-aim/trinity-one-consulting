@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trinity Cadence — AI-Native Business Operating Platform</title>
+<meta name="description" content="Trinity Cadence is the AI-powered execution layer that works alongside your business operating framework — turning strategy sessions into living weekly action.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--violet-dark:#1E1047;--violet-mid:#2D1B6B;--violet-brand:#7C5CBF;--violet-light:#A88EFF;--violet-pale:#C5AEFF;--violet-bg:#EDE8FF;--gray-light:#F5F4F2;--gray-mid:#E0DDD8;--gray-text:#5A5855;--dark-text:#1A1916;--white:#ffffff}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:#F8F7F5;color:var(--dark-text);font-size:16px;line-height:1.6}
+.page{max-width:860px;margin:0 auto;padding:48px 32px 80px}
+.hero{background:var(--violet-mid);border-radius:20px;padding:52px 48px 40px;margin-bottom:48px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-80px;right:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(120,80,240,0.2) 0%,transparent 65%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-50px;left:60px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(120,80,240,0.1) 0%,transparent 65%);pointer-events:none}
+.wordmark{font-family:'DM Serif Display',serif;font-size:13px;color:var(--violet-light);letter-spacing:.06em;margin-bottom:6px;position:relative;z-index:1}
+.wordmark span{font-family:'DM Sans',sans-serif;font-weight:300;font-size:11px;color:rgba(255,255,255,.35);margin-left:10px}
+.eyebrow{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--violet-light);margin-bottom:18px;position:relative;z-index:1}
+.hero-title{font-family:'DM Serif Display',serif;font-size:clamp(32px,5vw,46px);line-height:1.1;color:#fff;margin-bottom:18px;position:relative;z-index:1}
+.hero-title em{font-style:italic;color:var(--violet-pale)}
+.hero-sub{font-size:15px;font-weight:300;color:rgba(255,255,255,.65);line-height:1.75;max-width:600px;margin-bottom:32px;position:relative;z-index:1}
+.badges{display:flex;flex-wrap:wrap;gap:10px;position:relative;z-index:1}
+.badge{display:inline-flex;align-items:center;gap:7px;background:rgba(168,142,255,.13);border:.5px solid rgba(168,142,255,.38);border-radius:20px;padding:6px 16px;font-size:12px;font-weight:400;color:var(--violet-pale)}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--violet-light);flex-shrink:0}
+.section{margin-bottom:48px}
+.section-label{font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--violet-brand);padding-bottom:10px;border-bottom:.5px solid var(--gray-mid);margin-bottom:20px}
+.gap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gap-card{background:var(--gray-light);border:.5px solid var(--gray-mid);border-radius:12px;padding:20px 18px}
+.gap-card h3{font-size:14px;font-weight:500;color:var(--dark-text);margin-bottom:8px;line-height:1.4}
+.gap-card p{font-size:13px;font-weight:300;color:var(--gray-text);line-height:1.65}
+.feature-list{display:flex;flex-direction:column;gap:12px}
+.feature-block{background:var(--white);border:.5px solid var(--gray-mid);border-radius:14px;padding:22px 24px;display:grid;grid-template-columns:170px 1fr;gap:24px;align-items:start}
+.feat-tag{display:inline-block;font-size:10px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;background:var(--violet-bg);color:var(--violet-brand);padding:3px 10px;border-radius:10px;margin-bottom:10px}
+.feat-name{font-size:15px;font-weight:500;color:var(--dark-text);line-height:1.3}
+.feat-desc{font-size:13px;font-weight:300;color:var(--gray-text);line-height:1.7;margin-bottom:14px}
+.bullet-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px}
+.bullet-item{font-size:12.5px;font-weight:400;color:var(--dark-text);line-height:1.5;padding-left:14px;position:relative}
+.bullet-item::before{content:'';position:absolute;left:0;top:7px;width:5px;height:5px;border-radius:50%;background:var(--violet-brand)}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.compare-card{background:var(--white);border:.5px solid var(--gray-mid);border-radius:12px;overflow:hidden}
+.compare-header{padding:14px 16px 10px;font-size:13px;font-weight:500;color:var(--violet-brand);border-bottom:.5px solid var(--gray-mid)}
+.compare-table{width:100%;border-collapse:collapse}
+.compare-table thead th{padding:8px 12px 6px;font-size:11px;font-weight:400;color:var(--gray-text);text-align:left}
+.compare-table tbody tr{border-top:.5px solid var(--gray-mid)}
+.compare-table tbody td{padding:9px 12px;font-size:12.5px}
+.compare-table tbody td:first-child{color:var(--gray-text);font-weight:400}
+.compare-table tbody td.them{color:#AAA;font-style:italic;font-weight:300}
+.compare-table tbody td.us{color:var(--violet-brand);font-weight:500}
+.who-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.who-card{background:var(--white);border:.5px solid var(--gray-mid);border-radius:12px;padding:20px 18px}
+.who-pill{display:inline-block;font-size:10px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;background:var(--violet-bg);color:var(--violet-brand);padding:3px 10px;border-radius:10px;margin-bottom:10px}
+.who-title{font-size:14px;font-weight:500;color:var(--dark-text);margin-bottom:8px;line-height:1.4}
+.who-body{font-size:13px;font-weight:300;color:var(--gray-text);line-height:1.65}
+.intro-line{font-size:15px;font-weight:400;color:var(--gray-text);margin-bottom:20px;line-height:1.7}
+.promise-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.promise-card{background:var(--white);border-left:4px solid var(--violet-brand);border-radius:0 12px 12px 0;padding:20px 20px 20px 22px}
+.promise-title{font-size:14px;font-weight:500;color:var(--violet-dark);margin-bottom:8px;line-height:1.4}
+.promise-body{font-size:13px;font-weight:300;color:var(--gray-text);line-height:1.7}
+.pull-quote{background:var(--violet-bg);border-radius:12px;padding:20px 32px;text-align:center;font-family:'DM Serif Display',serif;font-style:italic;font-size:17px;color:var(--violet-dark);line-height:1.5}
+.disclaimer{background:var(--gray-light);border-left:4px solid var(--violet-brand);border-radius:0 10px 10px 0;padding:18px 20px}
+.disclaimer-title{font-size:11px;font-weight:500;color:var(--violet-brand);letter-spacing:.04em;margin-bottom:8px}
+.disclaimer-body{font-size:13px;font-weight:300;color:var(--gray-text);line-height:1.75}
+.cta{background:var(--violet-dark);border-radius:16px;padding:44px 48px;margin-top:48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.cta-eyebrow{font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--violet-light);margin-bottom:10px}
+.cta-title{font-family:'DM Serif Display',serif;font-size:26px;color:#fff;line-height:1.25;margin-bottom:8px}
+.cta-title em{font-style:italic;color:var(--violet-pale)}
+.cta-sub{font-size:13px;font-weight:300;color:rgba(255,255,255,.45)}
+.cta-buttons{display:flex;flex-direction:column;gap:10px;flex-shrink:0}
+.cta-btn{display:inline-block;background:var(--violet-light);color:var(--violet-dark);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:12px 24px;border-radius:9px;text-decoration:none;text-align:center;white-space:nowrap;transition:opacity .15s}
+.cta-btn:hover{opacity:.88}
+.cta-btn-ghost{display:inline-block;background:rgba(168,142,255,.12);border:.5px solid rgba(168,142,255,.35);color:var(--violet-pale);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:400;padding:10px 24px;border-radius:9px;text-decoration:none;text-align:center;white-space:nowrap}
+.footer{margin-top:32px;text-align:center;font-size:12px;font-weight:300;color:#AAA}
+.footer a{color:#AAA;text-decoration:none;border-bottom:.5px solid #CCC}
+@media(max-width:640px){.page{padding:24px 20px 60px}.hero{padding:36px 28px 32px}.gap-grid,.compare-grid,.who-grid,.promise-grid{grid-template-columns:1fr}.feature-block{grid-template-columns:1fr;gap:12px}.bullet-grid{grid-template-columns:1fr}.cta{flex-direction:column;padding:32px 28px}.cta-buttons{flex-direction:row;flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="hero">
+  <div class="wordmark">Trinity Cadence <span>by Trinity One Consulting</span></div>
+  <div class="eyebrow">AI-Native Business Operating Platform</div>
+  <h1 class="hero-title">Your operating framework<br><em>finally has an intelligent backbone.</em></h1>
+  <p class="hero-sub">Trinity Cadence is the AI-powered execution layer that works alongside the business operating framework your leadership team already runs — turning strategy sessions into living, breathing weekly action.</p>
+  <div class="badges">
+    <div class="badge"><span class="badge-dot"></span>Works alongside EOS®-running teams</div>
+    <div class="badge"><span class="badge-dot"></span>OKRs, Scaling Up &amp; custom frameworks</div>
+    <div class="badge"><span class="badge-dot"></span>AI coaching built in — not bolted on</div>
+  </div>
+</div>
+<div class="section">
+  <div class="section-label">The gap no one talks about</div>
+  <div class="gap-grid">
+    <div class="gap-card"><h3>You leave every quarterly session energized.</h3><p>You’ve set rocks, clarified priorities, and aligned the team. Everyone’s nodding. The whiteboard looks great.</p></div>
+    <div class="gap-card"><h3>Then week three happens.</h3><p>Issues creep back. Action items live in someone’s notes. The team isn’t sure what to move next. Momentum bleeds out quietly.</p></div>
+    <div class="gap-card"><h3>Your framework isn’t the problem.</h3><p>The gap is execution infrastructure. There’s no intelligent layer keeping your team oriented between sessions. Cadence fills that gap.</p></div>
+  </div>
+</div>
+<div class="section">
+  <div class="section-label">Core platform features</div>
+  <div class="feature-list">
+    <div class="feature-block"><div class="feat-left"><div class="feat-tag">Weekly Execution</div><div class="feat-name">Anchors &amp; Next Seven</div></div><div class="feat-right"><p class="feat-desc">Your long-horizon goals and the seven highest-leverage weekly actions — surfaced, prioritized, and coached by AI. Not a to-do list. A strategic focus engine that learns what moves your business forward.</p><div class="bullet-grid"><div class="bullet-item">AI ranks actions by strategic impact, not just deadline</div><div class="bullet-item">Completion patterns reveal what your team consistently avoids</div><div class="bullet-item">Anchors cascade directly from Blueprint targets every week</div><div class="bullet-item">Persistent memory flags actions that keep rolling over</div></div></div></div>
+    <div class="feature-block"><div class="feat-left"><div class="feat-tag">Living Strategy Doc</div><div class="feat-name">The Blueprint</div></div><div class="feat-right"><p class="feat-desc">Values, vision, one-year targets, three-year picture, and issues log — all in one place with an AI coach embedded in every section. Not a PDF filed away. A document that talks back.</p><div class="bullet-grid"><div class="bullet-item">AI coach sharpens vague values into measurable outcomes</div><div class="bullet-item">Issues log AI-triaged by urgency and ownership</div><div class="bullet-item">Blueprint targets auto-cascade into weekly Anchors</div><div class="bullet-item">Version history captures how your strategy evolves</div></div></div></div>
+    <div class="feature-block"><div class="feat-left"><div class="feat-tag">Context-Aware Intelligence</div><div class="feat-name">AI Coaching Layer</div></div><div class="feat-right"><p class="feat-desc">Unlike generic AI that knows nothing about your business, Cadence coaching is grounded in your Blueprint, history, and team’s language. Every prompt is contextual — not cold-start.</p><div class="bullet-grid"><div class="bullet-item">Coach surfaces questions that expose hidden assumptions</div><div class="bullet-item">Dedicated coaching mode for every Blueprint section</div><div class="bullet-item">Nudges when priorities and weekly actions fall out of sync</div><div class="bullet-item">Adapts to role: owner, integrator, or department lead</div></div></div></div>
+    <div class="feature-block"><div class="feat-left"><div class="feat-tag">Built for Operators</div><div class="feat-name">Multi-Org Architecture</div></div><div class="feat-right"><p class="feat-desc">Built for fractional operators, integrators, and COOs managing more than one client. Each org is fully isolated while you operate across all of them from a single dashboard.</p><div class="bullet-grid"><div class="bullet-item">Switch between client orgs instantly — no logout required</div><div class="bullet-item">Operator view shows aggregate health across all clients</div><div class="bullet-item">Each org has its own billing, permissions, and data</div><div class="bullet-item">Built for the person running five companies, not just one</div></div></div></div>
+    <div class="feature-block"><div class="feat-left"><div class="feat-tag">Pattern Recognition</div><div class="feat-name">Cadence Intelligence</div></div><div class="feat-right"><p class="feat-desc">Over time, Cadence builds a picture of how your business executes — where energy pools, where it leaks, which issues recur under different names. Patterns sharpen coaching and planning.</p><div class="bullet-grid"><div class="bullet-item">Issue recurrence detection across quarters</div><div class="bullet-item">Action velocity: who is unblocked vs. consistently stuck</div><div class="bullet-item">Quarterly summaries auto-generated from weekly data</div><div class="bullet-item">Trend lines on completion rates, Blueprint edits, issue volume</div></div></div></div>
+  </div>
+</div>
+<div class="section">
+  <div class="section-label">How Cadence is different</div>
+  <div class="compare-grid">
+    <div class="compare-card"><div class="compare-header">vs. EOS® tools &amp; Ninety.io</div><table class="compare-table"><thead><tr><th></th><th>Others</th><th>Cadence</th></tr></thead><tbody><tr><td>AI coaching</td><td class="them">None / add-on</td><td class="us">Native, context-aware</td></tr><tr><td>Framework lock-in</td><td class="them">EOS® required</td><td class="us">Framework-agnostic</td></tr><tr><td>Multi-org support</td><td class="them">Single company</td><td class="us">Built-in, core feature</td></tr><tr><td>Issue pattern detect</td><td class="them">Manual</td><td class="us">Automated + longitudinal</td></tr><tr><td>Weekly prioritization</td><td class="them">User-driven</td><td class="us">AI-ranked, strategic</td></tr></tbody></table></div>
+    <div class="compare-card"><div class="compare-header">vs. generic AI / PM tools</div><table class="compare-table"><thead><tr><th></th><th>Others</th><th>Cadence</th></tr></thead><tbody><tr><td>Business context</td><td class="them">Cold-start always</td><td class="us">Persistent, org-specific</td></tr><tr><td>Operating system</td><td class="them">Tasks only</td><td class="us">Framework + execution</td></tr><tr><td>Strategy to action</td><td class="them">None</td><td class="us">Native cascade</td></tr><tr><td>Built for leadership</td><td class="them">General purpose</td><td class="us">Owner / integrator first</td></tr><tr><td>Quarterly reviews</td><td class="them">Not included</td><td class="us">Auto-generated summaries</td></tr></tbody></table></div>
+  </div>
+</div>
+<div class="section">
+  <div class="section-label">Who it’s built for</div>
+  <div class="who-grid">
+    <div class="who-card"><div class="who-pill">EOS® Teams</div><div class="who-title">Already running the Entrepreneurial Operating System?</div><p class="who-body">Cadence is not a replacement and makes no claim to EOS® methodology or IP. It’s the AI execution layer your implementer doesn’t build — keeping rocks moving and issues surfaced between Level 10s.</p></div>
+    <div class="who-card"><div class="who-pill">OKR, Scaling Up, or custom</div><div class="who-title">Your framework. Cadence’s language.</div><p class="who-body">Cadence adapts to your vocabulary. If your team says ‘OKRs’ not ‘rocks,’ the platform works with the language you’ve already trained your people in. No re-education required.</p></div>
+    <div class="who-card"><div class="who-pill">Fractional COOs &amp; Integrators</div><div class="who-title">Manage five clients. Look like you’re in five places at once.</div><p class="who-body">The multi-org dashboard was built for fractional operators. See health signals across all clients, jump into any Blueprint, and spend your limited hours on conversations that matter.</p></div>
+    <div class="who-card"><div class="who-pill">Growth-stage, no framework yet</div><div class="who-title">Start with Cadence. Build the rhythm as you go.</div><p class="who-body">If you’ve been running on gut instinct and spreadsheets, Cadence gives you a structured starting point without committing to a full implementation on day one. Grow into it at your pace.</p></div>
+  </div>
+</div>
+<div class="section">
+  <div class="section-label">Our promise to implementers</div>
+  <p class="intro-line">We are building this with you, not around you. That is not a marketing line. It is the operating principle of the company.</p>
+  <div class="promise-grid">
+    <div class="promise-card"><div class="promise-title">1. We will never sell around you.</div><p class="promise-body">Teams brought into Cadence by an Implementer stay credited to that Implementer. Your book of business is your book of business. We are the tool; you are the trusted advisor. That relationship is sacred to us because it is the one that creates the value in the first place.</p></div>
+    <div class="promise-card"><div class="promise-title">2. We will make you look better, every session.</div><p class="promise-body">Every feature is stress-tested against one question: does this make the Implementer more valuable in the room, or less? If it makes you less valuable, it does not ship.</p></div>
+    <div class="promise-card"><div class="promise-title">3. We will share what we learn.</div><p class="promise-body">Aggregated, anonymized patterns across thousands of weekly meetings, Rocks, and Issues — fed back to the people who coach companies for a living. You will know what great looks like, because we will show you.</p></div>
+    <div class="promise-card"><div class="promise-title">4. We will never forget whose shoulders we stand on.</div><p class="promise-body">The methodology you practice was hard-won. The vocabulary you use was earned. We honor both. We are not here to replace what works — we are here to make it run at the speed the rest of your business now runs at.</p></div>
+  </div>
+  <div class="pull-quote">“The Implementer is not a customer. The Implementer is the co-architect.”</div>
+</div>
+<div class="section">
+  <div class="section-label">Important note regarding EOS® and EOS Worldwide</div>
+  <div class="disclaimer">
+    <div class="disclaimer-title">Independent product — no affiliation with EOS Worldwide</div>
+    <p class="disclaimer-body">Trinity Cadence is an independent product developed by Trinity One Consulting. It is not affiliated with, endorsed by, licensed by, or in any way designed to circumvent EOS Worldwide, LLC or the Entrepreneurial Operating System® (EOS®). EOS® is a registered trademark of EOS Worldwide, LLC. Trinity Cadence does not replicate, repackage, or compete with EOS® proprietary tools or methodology. Many Trinity Cadence users are active EOS implementers and practitioners who run EOS® alongside Cadence as a complementary AI execution layer. Trinity One Consulting respects the intellectual property of EOS Worldwide and all other framework providers.</p>
+  </div>
+</div>
+<div class="cta">
+  <div>
+    <div class="cta-eyebrow">Trinity One Consulting · Trinity Cadence</div>
+    <div class="cta-title">Close the gap between strategy<br><em>and execution.</em></div>
+    <p class="cta-sub">Schedule a 30-minute walkthrough. No commitment required.</p>
+  </div>
+  <div class="cta-buttons">
+    <a href="https://calendly.com/trinityoneconsulting" target="_blank" class="cta-btn">Book a Walkthrough →</a>
+    <a href="mailto:kp@trinityoneconsulting.com" class="cta-btn-ghost">kp@trinityoneconsulting.com</a>
+  </div>
+</div>
+<div class="footer">
+  <p>Trinity Cadence is a product of Trinity One Consulting  ·  St. Augustine, FL  ·  <a href="https://trinityoneconsulting.com">trinityoneconsulting.com</a></p>
+</div>
+</div>
+</body>
+</html>
