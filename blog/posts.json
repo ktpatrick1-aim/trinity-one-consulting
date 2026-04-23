@@ -6,34 +6,16 @@
     "tag": "Trinity One",
     "date": "2026-04-23",
     "readTime": "5 min",
-    "icon": "💼"
-  },
-  {
-    "slug": "why-your-website-isnt-converting",
-    "title": "Why Your Website Isn't Converting",
-    "excerpt": "Most websites are brochures, not sales conversations. Three things that convert: answer the #1 question in 5 sec, one clear next step, zero friction.",
-    "tag": "Trinity Forge",
-    "date": "2026-04-22",
-    "readTime": "5 min",
-    "icon": "🚀"
-  },
-  {
-    "slug": "document-processing-the-low-hanging-fruit-of-ai",
-    "title": "Document Processing: The Low-Hanging Fruit of AI",
-    "excerpt": "If your team spends 5+ hours/week on document processing, you're leaving money on the table.",
-    "tag": "Trinity Calibrate",
-    "date": "2026-04-21",
-    "readTime": "5 min",
-    "icon": "🎯"
+    "icon": "\ud83d\udcbc"
   },
   {
     "slug": "the-12-rooms-selfie-which-room-are-you-neglecting",
-    "title": "The 12 Rooms Selfie — Which Room Are You Neglecting?",
+    "title": "The 12 Rooms Selfie \u2014 Which Room Are You Neglecting?",
     "excerpt": "I'll go first. My most neglected room this month: Physical.",
     "tag": "Dream Management",
     "date": "2026-04-19",
     "readTime": "5 min",
-    "icon": "💚"
+    "icon": "\ud83d\udc9a"
   },
   {
     "slug": "the-difference-between-a-job-and-a-calling",
@@ -42,16 +24,7 @@
     "tag": "Human + Machine",
     "date": "2026-04-18",
     "readTime": "5 min",
-    "icon": "⚡"
-  },
-  {
-    "slug": "3-signs-your-business-is-flying-blind",
-    "title": "3 Signs Your Business Is Flying Blind",
-    "excerpt": "If you can't answer these 3 questions in 30 seconds, we need to talk.",
-    "tag": "Trinity Calibrate",
-    "date": "2026-04-17",
-    "readTime": "5 min",
-    "icon": "🎯"
+    "icon": "\u26a1"
   },
   {
     "slug": "the-human-machine-equation-full-breakdown",
@@ -60,16 +33,7 @@
     "tag": "Human + Machine",
     "date": "2026-04-16",
     "readTime": "5 min",
-    "icon": "⚡"
-  },
-  {
-    "slug": "the-solopreneurs-first-30-days",
-    "title": "The Solopreneur's First 30 Days",
-    "excerpt": "Week 1: Brand + Positioning. Week 2: Website + Intake. Week 3: Systems + Automation. Week 4: Content + Launch.",
-    "tag": "Trinity Forge",
-    "date": "2026-04-15",
-    "readTime": "5 min",
-    "icon": "🚀"
+    "icon": "\u26a1"
   },
   {
     "slug": "what-sap-business-one-taught-me-about-people",
@@ -78,16 +42,7 @@
     "tag": "Trinity One",
     "date": "2026-04-14",
     "readTime": "5 min",
-    "icon": "💼"
-  },
-  {
-    "slug": "the-roi-of-saying-no-to-the-wrong-ai",
-    "title": "The ROI of Saying No to the Wrong AI",
-    "excerpt": "The most valuable thing I do: telling clients what NOT to buy.",
-    "tag": "Trinity Calibrate",
-    "date": "2026-04-11",
-    "readTime": "5 min",
-    "icon": "🎯"
+    "icon": "\ud83d\udcbc"
   },
   {
     "slug": "the-12-rooms-framework",
@@ -96,7 +51,7 @@
     "tag": "Dream Management",
     "date": "2026-04-10",
     "readTime": "10 min",
-    "icon": "💚"
+    "icon": "\ud83d\udc9a"
   },
   {
     "slug": "why-i-coach-middle-school-football",
@@ -105,16 +60,7 @@
     "tag": "Dream Management",
     "date": "2026-04-09",
     "readTime": "5 min",
-    "icon": "💚"
-  },
-  {
-    "slug": "the-mvp-myth-minimum-viable-isnt-enough",
-    "title": "The MVP Myth: Minimum Viable Isn't Enough",
-    "excerpt": "You can have a brilliant product and fail because your intake loses leads, your follow-up is manual, your invoicing takes 3 hours/week.",
-    "tag": "Trinity Forge",
-    "date": "2026-04-08",
-    "readTime": "5 min",
-    "icon": "🚀"
+    "icon": "\ud83d\udc9a"
   },
   {
     "slug": "the-biggest-lie-in-business-consulting",
@@ -123,7 +69,7 @@
     "tag": "Trinity One",
     "date": "2026-04-07",
     "readTime": "5 min",
-    "icon": "💼"
+    "icon": "\ud83d\udcbc"
   },
   {
     "slug": "faith-football-business-the-leadership-triad",
@@ -132,25 +78,7 @@
     "tag": "Human + Machine",
     "date": "2026-04-05",
     "readTime": "5 min",
-    "icon": "⚡"
-  },
-  {
-    "slug": "the-dashboard-problem-47-dashboards-zero-decisions",
-    "title": "The Dashboard Problem: 47 Dashboards, Zero Decisions",
-    "excerpt": "I walked into a client's office. They had 47 dashboards.",
-    "tag": "Trinity Calibrate",
-    "date": "2026-04-04",
-    "readTime": "5 min",
-    "icon": "🎯"
-  },
-  {
-    "slug": "the-dream-architects-season-3",
-    "title": "The Dream Architects: Season 3 of The Dream Dividend",
-    "excerpt": "Season 3 is here — The Dream Architects: Designing the Next Economy. 283 episodes in, this is the season KP has been building toward.",
-    "tag": "Dream Dividend",
-    "date": "2026-04-03",
-    "readTime": "5 min",
-    "icon": "🎙️"
+    "icon": "\u26a1"
   },
   {
     "slug": "why-70-of-erp-implementations-fail",
@@ -159,7 +87,7 @@
     "tag": "Trinity One",
     "date": "2026-04-02",
     "readTime": "5 min",
-    "icon": "💼"
+    "icon": "\ud83d\udcbc"
   },
   {
     "slug": "season-3-is-here-the-dream-architects",
@@ -168,16 +96,7 @@
     "tag": "Dream Management",
     "date": "2026-04-01",
     "readTime": "5 min",
-    "icon": "💚"
-  },
-  {
-    "slug": "what-a-50k-startup-budget-looks-like-in-2026",
-    "title": "What a $50K Startup Budget Looks Like in 2026",
-    "excerpt": "In 2020, launching a real business cost $50K minimum.",
-    "tag": "Trinity Forge",
-    "date": "2026-03-31",
-    "readTime": "5 min",
-    "icon": "🚀"
+    "icon": "\ud83d\udc9a"
   },
   {
     "slug": "the-question-that-changes-every-organization",
@@ -186,7 +105,7 @@
     "tag": "Dream Management",
     "date": "2026-03-30",
     "readTime": "5 min",
-    "icon": "💚"
+    "icon": "\ud83d\udc9a"
   },
   {
     "slug": "the-human-machine-equation",
@@ -195,25 +114,7 @@
     "tag": "Human + Machine",
     "date": "2026-03-29",
     "readTime": "5 min",
-    "icon": "⚡"
-  },
-  {
-    "slug": "3-questions-that-tell-me-if-youre-ready-for-ai",
-    "title": "3 Questions That Tell Me If You're Ready for AI",
-    "excerpt": "3 questions that tell me in 10 minutes whether a business is ready for AI:",
-    "tag": "Trinity Calibrate",
-    "date": "2026-03-28",
-    "readTime": "5 min",
-    "icon": "🎯"
-  },
-  {
-    "slug": "the-fear-that-kills-more-businesses-than-bad-ideas",
-    "title": "The Fear That Kills More Businesses Than Bad Ideas",
-    "excerpt": "The fear that kills more businesses than bad ideas:",
-    "tag": "Trinity Forge",
-    "date": "2026-03-27",
-    "readTime": "5 min",
-    "icon": "🚀"
+    "icon": "\u26a1"
   },
   {
     "slug": "retention-problem-isnt-about-compensation",
@@ -222,7 +123,7 @@
     "tag": "Dream Management",
     "date": "2026-03-26",
     "readTime": "6 min",
-    "icon": "💚"
+    "icon": "\ud83d\udc9a"
   },
   {
     "slug": "what-does-your-best-employee-dream-about",
@@ -231,25 +132,7 @@
     "tag": "Dream Management",
     "date": "2026-03-26",
     "readTime": "5 min",
-    "icon": "💚"
-  },
-  {
-    "slug": "you-dont-need-6-months-to-launch",
-    "title": "You Don't Need 6 Months to Launch. You Need 4 Weeks.",
-    "excerpt": "Trinity Forge compresses months of startup infrastructure into a 2-4 week AI-powered sprint.",
-    "tag": "Trinity Forge",
-    "date": "2026-03-25",
-    "readTime": "7 min",
-    "icon": "🚀"
-  },
-  {
-    "slug": "youre-not-behind-on-ai",
-    "title": "You're Not Behind on AI. You Just Haven't Had Anyone Show You Where It Fits.",
-    "excerpt": "Most AI implementations fail because companies solve the wrong problem first. The AI Readiness Audit changes that.",
-    "tag": "Trinity Calibrate",
-    "date": "2026-03-24",
-    "readTime": "8 min",
-    "icon": "🎯"
+    "icon": "\ud83d\udc9a"
   },
   {
     "slug": "why-dream-management-works",
@@ -258,24 +141,24 @@
     "tag": "Dream Management",
     "date": "2026-03-15",
     "readTime": "5 min",
-    "icon": "📝"
+    "icon": "\ud83d\udcdd"
   },
   {
     "slug": "ai-for-small-business",
-    "title": "AI Isn't Just for Enterprise — How Small Businesses Can Start Today",
+    "title": "AI Isn't Just for Enterprise \u2014 How Small Businesses Can Start Today",
     "excerpt": "You don't need a massive budget to leverage AI. Practical steps for small and mid-size organizations to start automating intelligently.",
     "tag": "AI & Automation",
     "date": "2026-03-08",
     "readTime": "4 min",
-    "icon": "🤖"
+    "icon": "\ud83e\udd16"
   },
   {
     "slug": "culture-eats-strategy",
-    "title": "Culture Eats Strategy for Breakfast — And Here's the Proof",
+    "title": "Culture Eats Strategy for Breakfast \u2014 And Here's the Proof",
     "excerpt": "Data-driven evidence that organizational culture is the single biggest predictor of long-term business performance.",
     "tag": "Culture",
     "date": "2026-02-28",
     "readTime": "6 min",
-    "icon": "🏢"
+    "icon": "\ud83c\udfe2"
   }
 ]
