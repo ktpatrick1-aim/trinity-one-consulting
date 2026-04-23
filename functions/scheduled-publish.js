@@ -1,6 +1,72 @@
 const fetch = require('node-fetch');
 const schedule = require('./content-schedule.json');
 
+// Each post has ONE canonical home, determined by its `tag` field.
+// No fan-out — publishing the same post to multiple domains creates duplicate
+// content and suppresses indexing on all of them.
+const TAG_TO_REPO = {
+  'Trinity Forge':     'ktpatrick1-aim/trinity_forge',
+  'Trinity Calibrate': 'ktpatrick1-aim/trinity_calibrate',
+  'Trinity One':       'ktpatrick1-aim/trinity-one-consulting',
+  'Dream Management':  'ktpatrick1-aim/trinity-one-consulting',
+  'Human + Machine':   'ktpatrick1-aim/trinity-one-consulting',
+  'AI & Automation':   'ktpatrick1-aim/trinity-one-consulting',
+  'Culture':           'ktpatrick1-aim/trinity-one-consulting',
+  'Dream Dividend':    'ktpatrick1-aim/thedreamdividend',
+  'Trinity Cadence':   'ktpatrick1-aim/trinity-cadence-web',
+};
+const TAG_TO_HOST = {
+  'Trinity Forge':     'forge.trinityoneconsulting.com',
+  'Trinity Calibrate': 'calibrate.trinityoneconsulting.com',
+  'Trinity One':       'trinityoneconsulting.com',
+  'Dream Management':  'trinityoneconsulting.com',
+  'Human + Machine':   'trinityoneconsulting.com',
+  'AI & Automation':   'trinityoneconsulting.com',
+  'Culture':           'trinityoneconsulting.com',
+  'Dream Dividend':    'thedreamdividend.com',
+  'Trinity Cadence':   'cadence.trinityoneconsulting.com',
+};
+const FALLBACK_REPO = 'ktpatrick1-aim/trinity-one-consulting';
+const FALLBACK_HOST = 'trinityoneconsulting.com';
+
+// Returns the canonical public URL for a post, given its tag and slug.
+// Root domain uses extensionless pretty URLs; sub-brands use .html.
+function canonicalBlogUrl(tag, slug) {
+  const host = TAG_TO_HOST[tag] || FALLBACK_HOST;
+  const ext = host === 'trinityoneconsulting.com' ? '' : '.html';
+  return `https://${host}/blog/${slug}${ext}`;
+}
+
+// Rewrites the generic source HTML so its canonical URL, og:url, and
+// "Back to Blog" nav link point at the deploy target's actual domain.
+// og:url and canonical are inserted if missing — every deployed post gets them.
+function canonicalizeHtml(html, tag, slug) {
+  const canonicalUrl = canonicalBlogUrl(tag, slug);
+  const host = TAG_TO_HOST[tag] || FALLBACK_HOST;
+  const ogTag = `<meta property="og:url" content="${canonicalUrl}">`;
+  const canonicalTag = `<link rel="canonical" href="${canonicalUrl}">`;
+
+  if (/<meta property="og:url"/.test(html)) {
+    html = html.replace(/<meta property="og:url" content="[^"]*">/, ogTag);
+  } else {
+    html = html.replace(/(<meta name="viewport"[^>]*>)/, `$1\n${ogTag}`);
+  }
+
+  if (/<link rel="canonical"/.test(html)) {
+    html = html.replace(/<link rel="canonical" href="[^"]*">/, canonicalTag);
+  } else {
+    html = html.replace(/(<meta name="viewport"[^>]*>)/, `$1\n${canonicalTag}`);
+  }
+
+  // "Back to Blog" — rewrite if present, don't invent nav if missing
+  html = html.replace(
+    /(<a href=")https:\/\/[^/"]+(\/blog\/">\s*←\s*Back to Blog<\/a>)/,
+    `$1https://${host}$2`
+  );
+
+  return html;
+}
+
 // Netlify Scheduled Function — runs daily at 8am ET (12:00 UTC)
 exports.handler = async (event) => {
   const accessToken = process.env.LINKEDIN_ACCESS_TOKEN;
@@ -26,64 +92,40 @@ exports.handler = async (event) => {
 
   for (const item of dueItems) {
     // ── BLOG DEPLOY via GitHub API ──
-    // Step 1: Always deploy to trinityoneconsulting.com first (the hub)
+    // Each post has ONE canonical repo, based on its `tag` field. No fan-out.
     if (item.blog && githubToken) {
-      let hubDeploySuccess = false;
+      const canonicalRepo = TAG_TO_REPO[item.tag] || FALLBACK_REPO;
+      if (!TAG_TO_REPO[item.tag]) {
+        console.log(`[blog] WARN: unknown tag "${item.tag}" for "${item.title}" — falling back to ${FALLBACK_REPO}`);
+      }
+
+      let deploySuccess = false;
       try {
-        const hubResult = await deployBlog({
+        const deployResult = await deployBlog({
           ...item,
-          blog: { ...item.blog, repo: 'ktpatrick1-aim/trinity-one-consulting' }
+          blog: { ...item.blog, repo: canonicalRepo }
         }, githubToken);
-        hubResult.action = 'blog-hub';
-        results.push(hubResult);
-        hubDeploySuccess = hubResult.success;
-        console.log(`[blog-hub] ${hubResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title} → trinity-one-consulting`);
+        deployResult.action = 'blog';
+        deployResult.repo = canonicalRepo;
+        results.push(deployResult);
+        deploySuccess = deployResult.success;
+        console.log(`[blog] ${deployResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title} → ${canonicalRepo}`);
       } catch (err) {
-        results.push({ itemId: item.id, title: item.title, action: 'blog-hub', success: false, error: err.message });
-        console.log(`[blog-hub] ERROR: ${item.title}: ${err.message}`);
+        results.push({ itemId: item.id, title: item.title, action: 'blog', repo: canonicalRepo, success: false, error: err.message });
+        console.log(`[blog] ERROR: ${item.title}: ${err.message}`);
       }
 
-      // Step 2: Update posts.json on the hub repo after successful deploy
-      if (hubDeploySuccess) {
+      // Update posts.json on the same canonical repo
+      if (deploySuccess) {
         try {
-          const postsResult = await updatePostsJson(item, githubToken);
+          const postsResult = await updatePostsJson(item, githubToken, canonicalRepo);
+          postsResult.action = 'posts-json';
+          postsResult.repo = canonicalRepo;
           results.push(postsResult);
-          console.log(`[posts-json] ${postsResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title}`);
+          console.log(`[posts-json] ${postsResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title} → ${canonicalRepo}`);
         } catch (err) {
-          results.push({ itemId: item.id, title: item.title, action: 'posts-json', success: false, error: err.message });
+          results.push({ itemId: item.id, title: item.title, action: 'posts-json', repo: canonicalRepo, success: false, error: err.message });
           console.log(`[posts-json] ERROR: ${item.title}: ${err.message}`);
-        }
-      }
-
-      // Step 3: Fan out to ALL sub-brand repos
-      const allSubBrandRepos = [
-        'ktpatrick1-aim/trinity_forge',
-        'ktpatrick1-aim/trinity_calibrate',
-        'ktpatrick1-aim/thedreamdividend',
-        'ktpatrick1-aim/trinity-cadence-web',
-      ];
-      for (const subRepo of allSubBrandRepos) {
-        try {
-          const brandResult = await deployBlog({
-            ...item,
-            blog: { ...item.blog, repo: subRepo }
-          }, githubToken);
-          brandResult.action = 'blog-' + subRepo.split('/')[1];
-          results.push(brandResult);
-          console.log(`[blog-brand] ${brandResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title} → ${subRepo}`);
-        } catch (err) {
-          results.push({ itemId: item.id, title: item.title, action: 'blog-' + subRepo.split('/')[1], success: false, error: err.message });
-          console.log(`[blog-brand] ERROR: ${item.title}: ${err.message}`);
-        }
-
-        try {
-          const subPostsResult = await updatePostsJson(item, githubToken, subRepo);
-          subPostsResult.action = 'posts-json-' + subRepo.split('/')[1];
-          results.push(subPostsResult);
-          console.log(`[posts-json-brand] ${subPostsResult.success ? 'SUCCESS' : 'FAILED'}: ${item.title} → ${subRepo}`);
-        } catch (err) {
-          results.push({ itemId: item.id, title: item.title, action: 'posts-json-' + subRepo.split('/')[1], success: false, error: err.message });
-          console.log(`[posts-json-brand] ERROR: ${item.title}: ${err.message}`);
         }
       }
     }
@@ -177,7 +219,13 @@ async function deployBlog(item, githubToken) {
   }
 
   const sourceData = await sourceRes.json();
-  const content = sourceData.content; // Already base64 encoded
+
+  // Rewrite og:url, canonical, and "Back to Blog" link to match the
+  // canonical deploy destination. Source files stay generic.
+  const rawHtml = Buffer.from(sourceData.content, 'base64').toString('utf-8');
+  const slug = destPath.replace(/^blog\//, '').replace(/\.html$/, '');
+  const rewritten = canonicalizeHtml(rawHtml, item.tag, slug);
+  const content = Buffer.from(rewritten, 'utf-8').toString('base64');
 
   // 2. Check if dest file already exists (need SHA to update)
   let existingSha = null;
