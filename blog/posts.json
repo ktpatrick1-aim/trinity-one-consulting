@@ -1,21 +1,30 @@
 [
   {
+    "slug": "the-cost-of-an-unengaged-employee",
+    "title": "The Cost of an Unengaged Employee",
+    "excerpt": "67% not engaged. Each costs $3,400 per $10K salary. For 200 people at $55K = $2.5M/year in lost productivity.",
+    "tag": "Dream Management",
+    "date": "2026-04-25",
+    "readTime": "5 min",
+    "icon": "💚"
+  },
+  {
     "slug": "eos-dream-management-why-the-flywheel-works",
     "title": "EOS + Dream Management: Why the Flywheel Works",
     "excerpt": "Every traction problem I've seen traces back to the same root: the people aren't bought in.",
     "tag": "Trinity One",
     "date": "2026-04-23",
     "readTime": "5 min",
-    "icon": "\ud83d\udcbc"
+    "icon": "💼"
   },
   {
     "slug": "the-12-rooms-selfie-which-room-are-you-neglecting",
-    "title": "The 12 Rooms Selfie \u2014 Which Room Are You Neglecting?",
+    "title": "The 12 Rooms Selfie — Which Room Are You Neglecting?",
     "excerpt": "I'll go first. My most neglected room this month: Physical.",
     "tag": "Dream Management",
     "date": "2026-04-19",
     "readTime": "5 min",
-    "icon": "\ud83d\udc9a"
+    "icon": "💚"
   },
   {
     "slug": "the-difference-between-a-job-and-a-calling",
@@ -24,7 +33,7 @@
     "tag": "Human + Machine",
     "date": "2026-04-18",
     "readTime": "5 min",
-    "icon": "\u26a1"
+    "icon": "⚡"
   },
   {
     "slug": "the-human-machine-equation-full-breakdown",
@@ -33,7 +42,7 @@
     "tag": "Human + Machine",
     "date": "2026-04-16",
     "readTime": "5 min",
-    "icon": "\u26a1"
+    "icon": "⚡"
   },
   {
     "slug": "what-sap-business-one-taught-me-about-people",
@@ -42,7 +51,7 @@
     "tag": "Trinity One",
     "date": "2026-04-14",
     "readTime": "5 min",
-    "icon": "\ud83d\udcbc"
+    "icon": "💼"
   },
   {
     "slug": "the-12-rooms-framework",
@@ -51,7 +60,7 @@
     "tag": "Dream Management",
     "date": "2026-04-10",
     "readTime": "10 min",
-    "icon": "\ud83d\udc9a"
+    "icon": "💚"
   },
   {
     "slug": "why-i-coach-middle-school-football",
@@ -60,7 +69,7 @@
     "tag": "Dream Management",
     "date": "2026-04-09",
     "readTime": "5 min",
-    "icon": "\ud83d\udc9a"
+    "icon": "💚"
   },
   {
     "slug": "the-biggest-lie-in-business-consulting",
@@ -69,7 +78,7 @@
     "tag": "Trinity One",
     "date": "2026-04-07",
     "readTime": "5 min",
-    "icon": "\ud83d\udcbc"
+    "icon": "💼"
   },
   {
     "slug": "faith-football-business-the-leadership-triad",
@@ -78,7 +87,7 @@
     "tag": "Human + Machine",
     "date": "2026-04-05",
     "readTime": "5 min",
-    "icon": "\u26a1"
+    "icon": "⚡"
   },
   {
     "slug": "why-70-of-erp-implementations-fail",
@@ -87,7 +96,7 @@
     "tag": "Trinity One",
     "date": "2026-04-02",
     "readTime": "5 min",
-    "icon": "\ud83d\udcbc"
+    "icon": "💼"
   },
   {
     "slug": "season-3-is-here-the-dream-architects",
@@ -96,7 +105,7 @@
     "tag": "Dream Management",
     "date": "2026-04-01",
     "readTime": "5 min",
-    "icon": "\ud83d\udc9a"
+    "icon": "💚"
   },
   {
     "slug": "the-question-that-changes-every-organization",
@@ -105,7 +114,7 @@
     "tag": "Dream Management",
     "date": "2026-03-30",
     "readTime": "5 min",
-    "icon": "\ud83d\udc9a"
+    "icon": "💚"
   },
   {
     "slug": "the-human-machine-equation",
@@ -114,7 +123,7 @@
     "tag": "Human + Machine",
     "date": "2026-03-29",
     "readTime": "5 min",
-    "icon": "\u26a1"
+    "icon": "⚡"
   },
   {
     "slug": "retention-problem-isnt-about-compensation",
@@ -123,7 +132,7 @@
     "tag": "Dream Management",
     "date": "2026-03-26",
     "readTime": "6 min",
-    "icon": "\ud83d\udc9a"
+    "icon": "💚"
   },
   {
     "slug": "what-does-your-best-employee-dream-about",
@@ -132,7 +141,7 @@
     "tag": "Dream Management",
     "date": "2026-03-26",
     "readTime": "5 min",
-    "icon": "\ud83d\udc9a"
+    "icon": "💚"
   },
   {
     "slug": "why-dream-management-works",
@@ -141,24 +150,24 @@
     "tag": "Dream Management",
     "date": "2026-03-15",
     "readTime": "5 min",
-    "icon": "\ud83d\udcdd"
+    "icon": "📝"
   },
   {
     "slug": "ai-for-small-business",
-    "title": "AI Isn't Just for Enterprise \u2014 How Small Businesses Can Start Today",
+    "title": "AI Isn't Just for Enterprise — How Small Businesses Can Start Today",
     "excerpt": "You don't need a massive budget to leverage AI. Practical steps for small and mid-size organizations to start automating intelligently.",
     "tag": "AI & Automation",
     "date": "2026-03-08",
     "readTime": "4 min",
-    "icon": "\ud83e\udd16"
+    "icon": "🤖"
   },
   {
     "slug": "culture-eats-strategy",
-    "title": "Culture Eats Strategy for Breakfast \u2014 And Here's the Proof",
+    "title": "Culture Eats Strategy for Breakfast — And Here's the Proof",
     "excerpt": "Data-driven evidence that organizational culture is the single biggest predictor of long-term business performance.",
     "tag": "Culture",
     "date": "2026-02-28",
     "readTime": "6 min",
-    "icon": "\ud83c\udfe2"
+    "icon": "🏢"
   }
 ]
