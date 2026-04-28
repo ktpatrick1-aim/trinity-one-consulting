@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trinity One — One-Pagers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0A0A0F;
+    color: #fff;
+    min-height: 100vh;
+    padding: 48px 40px 64px;
+  }
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .logo-pill {
+    background: #fff;
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .logo-pill img { height: 36px; width: auto; display: block; }
+
+  .header-text h1 {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .header-text p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #5A5A6E;
+    margin-top: 2px;
+    letter-spacing: 0.04em;
+  }
+
+  .section-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #5A5A6E;
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    background: #13131A;
+    border: 1px solid #1E1E2A;
+    border-radius: 8px;
+    padding: 20px 22px 18px;
+    text-decoration: none;
+    display: block;
+    transition: border-color 0.15s, background 0.15s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--card-accent);
+  }
+
+  .card:hover {
+    border-color: var(--card-accent);
+    background: #17171F;
+  }
+
+  .card-eyebrow {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--card-accent);
+    display: block;
+    margin-bottom: 8px;
+    opacity: 0.85;
+  }
+
+  .card-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 6px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .card-tagline {
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 600;
+    color: #7070A0;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+
+  .card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--card-accent);
+    opacity: 0.8;
+  }
+
+  .card-link svg { width: 12px; height: 12px; }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #1E1E2A;
+    margin: 32px 0 28px;
+  }
+
+  footer-bar {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #3A3A52;
+    margin-top: 48px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="page-header">
+    <div class="logo-pill">
+      <img src="../images/logo.png" alt="Trinity One Consulting">
+    </div>
+    <div class="header-text">
+      <h1>One-Pagers</h1>
+      <p>Sales &amp; leave-behind documents · trinityoneconsulting.com</p>
+    </div>
+  </div>
+
+  <!-- Consulting Services -->
+  <span class="section-label">Consulting Services</span>
+  <div class="grid">
+
+    <a href="one-pager-fractional-coo.html" class="card" style="--card-accent: #3D3D9E;">
+      <span class="card-eyebrow">Fractional COO &amp; EOS Integrator</span>
+      <div class="card-title">Fractional COO &amp; EOS Integrator</div>
+      <div class="card-tagline">"The operator who runs the business so the Visionary can build it."</div>
+      <span class="card-link">View One-Pager <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+    </a>
+
+    <a href="one-pager-trinity-forge.html" class="card" style="--card-accent: #E07B1F;">
+      <span class="card-eyebrow">AI-Powered Business Launch</span>
+      <div class="card-title">Trinity Forge</div>
+      <div class="card-tagline">"Launch with AI in the foundation — not bolted on three years later."</div>
+      <span class="card-link">View One-Pager <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+    </a>
+
+    <a href="one-pager-trinity-calibrate.html" class="card" style="--card-accent: #1F6FE0;">
+      <span class="card-eyebrow">AI Optimization for SMBs</span>
+      <div class="card-title">Trinity Calibrate</div>
+      <div class="card-tagline">"Find where AI moves the needle. Build it. Deploy it. Measure it."</div>
+      <span class="card-link">View One-Pager <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+    </a>
+
+    <a href="one-pager-dream-manager.html" class="card" style="--card-accent: #C8A84B;">
+      <span class="card-eyebrow">Certified Dream Manager Program</span>
+      <div class="card-title">Dream Manager Program</div>
+      <div class="card-tagline">"Build the culture that holds everything else together."</div>
+      <span class="card-link">View One-Pager <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+    </a>
+
+  </div>
+
+  <hr class="divider">
+
+  <!-- SaaS Products -->
+  <span class="section-label">SaaS Products</span>
+  <div class="grid">
+
+    <a href="one-pager-trinity-cadence.html" class="card" style="--card-accent: #0EA5A5;">
+      <span class="card-eyebrow">AI-Native Business Operating System</span>
+      <div class="card-title">Trinity Cadence</div>
+      <div class="card-tagline">"The AI-native operating system for small and mid-sized businesses."</div>
+      <span class="card-link">View One-Pager <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+    </a>
+
+    <a href="one-pager-dream-compass.html" class="card" style="--card-accent: #7B3FE4;">
+      <span class="card-eyebrow">Dream Manager SaaS Platform</span>
+      <div class="card-title">DreamCompass</div>
+      <div class="card-tagline">"The Dream Manager methodology, operationalized at scale."</div>
+      <span class="card-link">View One-Pager <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+    </a>
+
+  </div>
+
+  <footer-bar>© 2026 Trinity One Consulting · St. Augustine, FL · trinityoneconsulting.com</footer-bar>
+
+</body>
+</html>

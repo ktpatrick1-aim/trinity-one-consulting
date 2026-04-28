@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trinity Calibrate — AI Optimization for SMBs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --accent:        #1F6FE0;
+    --near-black:    #0A0A0F;
+    --white:         #FFFFFF;
+    --muted:         #5A5A6E;
+    --hairline:      #E5E5EC;
+    --gold:          #C8A84B;
+    --body-bg:       #FFFFFF;
+    --fs-eyebrow:    7.5pt;
+    --fs-h1:         22pt;
+    --fs-tagline:    10pt;
+    --fs-section:    6.5pt;
+    --fs-card-title: 9pt;
+    --fs-body:       8pt;
+    --fs-contact:    7pt;
+  }
+
+  @page { size: Letter; margin: 0; }
+
+  @media print {
+    .no-print { display: none !important; }
+    html, body { width: 8.5in; height: 11in; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+
+  body.pager-calibrate {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--fs-body);
+    line-height: 1.55;
+    color: var(--near-black);
+    background: var(--body-bg);
+    width: 8.5in;
+    min-height: 11in;
+    max-width: 8.5in;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .eyebrow { font-size: var(--fs-eyebrow); font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 6px; }
+  .section-label { font-size: var(--fs-section); font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 8px; }
+
+  .hero {
+    background: var(--near-black);
+    color: var(--white);
+    padding: 20px 36px 18px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 1.6in;
+  }
+
+  .hero-top-row { display: flex; justify-content: flex-end; align-items: flex-start; margin-bottom: 10px; }
+  .hero-bottom-row { display: flex; align-items: center; gap: 14px; margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.08); }
+
+  .brand-logo { display: flex; align-items: center; gap: 10px; }
+  .brand-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .brand-logo-text .top-line { font-size: 7pt; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+  .brand-logo-text .bottom-line { font-size: 11pt; font-weight: 800; letter-spacing: 0.04em; color: var(--white); }
+  .brand-logo-text .bottom-line span { color: var(--accent); }
+
+  .btn-download { background: var(--accent); color: var(--white); border: none; padding: 6px 14px; font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; border-radius: 3px; text-decoration: none; display: inline-block; white-space: nowrap; }
+  .btn-download:hover { opacity: 0.88; }
+
+  .hero h1 { font-size: var(--fs-h1); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; color: var(--white); margin-top: 4px; margin-bottom: 6px; }
+  .accent-rule { width: 40px; height: 3px; background: var(--accent); margin-bottom: 8px; }
+  .tagline { font-size: var(--fs-tagline); font-weight: 600; font-style: italic; color: #6FA8F5; }
+
+  main { flex: 1; display: flex; flex-direction: column; }
+  .section { padding: 14px 36px; border-bottom: 1px solid var(--hairline); }
+
+  .problem-body { font-size: var(--fs-body); color: var(--near-black); max-width: 6.6in; line-height: 1.6; }
+  .pull-stat { margin-top: 8px; font-size: 8pt; font-weight: 600; font-style: italic; color: var(--gold); border-left: 3px solid var(--gold); padding-left: 10px; line-height: 1.4; }
+
+  .cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 6px; }
+  .card { border-top: 3px solid var(--accent); background: #F3F7FE; padding: 10px 11px 11px; border-radius: 0 0 4px 4px; }
+  .card-icon { width: 22px; height: 22px; margin-bottom: 6px; color: var(--accent); }
+  .card-title { font-size: var(--fs-card-title); font-weight: 700; color: var(--near-black); margin-bottom: 4px; line-height: 1.2; }
+  .card-body { font-size: 7.5pt; color: var(--muted); line-height: 1.5; }
+
+  .steps-strip { display: flex; gap: 0; margin-top: 8px; align-items: flex-start; position: relative; }
+  .steps-strip::before { content: ''; position: absolute; top: 14px; left: 14px; right: 14px; height: 2px; background: var(--hairline); z-index: 0; }
+  .step { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; z-index: 1; padding: 0 6px; }
+  .step-num { width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--white); font-size: 9pt; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-bottom: 6px; flex-shrink: 0; }
+  .step-title { font-size: 8pt; font-weight: 700; color: var(--near-black); margin-bottom: 3px; line-height: 1.2; }
+  .step-body { font-size: 7pt; color: var(--muted); line-height: 1.45; }
+
+  .fit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 8px; }
+  .fit-col-label { font-size: 7pt; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; display: block; }
+  .fit-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .fit-list li { font-size: 7.5pt; color: var(--near-black); padding-left: 14px; position: relative; line-height: 1.45; }
+  .fit-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: 7pt; top: 1px; }
+
+  footer { background: var(--near-black); color: var(--white); padding: 16px 36px 14px; flex: 0 0 auto; display: flex; flex-direction: column; gap: 10px; }
+  .thesis { text-align: center; }
+  .thesis-title { font-size: 8pt; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 4px; }
+  .thesis-body { font-size: 7.5pt; font-weight: 600; font-style: italic; color: #CCCCE0; line-height: 1.5; max-width: 5in; margin: 0 auto; }
+  .contact-strip { border-top: 1px solid #2A2A3A; padding-top: 8px; display: flex; justify-content: center; align-items: center; gap: 0; flex-wrap: wrap; }
+  .contact-strip span, .contact-strip a { font-size: var(--fs-contact); color: #AAAABB; text-decoration: none; }
+  .contact-strip a:hover { color: var(--white); }
+  .contact-sep { margin: 0 6px; color: #444458; }
+  .copyright { text-align: center; font-size: 6.5pt; color: #555568; }
+</style>
+</head>
+<body class="pager-calibrate">
+
+  <header class="hero">
+    <div class="hero-top-row">
+      <button class="btn-download no-print" onclick="window.print()">Download PDF</button>
+    </div>
+    <div>
+      <span class="eyebrow">AI Optimization for SMBs</span>
+      <h1>Trinity Calibrate</h1>
+      <div class="accent-rule"></div>
+    </div>
+    <div class="hero-bottom-row">
+      <div class="brand-logo">
+        <svg width="36" height="46" viewBox="-6 0 72 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 6 C16 6 14 40 14 50 C14 58 20 62 28 62" stroke="#D0DEF0" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M44 6 C44 6 46 40 46 50 C46 58 40 62 32 62" stroke="#D0DEF0" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <line x1="30" y1="62" x2="30" y2="96" stroke="#D0DEF0" stroke-width="5" stroke-linecap="round"/>
+          <path d="M8 18 C3 28 3 38 8 48" stroke="#60A5FA" stroke-width="2.2" fill="none" opacity="0.9"/>
+          <path d="M3 22 C-2 30 -2 36 3 44" stroke="#60A5FA" stroke-width="1.6" fill="none" opacity="0.6"/>
+          <path d="M52 18 C57 28 57 38 52 48" stroke="#60A5FA" stroke-width="2.2" fill="none" opacity="0.9"/>
+          <path d="M57 22 C62 30 62 36 57 44" stroke="#60A5FA" stroke-width="1.6" fill="none" opacity="0.6"/>
+        </svg>
+        <div class="brand-logo-text">
+          <span class="top-line">A Trinity One Service Line</span>
+          <span class="bottom-line">TRINITY <span>CALIBRATE</span></span>
+        </div>
+      </div>
+      <p class="tagline">"Find where AI moves the needle. Build it. Deploy it. Measure it."</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <span class="section-label">The Problem</span>
+      <p class="problem-body">Established SMBs are drowning in AI hype and have no idea where to actually start. Most "AI consultants" sell hours of strategy, not measurable ROI. Calibrate is built for operators who need outcomes, not slide decks.</p>
+      <p class="pull-stat">"You don't need more AI options. You need someone to tell you which one actually moves the needle — and then build it."</p>
+    </section>
+
+    <section class="section">
+      <span class="section-label">What You Get</span>
+      <div class="cards-grid">
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <div class="card-title">AI Readiness Audit</div>
+          <div class="card-body">A vendor-neutral diagnostic that identifies the highest-ROI opportunities in your operation. Low-risk entry point.</div>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+          </svg>
+          <div class="card-title">Targeted Build &amp; Deploy</div>
+          <div class="card-body">We build and deploy the specific AI workflows that move the needle on operations and revenue.</div>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          <div class="card-title">Team Enablement</div>
+          <div class="card-body">Your people get trained on the tools so adoption sticks after we're gone.</div>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+          </svg>
+          <div class="card-title">ROI Tracking</div>
+          <div class="card-body">Measurable ROI in 60–90 days or we tell you why it didn't work.</div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="section-label">How It Works</span>
+      <div class="steps-strip">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-title">Audit</div>
+          <div class="step-body">2-week readiness assessment, prioritized opportunity map.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-title">Build</div>
+          <div class="step-body">Targeted deployment of the 1–3 highest-ROI AI workflows.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-title">Calibrate</div>
+          <div class="step-body">Train, measure, and tune. ROI documented.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="fit-grid">
+        <div>
+          <span class="fit-col-label">Built For</span>
+          <ul class="fit-list">
+            <li>Established SMBs ($5M–$100M)</li>
+            <li>Distribution, manufacturing, construction, field services, professional services</li>
+            <li>Operators tired of AI hype without ROI</li>
+            <li>Teams that need outcomes, not endless strategy decks</li>
+          </ul>
+        </div>
+        <div>
+          <span class="fit-col-label">What You Walk Away With</span>
+          <ul class="fit-list">
+            <li>Measurable ROI in 60–90 days</li>
+            <li>A vendor-neutral roadmap of where AI actually fits</li>
+            <li>Trained internal team that owns the tools</li>
+            <li>The 40% efficiency you didn't know you were leaving on the table</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="thesis">
+      <span class="thesis-title">The Human + Machine Equation</span>
+      <p class="thesis-body">AI and systems optimize operations. The Dream Manager methodology optimizes people. The equation is both. Always both.</p>
+    </div>
+    <div class="contact-strip">
+      <span>Kevin Patrick</span><span class="contact-sep">·</span>
+      <span>Founder, Trinity One Consulting</span><span class="contact-sep">·</span>
+      <a href="mailto:kevin@trinityoneconsulting.com">kevin@trinityoneconsulting.com</a><span class="contact-sep">·</span>
+      <span>(904) 466-8737</span><span class="contact-sep">·</span>
+      <a href="https://trinityoneconsulting.com">trinityoneconsulting.com</a>
+    </div>
+    <div class="copyright">© 2026 Trinity One Consulting · St. Augustine, FL</div>
+  </footer>
+
+</body>
+</html>

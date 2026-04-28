@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certified Dream Manager Program — Trinity One Consulting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --accent:        #C8A84B;
+    --near-black:    #0A0A0F;
+    --white:         #FFFFFF;
+    --muted:         #5A5A6E;
+    --hairline:      #E5E5EC;
+    --gold:          #C8A84B;
+    --body-bg:       #FFFFFF;
+    --fs-eyebrow:    7.5pt;
+    --fs-h1:         22pt;
+    --fs-tagline:    10pt;
+    --fs-section:    6.5pt;
+    --fs-card-title: 9pt;
+    --fs-body:       8pt;
+    --fs-contact:    7pt;
+  }
+
+  @page { size: Letter; margin: 0; }
+
+  @media print {
+    .no-print { display: none !important; }
+    html, body { width: 8.5in; height: 11in; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+
+  body.pager-dream {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--fs-body);
+    line-height: 1.55;
+    color: var(--near-black);
+    background: var(--body-bg);
+    width: 8.5in;
+    min-height: 11in;
+    max-width: 8.5in;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .eyebrow { font-size: var(--fs-eyebrow); font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(200,168,75,0.7); display: block; margin-bottom: 6px; }
+  .section-label { font-size: var(--fs-section); font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 8px; }
+
+  .hero { background: var(--near-black); color: var(--white); padding: 20px 36px 18px; flex: 0 0 auto; display: flex; flex-direction: column; min-height: 1.6in; }
+  .hero-top-row { display: flex; justify-content: flex-end; align-items: flex-start; margin-bottom: 10px; }
+
+  .hero-bottom-row { display: flex; align-items: center; gap: 14px; margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.08); }
+
+  .logo-pill { background: #fff; border-radius: 5px; padding: 5px 10px; display: inline-flex; align-items: center; }
+  .logo-pill img { height: 40px; width: auto; display: block; }
+
+  .brand-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .brand-logo-text .top-line { font-size: 7pt; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+  .brand-logo-text .bottom-line { font-size: 10pt; font-weight: 800; letter-spacing: 0.04em; color: var(--accent); }
+
+  .btn-download { background: var(--accent); color: var(--near-black); border: none; padding: 6px 14px; font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; border-radius: 3px; text-decoration: none; display: inline-block; white-space: nowrap; }
+  .btn-download:hover { opacity: 0.88; }
+
+  .hero h1 { font-size: var(--fs-h1); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; color: var(--white); margin-top: 4px; margin-bottom: 6px; }
+  .accent-rule { width: 40px; height: 3px; background: var(--accent); margin-bottom: 8px; }
+  .tagline { font-size: var(--fs-tagline); font-weight: 600; font-style: italic; color: var(--accent); }
+
+  main { flex: 1; display: flex; flex-direction: column; }
+  .section { padding: 14px 36px; border-bottom: 1px solid var(--hairline); }
+
+  .problem-body { font-size: var(--fs-body); color: var(--near-black); max-width: 6.6in; line-height: 1.6; }
+  .pull-stat { margin-top: 8px; font-size: 8pt; font-weight: 600; font-style: italic; color: var(--gold); border-left: 3px solid var(--gold); padding-left: 10px; line-height: 1.4; }
+
+  .cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 6px; }
+  .card { border-top: 3px solid var(--accent); background: #FDFAF3; padding: 10px 11px 11px; border-radius: 0 0 4px 4px; }
+  .card-icon { width: 22px; height: 22px; margin-bottom: 6px; color: var(--accent); }
+  .card-title { font-size: var(--fs-card-title); font-weight: 700; color: var(--near-black); margin-bottom: 4px; line-height: 1.2; }
+  .card-body { font-size: 7.5pt; color: var(--muted); line-height: 1.5; }
+
+  .steps-strip { display: flex; gap: 0; margin-top: 8px; align-items: flex-start; position: relative; }
+  .steps-strip::before { content: ''; position: absolute; top: 14px; left: 14px; right: 14px; height: 2px; background: var(--hairline); z-index: 0; }
+  .step { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; z-index: 1; padding: 0 6px; }
+  .step-num { width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--near-black); font-size: 9pt; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-bottom: 6px; flex-shrink: 0; }
+  .step-title { font-size: 8pt; font-weight: 700; color: var(--near-black); margin-bottom: 3px; line-height: 1.2; }
+  .step-body { font-size: 7pt; color: var(--muted); line-height: 1.45; }
+
+  .fit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 8px; }
+  .fit-col-label { font-size: 7pt; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; display: block; }
+  .fit-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .fit-list li { font-size: 7.5pt; color: var(--near-black); padding-left: 14px; position: relative; line-height: 1.45; }
+  .fit-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: 7pt; top: 1px; }
+
+  footer { background: var(--near-black); color: var(--white); padding: 16px 36px 14px; flex: 0 0 auto; display: flex; flex-direction: column; gap: 10px; }
+  .thesis { text-align: center; }
+  .thesis-title { font-size: 8pt; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 4px; }
+  .thesis-body { font-size: 7.5pt; font-weight: 600; font-style: italic; color: #CCCCE0; line-height: 1.5; max-width: 5in; margin: 0 auto; }
+  .contact-strip { border-top: 1px solid #2A2A3A; padding-top: 8px; display: flex; justify-content: center; align-items: center; gap: 0; flex-wrap: wrap; }
+  .contact-strip span, .contact-strip a { font-size: var(--fs-contact); color: #AAAABB; text-decoration: none; }
+  .contact-strip a:hover { color: var(--white); }
+  .contact-sep { margin: 0 6px; color: #444458; }
+  .copyright { text-align: center; font-size: 6.5pt; color: #555568; }
+</style>
+</head>
+<body class="pager-dream">
+
+  <header class="hero">
+    <div class="hero-top-row">
+      <button class="btn-download no-print" onclick="window.print()">Download PDF</button>
+    </div>
+    <div>
+      <span class="eyebrow">Certified Dream Manager Program</span>
+      <h1>Dream Manager Program</h1>
+      <div class="accent-rule"></div>
+    </div>
+    <div class="hero-bottom-row">
+      <div class="logo-pill">
+        <img src="../images/logo.png" alt="Trinity One Consulting">
+      </div>
+      <p class="tagline">"Build the culture that holds everything else together."</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <span class="section-label">The Problem</span>
+      <p class="problem-body">You can deploy world-class systems and watch them fail because the people running them aren't invested. Disengaged teams resist change. Burned-out managers don't champion new tools. The technology isn't the problem. The people are.</p>
+      <p class="pull-stat">"91% of employees who have a Dream Manager report higher engagement. The methodology doesn't just feel good — it measures."</p>
+    </section>
+
+    <section class="section">
+      <span class="section-label">What You Get</span>
+      <div class="cards-grid">
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          <div class="card-title">Certified Methodology</div>
+          <div class="card-body">Matthew Kelly's Dream Manager program, delivered by a Certified Dream Manager with 30+ years of operational depth.</div>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          <div class="card-title">1-on-1 Dream Sessions</div>
+          <div class="card-body">Structured coaching pairs employees with a Dream Manager to identify and pursue their personal and professional dreams.</div>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          <div class="card-title">Manager Training</div>
+          <div class="card-body">Equip your leaders to coach Dreams the same way they coach performance.</div>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+          </svg>
+          <div class="card-title">Culture Metrics</div>
+          <div class="card-body">Engagement, retention, and discretionary effort measured before and after — not just felt.</div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="section-label">How It Works</span>
+      <div class="steps-strip">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-title">Foundation</div>
+          <div class="step-body">Leadership alignment, program design, baseline metrics.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-title">Launch</div>
+          <div class="step-body">All-team kickoff, Dream Sessions begin.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-title">Cadence</div>
+          <div class="step-body">Monthly Dream Sessions, quarterly culture pulse.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-title">Compounding</div>
+          <div class="step-body">Engagement and retention move. Talent stays. The organization changes.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="fit-grid">
+        <div>
+          <span class="fit-col-label">Built For</span>
+          <ul class="fit-list">
+            <li>Companies with 25–500 employees</li>
+            <li>Industries fighting turnover and disengagement</li>
+            <li>Leaders who know "more pizza Fridays" isn't the answer</li>
+            <li>Organizations ready to invest in people as a strategy, not a perk</li>
+          </ul>
+        </div>
+        <div>
+          <span class="fit-col-label">What You Walk Away With</span>
+          <ul class="fit-list">
+            <li>Documented engagement and retention lift</li>
+            <li>A culture that holds when other systems are stressed</li>
+            <li>Managers who coach the whole person, not just the role</li>
+            <li>Talent that chooses to stay</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="thesis">
+      <span class="thesis-title">The Human + Machine Equation</span>
+      <p class="thesis-body">AI and systems optimize operations. The Dream Manager methodology optimizes people. The equation is both. Always both.</p>
+    </div>
+    <div class="contact-strip">
+      <span>Kevin Patrick</span><span class="contact-sep">·</span>
+      <span>Founder, Trinity One Consulting</span><span class="contact-sep">·</span>
+      <a href="mailto:kevin@trinityoneconsulting.com">kevin@trinityoneconsulting.com</a><span class="contact-sep">·</span>
+      <span>(904) 466-8737</span><span class="contact-sep">·</span>
+      <a href="https://trinityoneconsulting.com">trinityoneconsulting.com</a>
+    </div>
+    <div class="copyright">© 2026 Trinity One Consulting · St. Augustine, FL</div>
+  </footer>
+
+</body>
+</html>
